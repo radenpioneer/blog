@@ -1,0 +1,9 @@
+[[redirects]]
+    from = "https://radenpioneer.netlify.app/*"
+    to = "https://radenpioneer.xyz/:splat"
+    status = 301
+    force = true
+
+[dev]
+    command = "npm run serve"
+    port = 4000
