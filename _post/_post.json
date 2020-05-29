@@ -1,0 +1,6 @@
+{
+    "tags": "post",
+    "layout": "post",
+    "permalink": "post/{{ page.date | date: '%Y' }}/{{ title | slug }}/index.html",
+    "comment": true
+}

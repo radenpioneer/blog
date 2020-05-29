@@ -1,0 +1,26 @@
+---
+layout: layout.liquid
+pagination:
+    data: collections.post
+    size: 10
+    reverse: true
+    alias: posts
+---
+
+<div class="px2">
+    <section class="center">
+        <h1 class="mt0 mb1 headings">{{ site.title }}</h1>
+        <span class="block italic center mb2" style="font-size: 125%">{{ site.description }}</span>
+        <div class="divider"></div>
+    </section>
+    <section class="mt3 content">
+    {% for post in posts %}
+        <table>
+            <tr valign="top">
+                <td style="width: 70%"><a href="{{ post.url }}"><b>{{ post.data.title }}</b></a></td>
+                <td class="right-align mute" style="width: 30%">{{ post.data.date | dateReadable }}</td>
+            </tr>
+        </table>
+    {% endfor %}
+    </section>
+</div>

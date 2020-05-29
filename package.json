@@ -1,0 +1,28 @@
+{
+  "name": "sastronegoro-blog",
+  "version": "1.0.0",
+  "description": "Blog Personal R. Ilham Sastronegoro",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port 4000"
+  },
+  "keywords": [],
+  "author": "R. Ilham Sastronegoro",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "basscss": "^8.0.2",
+    "dark-mode-toggle": "^0.5.1",
+    "html-minifier": "^4.0.0",
+    "jquery": "^3.4.1",
+    "lity": "^2.4.0",
+    "markdown-it-attrs": "^3.0.2",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-implicit-figures": "^0.10.0",
+    "normalize.css": "^8.0.1"
+  }
+}
