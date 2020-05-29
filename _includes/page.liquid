@@ -1,0 +1,16 @@
+---
+layout: layout.liquid
+---
+
+<article class="px2">
+    <div class="center">
+        <h1 class="mt2 mb1 headings">{{ title }}</h1>
+        {% if subtitle %}
+            <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
+        {% endif %}
+    </div>
+    <div class="divider"></div>
+    <div class="content">
+        {{ content }}
+    </div>
+</article>
