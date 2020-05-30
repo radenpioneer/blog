@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
         "node_modules/lity/dist/lity.min.css": "assets/css/lity.min.css",
         "node_modules/dark-mode-toggle/dist/dark-mode-toggle.min.mjs": "assets/js/dark-mode-toggle.min.mjs",
         "node_modules/pdfobject/pdfobject.min.js": "assets/js/pdfobject.min.js",
-        "_redirects": "_redirects"
+        "manifest.json": "manifest.json"
     })
 
     eleventyConfig.addCollection("post", function(collection) {
