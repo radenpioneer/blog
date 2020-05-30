@@ -116,6 +116,10 @@ section table {
     width: 100%;
 }
 
+.postlink a {
+    font-family: var(--body-font);
+}
+
 .mute {
     color: var(--mute-color);
 }
