@@ -15,6 +15,25 @@ layout: layout.liquid
         {{ content }}
     </div>
 </article>
+{% if nextPost.url or prevPost.url %}
+<section class="postlink px2">
+    <div class="divider"></div>
+    <div class="flex">
+        {% if prevPost.url %}
+        <div class="mr-auto">
+            <span class="h3 bold">&laquo;</span>
+            <a href="{{ prevPost.url }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
+        </div>
+        {% endif %}
+        {% if nextPost.url %}
+        <div class="ml-auto">
+            <a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
+            <span class="h3 bold">&raquo;</span>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
 {% if comment %}
 <section class="px2">
     <div class="divider"></div>
