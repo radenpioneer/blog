@@ -6,6 +6,5 @@
     --background-color: var(--white);
     --text-color: var(--black);
     --mute-color: var(--grey);
-    --link-color: linear-gradient(to right, rgb(2, 180, 224) , rgb(218, 1, 218));
 
 }
