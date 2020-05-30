@@ -23,4 +23,23 @@ pagination:
         </table>
     {% endfor %}
     </section>
+    {% if pagination.href.previous or pagination.href.next %}
+    <section class="postlink px2">
+        <div class="divider"></div>
+        <div class="flex">
+            {% if pagination.href.previous %}
+            <div class="mr-auto">
+                <span class="h3 bold">&laquo;</span>
+                <a href="{{ pagination.href.previous }}" title="Artikel lama"><i>Artikel lama</i></a>
+            </div>
+            {% endif %}
+            {% if pagination.href.next %}
+            <div class="ml-auto">
+                <a href="{{ pagination.href.next }}" title="Artikel terbaru"><i>Artikel terbaru</i></a>
+                <span class="h3 bold">&raquo;</span>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
 </div>
