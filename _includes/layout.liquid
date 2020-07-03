@@ -25,7 +25,7 @@ layout: base.liquid
     <div class="max-width-3 mx-auto">
         <div class="divider"></div>
         <div>
-            <span class="mute">&copy; {{ page.date | date: '%Y' | append: " " | append: site.title | upcase }}</span>
+            <span class="mute">&copy; {% currentYear %} {{ site.title | upcase }}</span>
         </div>
     </div>
 </footer>

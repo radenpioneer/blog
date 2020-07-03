@@ -37,6 +37,10 @@ module.exports = function(eleventyConfig) {
         return moment(date).format('LL')
     })
 
+    eleventyConfig.addShortcode('currentYear', function() {
+        return moment().utc().format('YYYY')
+    })
+
     //markdown configs
     let markdownIt = require("markdown-it")
     let markdownAttrs = require("markdown-it-attrs")
