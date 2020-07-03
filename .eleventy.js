@@ -6,13 +6,9 @@ const minify = require('html-minifier')
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets": "assets",
-        "node_modules/normalize.css/normalize.css": "assets/css/normalize.css",
-        "node_modules/basscss/css/basscss.min.css": "assets/css/basscss.min.css",
         "node_modules/jquery/dist/jquery.min.js": "assets/js/jquery.min.js",
         "node_modules/lity/dist/lity.min.js": "assets/js/lity.min.js",
-        "node_modules/lity/dist/lity.min.css": "assets/css/lity.min.css",
         "node_modules/dark-mode-toggle/dist/dark-mode-toggle.min.mjs": "assets/js/dark-mode-toggle.min.mjs",
-        "node_modules/pdfobject/pdfobject.min.js": "assets/js/pdfobject.min.js",
         "manifest.json": "manifest.json"
     })
 
@@ -65,6 +61,7 @@ module.exports = function(eleventyConfig) {
                 removeComments: true,
                 collapseWhitespace: true,
                 minifyJS: true,
+                minifyCSS: true,
                 processScripts: [
                     "text/javascript",
                     "application/ld+json"

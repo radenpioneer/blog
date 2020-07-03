@@ -14,6 +14,7 @@ api-docs/
 
 # Ignore eleventy output when doing local tests
 _site/
+.cache
 
 # Local Netlify folder
 .netlify

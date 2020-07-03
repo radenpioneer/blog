@@ -14,11 +14,11 @@
 img {
     filter: var(--image-filter);
     transition: filter var(--duration) var(--timing);
-}
 
-img:hover {
-    filter: none;
-    transition: filter var(--duration) var(--timing);
+    &:hover {
+        filter: none;
+        transition: filter var(--duration) var(--timing);
+    }
 }
 
 .lity-content img {
