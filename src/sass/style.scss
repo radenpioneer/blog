@@ -5,11 +5,13 @@
 @import '../../node_modules/basscss/css/basscss';
 @import '../../node_modules/lity/dist/lity';
 
+@import 'colors';
+
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --heading-font: var(--system-font);
     --body-font: "Libre Baskerville", serif;
-    --link-color: rgb(0, 136, 255);
+    --link-color: var(--blue);
     --duration: 0.5s;
     --timing: ease;
     color-scheme: light dark;
