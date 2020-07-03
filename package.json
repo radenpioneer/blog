@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "Blog Personal R. Ilham Sastronegoro",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radenpioneer/blog.git"
+  },
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy"
+    "build": "gulp build & ELEVENTY_ENV=prod npx @11ty/eleventy",
+    "dev": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "debug": "gulp build & ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "R. Ilham Sastronegoro",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "moment": "^2.24.0"
   },
   "dependencies": {

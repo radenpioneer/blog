@@ -1,4 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/basscss/css/basscss';
+@import '../../node_modules/lity/dist/lity';
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -47,31 +52,30 @@ a,
 .content h5,
 .content h6 {
     transition: 
-        color var(--duration) var(--timing)
-}
+        color var(--duration) var(--timing);
 
-a:hover, 
-.headings:hover,
-.content h1:hover,
-.content h2:hover,
-.content h3:hover,
-.content h4:hover,
-.content h5:hover,
-.content h6:hover {
-    color: var(--link-color);
-    transition: 
-        color var(--duration) var(--timing)
-    
+    &:hover, 
+    .headings:hover,
+    .content h1:hover,
+    .content h2:hover,
+    .content h3:hover,
+    .content h4:hover,
+    .content h5:hover,
+    .content h6:hover {
+        color: var(--link-color);
+        transition: 
+            color var(--duration) var(--timing);
+        
+    }
 }
 
 .profile {
-    filter: grayscale();
+    filter: unquote("grayscale()");
     transition: filter var(--duration) var(--timing);
-}
-
-.profile:hover {
-    filter: none;
-    transition: filter var(--duration) var(--timing);
+    &:hover {
+        filter: none;
+        transition: filter var(--duration) var(--timing);
+    }
 }
 
 .content {
@@ -80,36 +84,38 @@ a:hover,
     line-height: 1.5em;
 }
 
-article a {
-    text-decoration: underline;
-}
+article {
+    a {
+        text-decoration: underline;
+    }
 
-article blockquote {
-    border-left: 2px solid var(--mute-color);
-    color: var(--mute-color);
-    padding-left: 1em;
-    font-size: 125%;
-}
+    blockquote {
+        border-left: 2px solid var(--mute-color);
+        color: var(--mute-color);
+        padding-left: 1em;
+        font-size: 125%;
+    }
 
-article figure {
-    text-align: center;
-    max-width: 100%;
-}
+    figure {
+        text-align: center;
+        max-width: 100%;
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
 
-article figure img {
-    max-width: 100%;
-    object-fit: contain;
-}
+    figcaption {
+        font-family: var(--body-font);
+        color: var(--mute-color);
+        margin-top: 0.5em;
+        font-size: 90%;
+    }
 
-article figcaption {
-    font-family: var(--body-font);
-    color: var(--mute-color);
-    margin-top: 0.5em;
-    font-size: 90%;
-}
+    embed {
+        display: block;
+    }
 
-article embed {
-    display: block;
 }
 
 section table {
@@ -139,16 +145,15 @@ section table {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 footer {

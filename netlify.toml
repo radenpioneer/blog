@@ -1,3 +1,6 @@
+[build]
+    command = "npm run build"
+    
 [[redirects]]
     from = "https://radenpioneer.netlify.app/*"
     to = "https://radenpioneer.xyz/:splat"
@@ -5,5 +8,5 @@
     force = true
 
 [dev]
-    command = "npm run serve"
+    command = "npm run dev"
     port = 4000
