@@ -7,7 +7,7 @@ category: ['esai']
 Mungkin hal-hal berikut di bawah ini akan jarang kita temukan di sekolah umum manapun. Berdasarkan pengalaman saya ketika mengajar di PP Nurul Jannah Sawahan 2019 lalu:
 
 1. Sejatinya materi Muthalaah Haditsah 1 yang saya ajarkan ke anak-anak santri tidak berlagu. Namun anak-anak ternyata punya inisiatif sendiri untuk membuat lagu supaya memudahkan mereka untuk menghapal materi yang saya ajarkan. Menariknya, anak-anak ini masih berusia sangat muda (kurang lebih 8 tahun). Biasanya anak-anak seumuran ini tahunya mainan, tapi mereka bisa membuat 'metode' belajar mereka sendiri.
-2. Suatu ketika, pernah ada anak umur kira-kira 3 tahun ikut belajar di kelas. Ketika saya mengajar pun si anak mengikuti dengan antusias. Eh rupanya ibunya datang, nyuruh anaknya pulang, si anak menangis meraung-raung sambil merengek 'aku ga mau pulang ma, aku maunya ngaji!' Fenomena langka bukan? ðŸ˜
+2. Suatu ketika, pernah ada anak umur kira-kira 3 tahun ikut belajar di kelas. Ketika saya mengajar pun si anak mengikuti dengan antusias. Eh rupanya ibunya datang, nyuruh anaknya pulang, si anak menangis meraung-raung sambil merengek 'aku ga mau pulang ma, aku maunya ngaji!' Fenomena langka bukan?
 3. Tak jarang pula saya memarahi santri apabila berlaku dengan adab kurang baik terhadap guru. Namun, setelah dimarahi rupanya santri tidak menjadi stres, namun malah semakin antusias mengikuti pelajaran. Bahkan rupanya semakin pintar ia setelah dimarahi itu.
 
 <div class="videoWrapper">
