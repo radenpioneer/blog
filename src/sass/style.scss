@@ -56,14 +56,7 @@ a,
     transition: 
         color var(--duration) var(--timing);
 
-    &:hover, 
-    .headings:hover,
-    .content h1:hover,
-    .content h2:hover,
-    .content h3:hover,
-    .content h4:hover,
-    .content h5:hover,
-    .content h6:hover {
+    &:hover {
         color: var(--link-color);
         transition: 
             color var(--duration) var(--timing);
