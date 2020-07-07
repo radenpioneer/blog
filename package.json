@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "basscss": "^8.0.2",
-    "dark-mode-toggle": "^0.5.1",
+    "dark-mode-toggle": "^0.7.1",
     "html-minifier": "^4.0.0",
     "jquery": "^3.4.1",
     "lity": "^2.4.0",
