@@ -22,7 +22,7 @@
     "moment": "^2.27.0"
   },
   "dependencies": {
-    "basscss": "^8.0.2",
+    "basscss": "^8.1.0",
     "dark-mode-toggle": "^0.5.1",
     "html-minifier": "^4.0.0",
     "jquery": "^3.4.1",
