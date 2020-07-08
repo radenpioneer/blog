@@ -19,15 +19,15 @@
     "@11ty/eleventy": "^0.10.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
-    "moment": "^2.24.0"
+    "moment": "^2.27.0"
   },
   "dependencies": {
-    "basscss": "^8.0.2",
     "dark-mode-toggle": "^0.7.1",
+    "basscss": "^8.1.0",
     "html-minifier": "^4.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "lity": "^2.4.0",
-    "markdown-it-attrs": "^3.0.2",
+    "markdown-it-attrs": "^3.0.3",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-implicit-figures": "^0.10.0",
     "normalize.css": "^8.0.1"
