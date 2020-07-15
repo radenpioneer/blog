@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "gulp build & ELEVENTY_ENV=prod npx @11ty/eleventy",
+    "preview": "npm run build & npx http-server ./_site -p 4000",
     "dev": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
     "debug": "gulp build & ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
     "clean": "gulp clean"
