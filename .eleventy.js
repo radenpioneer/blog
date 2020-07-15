@@ -1,7 +1,7 @@
+const fs = require('fs')
+const minify = require('html-minifier')
 const moment = require('moment')
 moment.locale('id')
-
-const minify = require('html-minifier')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
@@ -70,5 +70,18 @@ module.exports = function(eleventyConfig) {
             return minified
         }
         return content
+    })
+
+    eleventyConfig.setBrowserSyncConfig({
+        callbacks: {
+            ready: function(err, bs) {
+                bs.addMiddleware('*', (req, res) => {
+                    const content_404 = fs.readFileSync('_site/404.html')
+                    res.write(content_404)
+                    res.writeHead(404)
+                    res.end()
+                })
+            }
+        }
     })
 }
