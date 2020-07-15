@@ -11,7 +11,7 @@ Pandemi COVID-19 yang sedang berlangsung (saat ditulisnya artikel ini) membuat k
 Tiga tahun yang lalu, dalam rangka memenuhi prasyarat pendaftaran Dauroh Pemandu Madrasah KAMMI Tasikmalaya, saya menulis sebuah esai yang berjudul *"Peran Madrasah KAMMI Dalam Pembentukan Karakter Kader KAMMI Generasi Digital Native".* Secara garis besar esai ini membahas tentang karakter generasi digital native dan tawaran solusi saya untuk Madrasah KAMMI dalam rangka rekrutmen generasi digital native. Jika anda tertarik untuk membacanya, silahkan download di bawah ini.
 
 <div class="videoWrapper">
-    <iframe src="https://onedrive.live.com/embed?cid=3615CF7D1E6B8A56&resid=3615CF7D1E6B8A56%212919&authkey=ACDWbmIBMlXeHH8&em=2" width="476" height="288" frameborder="0" scrolling="no" loading="lazy"></iframe>
+    <iframe src="https://onedrive.live.com/embed?cid=3615CF7D1E6B8A56&resid=3615CF7D1E6B8A56%213330&authkey=AMvPbxk-ml8l0ys&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
 </div>
 
 Salah satu poin yang jadi tawaran solusi saya adalah pemanfaatan aplikasi *instant messaging/messenger*. Namun pada saat itu, saya belum menawarkan solusi melalu *video conferencing*, karena konteks pada saat itu adalah posisi kader komisariat yang saling berdekatan dan cukup sering melaksanakan agenda bersama. Selain itu pendekatan dalam makalah tersebut adalah pendekatan kultur mahasiswa, ketimbang pemanfaatan teknologi itu sendiri.
