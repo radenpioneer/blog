@@ -1,12 +1,8 @@
 :root {
-    --white: rgb(200, 200, 200);
-    --grey: rgb(125, 125, 125);
-    --black: rgb(25, 25, 25);
 
     --background-color: var(--black);
-    --text-color: var(--white);
-    --mute-color: var(--grey);
-    --link-color: linear-gradient(to right, rgb(2, 180, 224) , rgb(218, 1, 218));
+    --text-color: var(--silver);
+    --mute-color: var(--gray);
 
     --image-filter: grayscale(50%)
 }
