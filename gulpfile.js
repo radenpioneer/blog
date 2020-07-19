@@ -1,19 +1,11 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
-const del = require('del')
 
 gulp.task('css', function() {
     return gulp.src('./src/sass/*.scss')
     .pipe(sass({outputStyle: 'compressed'})
     .on('error', sass.logError))
-    .pipe(gulp.dest('./_site/assets/css/'))
-})
-
-gulp.task('clean', function() {
-    return del([
-        '.cache',
-        '_site'
-    ])
+    .pipe(gulp.dest('./dist/assets/css/'))
 })
 
 gulp.task('watch', function() {
