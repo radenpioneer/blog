@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
-@import '../../node_modules/normalize.css/normalize';
-@import '../../node_modules/basscss/css/basscss';
-@import '../../node_modules/lity/dist/lity';
+@use '../../node_modules/normalize.css/normalize';
+@use '../../node_modules/basscss/css/basscss';
+@use '../../node_modules/lity/dist/lity';
 
-@import 'colors';
+@use 'gfonts';
+@use 'colors';
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
