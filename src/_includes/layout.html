@@ -3,7 +3,7 @@ layout: base
 ---
 
 <header class="relative center mt3 mb1">
-    <a href="{% if page.outputPath == '_site/index.html' %}{{ '/about' }}{% else %}{{ '/' }}{% endif %}">
+    <a href="{% if page.url == '/' %}{{ '/about' }}{% else %}{{ '/' }}{% endif %}">
         <img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=80" width="80" height="80">
     </a>
 </header>
