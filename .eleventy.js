@@ -81,7 +81,7 @@ module.exports = function(eleventyConfig) {
         callbacks: {
             ready: function(err, bs) {
                 bs.addMiddleware('*', (req, res) => {
-                    const content_404 = fs.readFileSync('_site/404.html')
+                    const content_404 = fs.readFileSync('dist/404.html')
                     res.write(content_404)
                     res.writeHead(404)
                     res.end()
@@ -89,4 +89,11 @@ module.exports = function(eleventyConfig) {
             }
         }
     })
+
+    return {
+        dir: {
+            input: 'src',
+            output: 'dist'
+        }
+    }
 }
