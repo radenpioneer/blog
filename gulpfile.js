@@ -1,6 +1,8 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 
+sass.compiler = require('sass')
+
 gulp.task('css', function() {
     return gulp.src('./src/sass/*.scss')
     .pipe(sass({outputStyle: 'compressed'})
