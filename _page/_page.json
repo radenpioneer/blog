@@ -1,5 +1,5 @@
 {
     "tags": "static",
     "layout": "page",
-    "permalink": "{{ title | slug }}/index.html"
+    "permalink": "{{ page.fileSlug }}/index.html"
 }
