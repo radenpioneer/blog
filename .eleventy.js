@@ -39,18 +39,23 @@ module.exports = function(eleventyConfig) {
 
     //markdown configs
     let markdownIt = require("markdown-it")
-    let markdownAttrs = require("markdown-it-attrs")
-    let markdownFigures = require("markdown-it-implicit-figures")
-    let markdownFootnotes = require("markdown-it-footnote")
+    let attrs = require("markdown-it-attrs")
+    let figures = require("markdown-it-implicit-figures")
+    let footnotes = require("markdown-it-footnote")
+    let deflist = require("markdown-it-deflist")
+    let emoji = require("markdown-it-emoji")
 
     let markdownLib = markdownIt({
-                        html: true
+                        html: true,
+                        linkify: true
                       })
-                      .use(markdownAttrs)
-                      .use(markdownFigures, {
+                      .use(attrs)
+                      .use(figures, {
                         figcaption: true
                       })
-                      .use(markdownFootnotes)
+                      .use(footnotes)
+                      .use(deflist)
+                      .use(emoji)
 
     eleventyConfig.setLibrary("md", markdownLib)
 
