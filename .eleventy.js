@@ -1,4 +1,3 @@
-const fs = require('fs')
 const minify = require('html-minifier')
 const moment = require('moment')
 moment.locale('id')
@@ -77,18 +76,7 @@ module.exports = function(eleventyConfig) {
         return content
     })
 
-    eleventyConfig.setBrowserSyncConfig({
-        callbacks: {
-            ready: function(err, bs) {
-                bs.addMiddleware('*', (req, res) => {
-                    const content_404 = fs.readFileSync('dist/404.html')
-                    res.write(content_404)
-                    res.writeHead(404)
-                    res.end()
-                })
-            }
-        }
-    })
+    eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     return {
         dir: {
