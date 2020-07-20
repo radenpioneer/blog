@@ -12,7 +12,7 @@
     "build:prod": "gulp build & ELEVENTY_ENV=prod npx @11ty/eleventy",
     "serve": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
     "debug": "gulp build & ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
-    "clean": "npx del dist & npx del .cache",
+    "clean": "npx del-cli dist & npx del-cli .cache",
     "prestart": "npm run clean",
     "start": "npm run serve"
   },
