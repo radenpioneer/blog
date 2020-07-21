@@ -8,10 +8,10 @@
     "url": "https://github.com/radenpioneer/blog.git"
   },
   "scripts": {
-    "build": "gulp build & ELEVENTY_ENV=dev npx @11ty/eleventy",
-    "build:prod": "gulp build & ELEVENTY_ENV=prod npx @11ty/eleventy",
-    "serve": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "debug": "gulp build & ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
+    "build": "gulp build & npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy",
+    "build:prod": "gulp --silent build & npx cross-env ELEVENTY_ENV=prod npx @11ty/eleventy --quiet",
+    "serve": "gulp build & gulp watch & npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "debug": "gulp build & npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
     "clean": "npx del-cli dist & npx del-cli .cache",
     "prestart": "npm run clean",
     "start": "npm run serve"
@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "cross-env": "^7.0.2",
     "del-cli": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
