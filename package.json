@@ -8,11 +8,19 @@
     "url": "https://github.com/radenpioneer/blog.git"
   },
   "scripts": {
-    "build": "gulp build & npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy",
-    "build:prod": "gulp --silent build & npx cross-env ELEVENTY_ENV=prod npx @11ty/eleventy --quiet",
-    "serve": "gulp build & gulp watch & npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "debug": "gulp build & npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
-    "clean": "npx del-cli dist & npx del-cli .cache",
+    "gulp:build": "gulp build",
+    "gulp:watch": "gulp watch",
+    "del:dist": "npx del-cli dist",
+    "del:cache": "npx del-cli .cache",
+    "eleventy:build": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy",
+    "eleventy:prod": "npx cross-env ELEVENTY_ENV=prod npx @11ty/eleventy --quiet",
+    "eleventy:serve": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "eleventy:debug": "npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
+    "build": "npm-run-all -s gulp:build eleventy:build",
+    "build:prod": "npm-run-all -s gulp:build eleventy:prod",
+    "serve": "npm-run-all -s gulp:build -p gulp:watch eleventy:serve",
+    "debug": "npm-run-all -s gulp:build eleventy:debug",
+    "clean": "npm-run-all -s del:dist del:cache",
     "prestart": "npm run clean",
     "start": "npm run serve"
   },
@@ -20,19 +28,20 @@
   "author": "R. Ilham Sastronegoro",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "cross-env": "^7.0.2",
     "del-cli": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
-    "moment": "^2.27.0"
+    "moment": "^2.27.0",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "basscss": "^8.1.0",
     "dark-mode-toggle": "^0.7.1",
     "html-minifier": "^4.0.0",
     "jquery": "^3.5.1",
-    "lity": "^2.4.0",
+    "lity": "^2.4.1",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-deflist": "^2.0.3",
     "markdown-it-emoji": "^1.4.0",
