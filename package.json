@@ -9,6 +9,7 @@
   },
   "scripts": {
     "gulp:build": "gulp build",
+    "gulp:prod": "gulp --silent build",
     "gulp:watch": "gulp watch",
     "del:dist": "npx del-cli dist",
     "del:cache": "npx del-cli .cache",
@@ -17,7 +18,7 @@
     "eleventy:serve": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
     "eleventy:debug": "npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
     "build": "npm-run-all -s gulp:build eleventy:build",
-    "build:prod": "npm-run-all -s gulp:build eleventy:prod",
+    "build:prod": "npm-run-all -s gulp:prod eleventy:prod",
     "serve": "npm-run-all -s gulp:build -p gulp:watch eleventy:serve",
     "debug": "npm-run-all -s gulp:build eleventy:debug",
     "clean": "npm-run-all -s del:dist del:cache",
