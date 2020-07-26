@@ -2,5 +2,5 @@
     "tags": "post",
     "layout": "layout/post",
     "permalink": "post/{{ page.date | date: '%Y' }}/{{ page.fileSlug }}.html",
-    "comment": false
+    "comments": true
 }
