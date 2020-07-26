@@ -8,30 +8,35 @@ pagination:
 ---
 
 <div class="px2">
-    <section class="mt3 content clearfix">
+    <section class="mt3 content clearfix mxn2">
     {% for post in posts %}
-        <div class="postbox col col-12 md-col-6 lg-col-6 p1 mb2">
-            <a href="{{ post.url }}"><amp-img class="rounded" src="{% if post.data.image %}{{ post.data.image }}{% else %}{{ site.logo }}{% endif %}?nf_resize=smartcrop&w=300&h=200" alt="{{ post.data.title }} thumbnail" width="300" height="200" layout="responsive"></amp-img></a>
-            <h3 class="my1"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb2">
+            {% if post.data.image %}
+            <a href="{{ post.url }}"><amp-img class="rounded" src="{% if post.data.image %}{{ post.data.image }}{% else %}{{ site.logo }}{% endif %}?nf_resize=smartcrop&w=352&h=235" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
+            <h1 class="h3 my1"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
             <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 100 | strip_html }}</p>
-            <a style="font-size: 80%; line-height: 1.5;" href="{{ post.url }}">Selengkapnya &raquo;</a>
+            {% else %}
+            <div style="border-top: 3px solid var(--link-color);"></div>
+            <h1 class="mt0 mb1"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 250 | strip_html }}</p>
+            {% endif %}
+            <a class="bold italic" style="font-size: 80%; line-height: 1.5;" href="{{ post.url }}">Selengkapnya &raquo;</a>
         </div>
     {% endfor %}
     </section>
     {% if pagination.href.previous or pagination.href.next %}
     <section class="postlink px2">
-        <div class="divider"></div>
-        <div class="flex">
+        <div class="clearfix">
             {% if pagination.href.previous %}
-            <div class="mr-auto">
-                <span class="h3 bold">&laquo;</span>
-                <a href="{{ pagination.href.previous }}" title="Artikel lama"><i>Artikel lama</i></a>
+            <div class="left col-12 md-col-6 flex justify-start items-center mb1">
+                <span class="h3 bold mr1">&#x2770;</span>
+                <a href="{{ pagination.href.previous }}" title="Artikel lama"><i>Artikel terbaru</i></a>
             </div>
             {% endif %}
             {% if pagination.href.next %}
-            <div class="ml-auto">
-                <a href="{{ pagination.href.next }}" title="Artikel terbaru"><i>Artikel terbaru</i></a>
-                <span class="h3 bold">&raquo;</span>
+            <div class="right col-12 md-col-6 flex justify-end items-center mb1">
+                <a href="{{ pagination.href.next }}" title="Artikel terbaru"><i>Artikel lama</i></a>
+                <span class="h3 bold ml1">&#x2771;</span>
             </div>
             {% endif %}
         </div>

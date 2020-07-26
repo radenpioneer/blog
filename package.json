@@ -22,6 +22,7 @@
     "serve": "npm-run-all -s gulp:build -p gulp:watch eleventy:serve",
     "debug": "npm-run-all -s gulp:build eleventy:debug",
     "clean": "npm-run-all -s del:dist del:cache",
+    "prebuild": "npm run clean",
     "prestart": "npm run clean",
     "start": "npm run serve"
   },
