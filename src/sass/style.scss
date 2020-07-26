@@ -12,7 +12,10 @@
     --link-color: var(--blue);
     --duration: 0.5s;
     --timing: ease;
-    color-scheme: light dark;
+
+    --background-color: var(--silver);
+    --text-color: var(--black);
+    --mute-color: var(--gray);
 }
 
 * {
@@ -65,6 +68,14 @@ a,
             color var(--duration) var(--timing);
         
     }
+}
+
+#siteheader {
+    width: 100vw;
+    background-color: var(--background-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .profile {
