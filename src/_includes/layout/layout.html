@@ -1,13 +1,17 @@
 ---
-layout: base
+layout: layout/base
 ---
 
-<header class="relative center mt3 mb1">
-    <a href="{% if page.url == '/' %}{{ '/about' }}{% else %}{{ '/' }}{% endif %}">
-        <img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=80" width="80" height="80">
-    </a>
+<header class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
+    <div class="max-width-3 mx-auto">
+        <a href="{% if page.url == '/' %}{{ '/about' }}{% else %}{{ '/' }}{% endif %}" class="flex items-center justify-center">
+            <img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=35" width="35" height="35">
+            <span class="h2 bold headings ml1">{{ site.title }}</span>
+        </a>
+        <div class="divider"></div>
+    </div>
 </header>
-<main>
+<main style="margin-top: 6rem;">
     <div class="max-width-3 mx-auto">
         <div class="clearfix">
             {{ content }}
