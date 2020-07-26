@@ -2,20 +2,20 @@
 layout: layout/layout
 pagination:
     data: collections.post
-    size: 10
+    size: 6
     reverse: true
     alias: posts
 ---
 
 <div class="px2">
-    <section class="mt3 content">
+    <section class="mt3 content clearfix">
     {% for post in posts %}
-        <table>
-            <tr valign="top">
-                <td style="width: 70%"><a href="{{ post.url }}"><b>{{ post.data.title }}</b></a></td>
-                <td class="right-align mute" style="width: 30%">{{ post.data.date | dateReadable }}</td>
-            </tr>
-        </table>
+        <div class="postbox col col-12 md-col-6 lg-col-6 p1 mb2">
+            <a href="{{ post.url }}"><amp-img class="rounded" src="{% if post.data.image %}{{ post.data.image }}{% else %}{{ site.logo }}{% endif %}?nf_resize=smartcrop&w=300&h=200" alt="{{ post.data.title }} thumbnail" width="300" height="200" layout="responsive"></amp-img></a>
+            <h3 class="my1"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 100 | strip_html }}</p>
+            <a style="font-size: 80%; line-height: 1.5;" href="{{ post.url }}">Selengkapnya &raquo;</a>
+        </div>
     {% endfor %}
     </section>
     {% if pagination.href.previous or pagination.href.next %}
