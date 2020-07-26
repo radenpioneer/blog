@@ -10,7 +10,7 @@ Sebelumnya sudah banyak yang disampaikan oleh bang Teguh Nababan (Aktivis GMKI) 
 
 Sebelumnya saya sempat terlibat dalam Pemilu Serentak 2019 sebagai Relawan Demokrasi KPU Kab. Kotawaringin Timur. Kebetulan saya terdaftar sebagai Relawan Basis Pemilih Pemuda, namun faktanya saya lebih banyak bersosialisasi ke daerah-daerah pedesaan di pinggiran kota Sampit, Kab. Kotawaringin Timur. Karena di daerah-daerah pedesaan banyak masyarakat yang tidak begitu mengerti soal Pemilu, padahal puluhan tahun sistem Pemilu kita tidak banyak berubah, dari 1955 sampai sekarang, metodenya tetap mencoblos. (Kecuali tahun 2009 di mana sempat berubah menjadi mencentang, dan itu juga ternyata menyebabkan turunnya partisipasi pemilih akibat perubahan sistem).
 
-![Pembukaan Musda VI PD KAMMI Palangka Raya](/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg?nf_resize=fit&w=600){data-lity data-lity-target="/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg" :loading="lazy"}
+![Pembukaan Musda VI PD KAMMI Palangka Raya](/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg?nf_resize=fit&w=600)
 
 Bagi saya, mau di era 4.0 atau apapun, tidak akan banyak mempengaruhi pelaksanaan pemilihan umum. Buktinya sistem pemilu Indonesia tidak banyak berubah baik secara metode, sistem penghitungan dan sebagainya. Indonesia juga sepertinya dalam waktu dekat tidak akan beralih ke sistem *e-voting*. (Menurut saya, sistem *e-voting* ini lebih banyak mudaratnya, berdasarkan penjelasan di link [ini](https://www.youtube.com/watch?v=w3_0x6oaDmI)).
 
@@ -60,7 +60,7 @@ Ada dua tawaran yang saya berikan, semua merujuk kepada masing-masing masalah:
 
 Demikian pokok-pokok pikiran ini saya sampaikan, untuk melengkapi apa yang telah saya sampaikan pada Studium Generale PD KAMMI Palangka Raya yang lalu.
 
-![Penyerahan cinderamata untuk PW KAMMI Kalteng](/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-2.jpg?nf_resize=fit&w=600){data-lity data-lity-target="/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-2.jpg" loading="lazy"}
+![Penyerahan cinderamata untuk PW KAMMI Kalteng](/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-2.jpg?nf_resize=fit&w=600)
 
 *Disampaikan (secara bebas) dalam Studium General Pembukaan Musyawarah Daerah VI PD KAMMI Palangka Raya, Sabtu, 21 Desember 2019.*
 

@@ -7,7 +7,7 @@ image: "/assets/images/2013-02-13-cara-berpikir-gajah.jpg"
 
 Ketika teman saya sedang melewati gajah, ia tiba-tiba berhenti, bingung dengan makhluk-makhluk besar yang diikat oleh tali kecil pada kaki depan mereka. Gajah tidak rantai, juga tidak dikandang. Sudah jelas gajah bisa melepaskan diri kapan saja dari tali yang mengikat gajah tersebut. Teman saya bertanya ke pelatih yang ada didekatnya, kenapa hewan-hewan besar (gajah) itu tidak berusaha melarikan diri, padahal itu adalah sangat mudah untuk gajah lakukan.
 
-![Ilustrasi gajah. *Photo by Nam Anh on Unsplash*](/assets/images/2013-02-13-cara-berpikir-gajah.jpg?nf_resize=fit&w=600){data-lity data-lity-target="/assets/images/2013-02-13-cara-berpikir-gajah.jpg" width="600" height="338" loading="lazy"}
+![Ilustrasi gajah. *Photo by Nam Anh on Unsplash*](/assets/images/2013-02-13-cara-berpikir-gajah.jpg?nf_resize=fit&w=600)
 
 Yah, kata pelatih gajah, ketika gajah-gajah itu masih sangat muda dan jauh lebih kecil, kami mengikat gajah tersebut menggunakan tali ukuran kecil yang pada usia saat itu cukup untuk menahan gajah tersebut. Ketika gajah-gajah itu tumbuh, gajah-gajah itu dikondisikan untuk percaya bahwa gajah tersebut tidak dapat melepaskan diri dari ikatan itu. Gajah itu percaya bahwa tali yang kecil itu masih bisa menahan mereka, sehingga gajah-gajah tersebut tidak pernah mencoba membebaskan diri.
 

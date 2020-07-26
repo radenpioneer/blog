@@ -2,10 +2,10 @@
 layout: layout/base
 ---
 
-<header class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
+<header id="siteheader" class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
     <div class="max-width-3 mx-auto">
         <a href="{% if page.url == '/' %}{{ '/about' }}{% else %}{{ '/' }}{% endif %}" class="flex items-center justify-center">
-            <img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=35" width="35" height="35">
+            <amp-img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=35" width="35" height="35"></amp-img>
             <span class="h2 bold headings ml1">{{ site.title }}</span>
         </a>
         <div class="divider"></div>
