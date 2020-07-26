@@ -1,6 +1,5 @@
 ---
 title: Tentang Blog Ini
-permalink: "about/index.html"
 ---
 
 # Informasi Teknis {#informasiteknis}

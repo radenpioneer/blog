@@ -51,6 +51,12 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
 a, 
 .headings,
 .content h1,
@@ -97,16 +103,37 @@ a,
     min-height: 450px;
 }
 
+#sidebar {
+    @media (max-width: 52em) {
+        width: 80vw;
+    }
+    @media (min-width: 52em) {
+        width: 25vw;
+    }
+}
+
+#sidebar-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
 article {
     a {
         text-decoration: underline;
     }
 
     blockquote {
-        border-left: 2px solid var(--mute-color);
-        color: var(--mute-color);
+        border-left: 3px solid var(--link-color);
+        color: var(--link-color);
         padding-left: 1em;
         font-size: 125%;
+        float: right;
+        max-width: 250px;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 
     figure {
