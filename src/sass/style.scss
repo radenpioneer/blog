@@ -1,7 +1,6 @@
 
-@import '../../node_modules/normalize.css/normalize';
-@import '../../node_modules/basscss/css/basscss';
-@import '../../node_modules/lity/dist/lity';
+@import 'normalize';
+@import 'basscss';
 
 @import 'gfonts';
 @import 'colors';
@@ -14,6 +13,10 @@
     --duration: 0.5s;
     --timing: ease;
     color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -34,7 +37,8 @@ h2,
 h3, 
 h4, 
 h5, 
-h6 {
+h6,
+.headings {
     font-family: var(--heading-font);
     line-height: initial;
 }

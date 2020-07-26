@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: layout/layout
 pagination:
     data: collections.post
     size: 10
@@ -8,11 +8,6 @@ pagination:
 ---
 
 <div class="px2">
-    <section class="center">
-        <h1 class="mt0 mb1 headings">{{ site.title }}</h1>
-        <span class="block italic center mb2" style="font-size: 125%">{{ site.description }}</span>
-        <div class="divider"></div>
-    </section>
     <section class="mt3 content">
     {% for post in posts %}
         <table>
