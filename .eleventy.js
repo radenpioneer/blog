@@ -79,7 +79,14 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
-    eleventyConfig.addPlugin(amphtml)
+    eleventyConfig.addPlugin(amphtml, {
+        dir: {
+            output: 'dist'
+        },
+        imageOptimization : {
+            urlPath: '/assets/images/o/'
+        }
+    })
 
     return {
         dir: {
