@@ -5,7 +5,7 @@ gulp.task('css', function() {
     return gulp.src('./src/sass/*.scss')
     .pipe(sass({outputStyle: 'compressed'})
     .on('error', sass.logError))
-    .pipe(gulp.dest('./dist/assets/css/'))
+    .pipe(gulp.dest('./src/_includes/partials/'))
 })
 
 gulp.task('watch', function() {

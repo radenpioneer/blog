@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: layout/layout
 ---
 
 <article class="px2">
@@ -18,23 +18,23 @@ layout: layout
 {% if nextPost.url or prevPost.url %}
 <section class="postlink px2">
     <div class="divider"></div>
-    <div class="flex">
+    <div class="clearfix">
         {% if prevPost.url %}
-        <div class="mr-auto">
-            <span class="h3 bold">&laquo;</span>
+        <div class="left col-12 md-col-6 flex justify-start items-center mb1">
+            <span class="h3 bold mr1">&#x2770;</span>
             <a href="{{ prevPost.url }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
         </div>
         {% endif %}
         {% if nextPost.url %}
-        <div class="ml-auto">
+        <div class="right col-12 md-col-6 flex justify-end items-center mb1">
             <a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
-            <span class="h3 bold">&raquo;</span>
+            <span class="h3 bold ml1">&#x2771;</span>
         </div>
         {% endif %}
     </div>
 </section>
 {% endif %}
-{% if comment %}
+{% if comments %}
 <section class="px2">
     <div class="divider"></div>
     {% include partials/comment.html %}

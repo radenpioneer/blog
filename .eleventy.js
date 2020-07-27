@@ -1,5 +1,6 @@
 const minify = require('html-minifier')
 const moment = require('moment')
+const amphtml = require('@ampproject/eleventy-plugin-amp')
 moment.locale('id')
 
 module.exports = function(eleventyConfig) {
@@ -77,6 +78,8 @@ module.exports = function(eleventyConfig) {
     })
 
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
+
+    eleventyConfig.addPlugin(amphtml)
 
     return {
         dir: {

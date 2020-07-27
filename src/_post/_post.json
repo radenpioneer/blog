@@ -1,6 +1,6 @@
 {
     "tags": "post",
-    "layout": "post",
+    "layout": "layout/post",
     "permalink": "post/{{ page.date | date: '%Y' }}/{{ page.fileSlug }}.html",
-    "comment": true
+    "comments": true
 }
