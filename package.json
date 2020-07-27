@@ -34,6 +34,7 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.2",
     "cross-env": "^7.0.2",
     "del-cli": "^3.0.1",
+    "eleventy-plugin-pwa": "^1.0.8",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "moment": "^2.27.0",
