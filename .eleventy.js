@@ -1,15 +1,14 @@
 const minify = require('html-minifier')
 const moment = require('moment')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
+const pwa = require('eleventy-plugin-pwa')
 moment.locale('id')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
-        "assets": "assets",
-        "node_modules/jquery/dist/jquery.min.js": "assets/js/jquery.min.js",
-        "node_modules/lity/dist/lity.min.js": "assets/js/lity.min.js",
-        "node_modules/dark-mode-toggle/dist/dark-mode-toggle.min.mjs": "assets/js/dark-mode-toggle.min.mjs",
-        "manifest.json": "manifest.json"
+        "assets/images": "assets/images",
+        "assets/favicon": "assets/favicon",
+        "src/favicon.ico": "favicon.ico"
     })
 
     eleventyConfig.addCollection("post", function(collection) {
@@ -79,7 +78,16 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
-    eleventyConfig.addPlugin(amphtml)
+    eleventyConfig.addPlugin(amphtml, {
+        dir: {
+            output: 'dist'
+        },
+        imageOptimization : {
+            urlPath: '/assets/images/o/'
+        }
+    })
+
+    eleventyConfig.addPlugin(pwa)
 
     return {
         dir: {

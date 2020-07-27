@@ -13,5 +13,7 @@ module.exports = {
         description: "notes and thoughts",
         logo: "/assets/images/profile.jpg",
         url: baseUrl,
+        themeColor: "#0074D9",
+        favicons: `${baseUrl}/assets/favicon/`
     }
 }
