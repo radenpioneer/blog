@@ -12,7 +12,7 @@ pagination:
     {% for post in posts %}
         <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb2">
             {% if post.data.image %}
-            <a href="{{ post.url }}"><amp-img class="rounded" src="{% if post.data.image %}{{ post.data.image }}{% else %}{{ site.logo }}{% endif %}?nf_resize=smartcrop&w=352&h=235" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
+            <a href="{{ post.url }}"><amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
             <h1 class="h3 my1"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
             <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 100 | strip_html }}</p>
             {% else %}

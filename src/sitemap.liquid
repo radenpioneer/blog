@@ -1,0 +1,10 @@
+---
+layout: false
+permalink: sitemap.txt
+---
+
+{% for item in collections.all %}
+    {% unless item.data.norobots %}
+        {{ item.url | replace: ".html", "" | prepend: env.site.url }}
+    {% endunless %}
+{% endfor %}
