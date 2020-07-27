@@ -40,7 +40,7 @@ Madrasah KAMMI Digital bukan hanya sekedar pengalihan trafik kajian dari dunia n
 
 *Wallahu a'lam bis-shawab.*
 
-**R. Ilham Sastronegoro**<br>
+**R. Ilham Sastronegoro**  
 *Sekjend PW KAMMI Kalteng*
 
 ![DPMK Tasikmalaya 2017]({{ image }})
