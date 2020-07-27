@@ -84,7 +84,8 @@ module.exports = function(eleventyConfig) {
         },
         imageOptimization : {
             urlPath: '/assets/images/o/'
-        }
+        },
+        validation: false
     })
 
     eleventyConfig.addPlugin(pwa)
