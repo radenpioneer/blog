@@ -24,5 +24,5 @@ Maka menjelang pergantian tahun ini, saya mengajak kawan-kawan semua untuk berpi
 
 2020, mari bicara kontribusi!
 
-**R. Ilham Sastronegoro**<br>
+**R. Ilham Sastronegoro**   
 *Sekjend PW KAMMI Kalteng*
