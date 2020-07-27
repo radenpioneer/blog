@@ -11,7 +11,7 @@
     {{ content }}
 
     <amp-install-serviceworker
-        src="/service-worker.js"
+        src="{{ env.site.url }}/service-worker.js"
         layout="nodisplay">
     </amp-install-serviceworker>
 </body>
