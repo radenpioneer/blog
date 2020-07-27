@@ -5,8 +5,8 @@ layout: layout/base
 <header id="siteheader" class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
     <div class="max-width-3 mx-auto">
         <a href="/" class="flex items-center justify-center">
-            <amp-img class="profile circle" src="{{ site.logo }}?nf_resize=fit&w=35" width="35" height="35"></amp-img>
-            <span class="h2 bold headings ml1">{{ site.title }}</span>
+            <amp-img class="profile circle" src="{{ env.site.logo }}" width="35" height="35"></amp-img>
+            <span class="h2 bold headings ml1">{{ env.site.title }}</span>
         </a>
         <div class="divider" style="margin-bottom: 0;"></div>
     </div>
@@ -17,16 +17,16 @@ layout: layout/base
 <amp-sidebar class="p2" id="sidebar" layout="nodisplay" side="left">
     <button class="bold h3 p1" on="tap:sidebar.close" style="top: 15px; left: 15px;">&#x2715;</button>
     <div class="p3 flex flex-column items-center">
-        <amp-img class="mx-auto profile circle" src="{{ site.logo }}?nf_resize=fit&w=100" width="100" height="100"></amp-img>
-        <span class="h2 bold headings block center mt1 mb1">{{ site.title }}</span>
-        <span class="h3 italic block center">{{ site.description }}</span>
+        <amp-img class="mx-auto profile circle" src="{{ env.site.logo }}" width="100" height="100"></amp-img>
+        <span class="h2 bold headings block center mt1 mb1">{{ env.site.title }}</span>
+        <span class="h3 italic block center">{{ env.site.description }}</span>
         <ul class="list-reset flex-auto">
             {% for item in nav %}
             <li class="h3 bold headings center m1"><a href="{{ item.url }}">{{ item.title }}</a></li>
             {% endfor %}
-            {% if env.environment == 'dev' %}
+            {% unless env.isProd %}
             <li class="h3 bold headings center m1"><a href="#development=1">AMP Dev Mode</a></li>
-            {% endif %}
+            {% endunless %}
         </ul>
     </div>
 </amp-sidebar>
@@ -41,7 +41,7 @@ layout: layout/base
     <div class="max-width-3 mx-auto">
         <div class="divider"></div>
         <div>
-            <span class="mute">&copy; {% currentYear %} {{ site.title | upcase }}</span>
+            <span class="mute">&copy; {% currentYear %} {{ env.site.title | upcase }}</span>
         </div>
     </div>
 </footer>

@@ -6,15 +6,21 @@
 
     <!--title-->
     {% if title %}
-    <title>{{ title }} - {{ site.title }}</title>
+    <title>{{ title }} - {{ env.site.title }}</title>
     {% else %}
-    <title>{{ site.title }} - {{ site.description }}</title>
+    <title>{{ env.site.title }} - {{ env.site.description }}</title>
     {% endif %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--machine-readable metadata-->
+    {% unless norobots %}
     {% include partials/metadata.html %}
+    {% endunless %}
+
+    {% if norobots %}
+    <meta name="robots" content="noindex"/>
+    {% endif %}
 
     <!--facebook comments-->
     {% if comments %}
@@ -28,6 +34,10 @@
     </style>
 </head>
 <body>
+    {% if env.isProd %}
+    {% include partials/analytics.html %}
+    {% endif %}
+    
     {{ content }}
 </body>
 </html>
