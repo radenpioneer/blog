@@ -100,7 +100,9 @@ a,
 }
 
 .postbox {
-    min-height: 450px;
+    @media (min-width: 40em) {
+        min-height: 410px;
+    }
     img {
         object-fit: cover;
         object-position: center center;
