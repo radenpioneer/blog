@@ -15,7 +15,7 @@
     "del:cache": "npx del-cli .cache",
     "eleventy:build": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy",
     "eleventy:prod": "npx cross-env ELEVENTY_ENV=prod npx @11ty/eleventy --quiet",
-    "eleventy:serve": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "eleventy:serve": "npx cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve --incremental",
     "eleventy:debug": "npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
     "build": "npm-run-all -s gulp:build eleventy:build",
     "build:prod": "npm-run-all -s gulp:prod eleventy:prod",
