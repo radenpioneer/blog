@@ -10,17 +10,23 @@ pagination:
 <div class="px2">
     <section class="mt3 content clearfix mxn2">
     {% for post in posts %}
-        <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb2">
+        <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb3">
             {% if post.data.image %}
             <a href="{{ post.url }}"><amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
             <h1 class="h3 my1"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
-            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 100 | strip_html }}</p>
+            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 75 | strip_html }}</p>
             {% else %}
             <div style="border-top: 3px solid var(--link-color);"></div>
             <h1 class="mt0 mb1"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
             <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 250 | strip_html }}</p>
             {% endif %}
             <a class="bold italic" style="font-size: 80%; line-height: 1.5;" href="{{ post.url }}">Selengkapnya &raquo;</a>
+            <div class="mt1" style="border-top: 1px solid var(--gray); font-size: 75%; font-family: var(--system-font);">
+                {% for category in post.data.category %}
+                <a class="mute" href="#">{{ category | upcase }}</a>
+                {% unless forloop.last %}<span class="mute">|</span>{% endunless %}
+                {% endfor %}
+            </div>
         </div>
     {% endfor %}
     </section>
