@@ -1,7 +1,7 @@
 {
-  "name": "sastronegoro-blog",
-  "version": "1.0.0",
-  "description": "Blog Personal R. Ilham Sastronegoro",
+  "name": "sastronegoro",
+  "version": "1.1.0",
+  "description": "notes and thoughts",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "build:prod": "npm-run-all -s gulp:prod eleventy:prod",
     "serve": "npm-run-all -s gulp:build -p gulp:watch eleventy:serve",
     "debug": "npm-run-all -s gulp:build eleventy:debug",
-    "clean": "npm-run-all -s del:dist del:cache",
+    "clean": "npm-run-all -p del:**",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
     "start": "npm run serve"

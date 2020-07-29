@@ -5,7 +5,7 @@ layout: layout/base
 <header id="siteheader" class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
     <div class="max-width-3 mx-auto">
         <a href="/" class="flex items-center justify-center">
-            <amp-img class="profile circle" src="{{ env.site.logo }}" width="35" height="35"></amp-img>
+            <amp-img class="profile circle" src="{{ env.site.logo }}" width="35" height="35" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
             <span class="h2 bold headings ml1">{{ env.site.title }}</span>
         </a>
         <div class="divider" style="margin-bottom: 0;"></div>
@@ -19,7 +19,7 @@ layout: layout/base
         <button class="bold h3 p1" on="tap:sidebar.close" style="top: 15px; left: 15px;">&#x2715;</button>
     </div>
     <div id="sidebar-inside" class="flex flex-column items-center flex-auto">
-        <amp-img class="mx-auto profile circle" src="{{ env.site.logo }}" width="100" height="100"></amp-img>
+        <amp-img class="mx-auto profile circle" src="{{ env.site.logo }}" width="100" height="100" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
         <span class="h2 bold headings block center mt1 mb1">{{ env.site.title }}</span>
         <span class="h3 italic block center">{{ env.site.description }}</span>
         <ul class="list-reset flex-auto">
@@ -28,7 +28,7 @@ layout: layout/base
             {% endfor %}
         </ul>
         <ul class="list-reset">
-            {% for item in menu-secondary %}
+            {% for item in links %}
             <li class="mute center m1"><a href="{{ item.url | prepend: env.site.url }}">{{ item.title }}</a></li>
             {% endfor %}
             {% unless env.isProd %}
