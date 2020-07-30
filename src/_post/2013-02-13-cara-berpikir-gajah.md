@@ -1,6 +1,5 @@
 ---
 title: Cara Berpikir Gajah
-date: 2013-02-13
 category: ['esai']
 image: "https://source.unsplash.com/QJbyG6O0ick/1600x900"
 ---

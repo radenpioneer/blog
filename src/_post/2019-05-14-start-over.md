@@ -1,6 +1,5 @@
 ---
-title: Start Over 
-date: 2019-05-14
+title: Start Over
 category: ['diary']
 norobots: true
 ---
