@@ -1,6 +1,5 @@
 ---
 title: Manusia dan Keistimewaannya
-date: 2013-02-14
 category: ['esai']
 image: "https://source.unsplash.com/oko_4WnoM98/1600x900"
 ---

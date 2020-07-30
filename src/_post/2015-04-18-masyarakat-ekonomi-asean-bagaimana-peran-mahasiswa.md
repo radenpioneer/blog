@@ -1,6 +1,5 @@
 ---
 title: Masyarakat Ekonomi ASEAN, Bagaimana Peran Mahasiswa?
-date: 2015-04-18
 category: ['esai']
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ASEAN_Nations_Flags_in_Jakarta_3.jpg/1280px-ASEAN_Nations_Flags_in_Jakarta_3.jpg"
 ---
