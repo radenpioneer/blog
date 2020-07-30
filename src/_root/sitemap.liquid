@@ -1,14 +1,12 @@
 ---
-layout: false
 permalink: sitemap.xml
-norobots: true
 ---
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-{% for item in collections.all reversed %}{% unless item.data.norobots %}
+{% for item in collections.all reversed %}
     <url>
         <loc>{{ item.url | replace: ".html", "" | prepend: env.site.url }}</loc>
         <lastmod>{{ item.date | dateIso }}</lastmod>
         <priority>{% if item.url == '/' %}1.00{% elsif item.inputPath contains '_post' %}0.80{% else %}0.50{% endif %}</priority>
     </url>
-{% endunless %}{% endfor %}
+{% endfor %}
 </urlset>

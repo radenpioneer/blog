@@ -19,11 +19,12 @@
     "eleventy:debug": "npx cross-env ELEVENTY_ENV=dev DEBUG=* npx @11ty/eleventy",
     "build": "npm-run-all -s gulp:build eleventy:build",
     "build:prod": "npm-run-all -s gulp:prod eleventy:prod",
+    "build:debug": "npm-run-all -s gulp:build eleventy:debug",
     "serve": "npm-run-all -s gulp:build -p gulp:watch eleventy:serve",
-    "debug": "npm-run-all -s gulp:build eleventy:debug",
     "clean": "npm-run-all -p del:**",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
+    "debug": "npm run build:debug",
     "start": "npm run serve"
   },
   "keywords": [],
