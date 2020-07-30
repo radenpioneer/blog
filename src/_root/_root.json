@@ -1,0 +1,5 @@
+{
+    "eleventyExcludeFromCollections": true,
+    "norobots": true,
+    "layout": false
+}
