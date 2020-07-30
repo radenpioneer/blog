@@ -59,9 +59,9 @@
     {% endfor %}
     <meta property="og:url" content="{{ absoluteUrl }}"/>
     {% if post_image contains "http" %}
-    <meta name="og:image" content="{{ post_image }}">
+    <meta property="og:image" content="{{ post_image }}">
     {% else %}
-    <meta name="og:image" content="{{ post_image | prepend: env.site.url }}">
+    <meta property="og:image" content="{{ post_image | prepend: env.site.url }}">
     {% endif %}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="675" />
