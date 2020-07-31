@@ -15,6 +15,9 @@ layout: layout/layout
         {{ content }}
     </div>
 </article>
+<section class="px2">
+    {% include partials/social.html %}
+</section>
 {% if nextPost.url or prevPost.url %}
 <section class="postlink px2">
     <div class="divider"></div>
