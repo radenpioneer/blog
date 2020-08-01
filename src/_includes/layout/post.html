@@ -3,18 +3,21 @@ layout: layout/layout
 ---
 
 <article class="px2">
-    <div class="center">
-        <h1 class="mt0 mb1 headings">{{ title }}</h1>
+    <div>
+        <h1 class="mt0 mb1 center headings">{{ title }}</h1>
         {% if subtitle %}
-            <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
+        <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
         {% endif %}
-        <time datetime="{{ date | dateIso }}" class="block center mute">{{ date | dateReadable | prepend: "Dipublikasikan pada tanggal " | upcase }}</time>
+        {% include partials/post-infobox.html %}
     </div>
     <div class="divider"></div>
     <div class="content">
         {{ content }}
     </div>
 </article>
+<section class="px2">
+    {% include partials/social.html %}
+</section>
 {% if nextPost.url or prevPost.url %}
 <section class="postlink px2">
     <div class="divider"></div>
