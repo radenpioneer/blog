@@ -1,6 +1,7 @@
 ---
 title: Start Over
-category: ['diary']
+category:
+    - diary
 norobots: true
 ---
 

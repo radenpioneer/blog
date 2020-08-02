@@ -2,6 +2,7 @@ const minify = require('html-minifier')
 const moment = require('moment')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
 const pwa = require('eleventy-plugin-pwa')
+const typeset = require('eleventy-plugin-typeset')
 moment.locale('id')
 
 module.exports = function(eleventyConfig) {
@@ -89,6 +90,8 @@ module.exports = function(eleventyConfig) {
     })
 
     eleventyConfig.addPlugin(pwa)
+
+    eleventyConfig.addPlugin(typeset())
 
     return {
         dir: {

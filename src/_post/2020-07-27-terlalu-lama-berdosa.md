@@ -1,7 +1,7 @@
 ---
 title: Terlalu Lama Berdosa
-date: 2020-07-27
-category: ['renungan', 'diary']
+category:
+    - diary
 ---
 
 Sudah terlalu lama berdosa  

@@ -22,15 +22,15 @@ layout: layout/layout
 <section class="postlink px2">
     <div class="divider"></div>
     <div class="clearfix">
-        {% if prevPost.url %}
+        {% if nextPost.url %}
         <div class="left col-12 md-col-6 flex justify-start items-center mb1">
             <span class="h3 bold mr1">&#x2770;</span>
-            <a href="{{ prevPost.url }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
+            <a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
         </div>
         {% endif %}
-        {% if nextPost.url %}
+        {% if prevPost.url %}
         <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-            <a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
+            <a href="{{ prevPost.url }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
             <span class="h3 bold ml1">&#x2771;</span>
         </div>
         {% endif %}
