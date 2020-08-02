@@ -1,7 +1,10 @@
 ---
 title: Madihin Nurul Jannah
 subtitle: Penampilan Madihin dalam agenda Latihan Muhadhoroh di PP Nurul Jannah Sawahan, Sampit.
-category: ['nurul jannah', 'dokumentasi']
+category:
+    - esai
+    - nurul jannah
+    - dokumentasi
 ---
 
 Senin, 27 Juli 2020, ada yang berbeda dari penampilan Muhadhoroh di Pondok Pesantren Nurul Jannah. Untuk pertama kalinya diselenggarakan penampilan Madihin selain pembacaan puisi dan penampilan pantun yang sudah cukup lumrah dalam agenda Muhadhoroh di Nurul Jannah sejak Januari lalu.

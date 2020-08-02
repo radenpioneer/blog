@@ -1,7 +1,7 @@
 {
     "tags": "post",
     "layout": "layout/post",
-    "permalink": "post/{{ page.date | date: '%Y' }}/{{ page.fileSlug }}.html",
+    "permalink": "post/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html",
     "author": "R. Ilham Sastronegoro",
     "comments": true
 }

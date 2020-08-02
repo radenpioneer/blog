@@ -1,7 +1,8 @@
 ---
 title: 2020, Mari Bicara Kontribusi
-subtitle: Artikel Bulanan AB3 Kalteng (1)
-category: ['esai', 'kammi']
+category:
+    - esai
+    - kammi
 image: "/assets/images/2019-12-31-2020-mari-bicara-kontribusi.jpg"
 ---
 

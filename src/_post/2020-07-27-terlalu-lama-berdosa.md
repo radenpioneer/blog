@@ -1,6 +1,7 @@
 ---
 title: Terlalu Lama Berdosa
-category: ['renungan']
+category:
+    - diary
 ---
 
 Sudah terlalu lama berdosa  

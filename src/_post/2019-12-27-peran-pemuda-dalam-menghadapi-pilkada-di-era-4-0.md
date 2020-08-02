@@ -1,8 +1,10 @@
 ---
 title: Peran Pemuda dalam Menghadapi Pilkada di Era 4.0
 subtitle: Studium Generale Musda VI KAMMI Palangka Raya
-category: ['talk', 'kammi']
 image: "/assets/images/2019-12-27-peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg"
+category:
+    - kammi
+    - talk
 ---
 
 Sebelumnya sudah banyak yang disampaikan oleh bang Teguh Nababan (Aktivis GMKI) terkait dengan generasi milenial, 4.0 dan hal-hal terkait. Maka saya akan lebih spesifik menjelaskan terkait Pilkada, dari sisi permasalahan dan tawaran solusi apa yang akan saya berikan untuk kawan-kawan dalam rangka menghadapi Pilkada Kalteng 2020.
