@@ -12,6 +12,7 @@
 
     <amp-install-serviceworker
         src="{{ env.site.url }}/service-worker.js"
+        data-iframe-src="{{ page.url | prepend: env.site.url }}"
         layout="nodisplay">
     </amp-install-serviceworker>
 </body>
