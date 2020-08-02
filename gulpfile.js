@@ -1,11 +1,48 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
+const workbox = require('workbox-build')
 
 gulp.task('css', function() {
     return gulp.src('./src/sass/style.scss')
     .pipe(sass({outputStyle: 'compressed'})
     .on('error', sass.logError))
     .pipe(gulp.dest('./src/_includes/partials/'))
+})
+
+gulp.task('service-worker', () => {
+    return workbox.generateSW({
+        globDirectory: 'dist',
+        globPatterns: [
+            '*.*',
+            '**/profile.jpg',
+            '**/*-39.jpg',
+            '**/*-82.jpg'
+        ],
+        swDest: 'dist/sw.js',
+        sourcemap: false,
+        runtimeCaching: [
+            {
+                urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
+                handler: 'CacheFirst',
+                options: {
+                    cacheName: 'images',
+                    expiration: {
+                        maxEntries: 10
+                    }
+                }
+            },
+            {
+                urlPattern: /\.html$/,
+                handler: 'NetworkFirst',
+                options: {
+                    cacheName: 'articles',
+                    expiration: {
+                        maxAgeSeconds: 60 * 60 * 24 * 3
+                    }
+                }
+            }
+        ]
+    })
 })
 
 gulp.task('watch', function() {
