@@ -14,6 +14,7 @@ module.exports = {
         logo: "/assets/images/profile.jpg",
         url: baseUrl,
         themeColor: "#0074D9",
+        images: `${baseUrl}/assets/images/`,
         favicons: `${baseUrl}/assets/favicon/`
     }
 }
