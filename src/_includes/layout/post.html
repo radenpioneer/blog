@@ -25,12 +25,12 @@ layout: layout/layout
         {% if nextPost.url %}
         <div class="left col-12 md-col-6 flex justify-start items-center mb1">
             <span class="h3 bold mr1">&#x2770;</span>
-            <a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
+            <a href="{{ nextPost.url | replace: '.html', '' }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
         </div>
         {% endif %}
         {% if prevPost.url %}
         <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-            <a href="{{ prevPost.url }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
+            <a href="{{ prevPost.url | replace: '.html', '' }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
             <span class="h3 bold ml1">&#x2771;</span>
         </div>
         {% endif %}
