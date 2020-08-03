@@ -11,7 +11,7 @@ Rasanya...
 
 Pagi ke malam hari  
 Tak pernah terlintas di hati  
-Bahkan di saat sendiri  
+Bahkan di saat berdosa  
 Aku tak pernah merasa rugi
 
 Sampai akhirnya kusadari  
