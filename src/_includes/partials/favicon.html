@@ -1,7 +1,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
 
-{% assign icons = [128, 196] %}
+{% assign icons = "128, 196" | split: ", " %}
 {% for icon in icons %}
 <link rel="icon" type="image/png" href="{{ env.site.favicons }}favicon-{{ icon }}.png" sizes="{{ icon }}x{{ icon }}">
 {% endfor %}
@@ -9,8 +9,8 @@
 <!--apple-->
 <link rel="mask-icon" href="{{ env.site.favicons }}favicon.svg" color="{{ env.site.themeColor }}">
 
-{% assign icons = [120, 152, 180] %}
-{% for icon in icons %}
+{% assign appleIcons = "120, 152, 180" | split: ", " %}
+{% for icon in appleIcons %}
 <link rel="apple-touch-icon" href="{{ env.site.favicons }}favicon-{{ icon }}.png" sizes="{{ icon }}x{{ icon }}">
 {% endfor %}
 
