@@ -1,0 +1,31 @@
+---
+permalink: feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ env.site.title }}</title>
+    <link href="{{ env.site.url }}" />
+    <updated>{{ page.date | dateIso }}</updated>
+    <author>
+        <name>{{ env.site.title }}</name>
+        <uri>{{ env.site.url | append: '/about' }}</uri>
+    </author>
+    <id>{{ env.site.url }}</id>
+    {%- for post in collections.post reversed -%}
+    <entry>
+        <title>{{ post.data.title }}</title>
+        <link href="{{ post.url | prepend: env.site.url }}" />
+        <id>{{ post.url | prepend: env.site.url }}</id>
+        <published>{{ post.date | dateIso }}</published>
+        <updated>{{ post.date | dateIso }}</updated>
+        {%- for item in post.data.category -%}
+        <category term="{{ item }}"/>
+        {%- endfor -%}
+        <author>
+            <name>{{ post.data.author }}</name>
+            <uri>{{ env.site.url | append: '/about' }}</uri>
+        </author>
+        <summary>{{ post.templateContent | strip_html | truncatewords: 100 }}</summary>
+    </entry>
+    {%- endfor -%}
+</feed>

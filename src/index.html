@@ -31,7 +31,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | p
     {% endfor %}
     </section>
     {% if pagination.href.previous or pagination.href.next %}
-    <section class="postlink px2">
+    <section class="postlink">
         <div class="clearfix">
             {% if pagination.href.previous %}
             <div class="left col-12 md-col-6 flex justify-start items-center mb1">

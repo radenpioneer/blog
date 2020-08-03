@@ -1,6 +1,7 @@
 const minify = require('html-minifier')
 const moment = require('moment')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
+const base64 = require('base-64')
 const typeset = require('eleventy-plugin-typeset')
 moment.locale('id')
 
@@ -22,6 +23,10 @@ module.exports = function(eleventyConfig) {
         }
 
         return coll
+    })
+
+    eleventyConfig.addFilter('base64', value => {
+        return base64.encode(value)
     })
 
     eleventyConfig.addFilter('dateIso', date => {

@@ -1,0 +1,26 @@
+---
+permalink: instant.rss
+---
+
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+    <title>{{ env.site.title }}</title>
+    <link>{{ env.site.url }}</link>
+    <description>{{ env.site.description }}</description>
+    <language>id-id</language>
+    <lastBuildDate>{{ page.date | dateIso }}</lastBuildDate>
+    {% for post in collections.post %}
+    <item>
+        <title>{{ post.data.title }}</title>
+        <link>{{ post.url | prepend: env.site.url }}</link>
+        <guid>{{ post.fileSlug | base64 }}</guid>
+        <pubDate>{{ post.date | dateIso }}</pubDate>
+        <description>{% if post.data.subtitle %}{{ post.data.subtitle }}{% else %}{{ "Artikel oleh " | append: env.site.title }}{% endif %}</description>
+        <content:encoded>
+            <![CDATA[
+            {% include partials/feed-encoded.html %}
+            ]]>
+        </content:encoded>
+    </item>
+    {% endfor %}
+</channel>

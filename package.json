@@ -33,6 +33,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@ampproject/eleventy-plugin-amp": "^0.5.2",
+    "base-64": "^0.1.0",
     "cross-env": "^7.0.2",
     "del-cli": "^3.0.1",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
