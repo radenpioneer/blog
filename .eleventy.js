@@ -6,7 +6,7 @@ moment.locale('id')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
-        "assets/images": "assets/images",
+        "assets/img": "assets/img",
         "assets/favicon": "assets/favicon",
         "src/favicon.ico": "favicon.ico"
     })
@@ -83,7 +83,7 @@ module.exports = function(eleventyConfig) {
             output: 'dist'
         },
         imageOptimization : {
-            urlPath: '/assets/images/o/'
+            urlPath: '/assets/img/o/'
         },
         validation: false
     })
