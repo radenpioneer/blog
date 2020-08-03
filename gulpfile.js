@@ -20,6 +20,10 @@ gulp.task('service-worker', () => {
         ],
         swDest: 'dist/sw.js',
         sourcemap: false,
+        clientsClaim: true,
+        skipWaiting: true,
+        offlineGoogleAnalytics: true,
+        maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         runtimeCaching: [
             {
                 urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
@@ -32,10 +36,10 @@ gulp.task('service-worker', () => {
                 }
             },
             {
-                urlPattern: /\.html$/,
+                urlPattern: /(.*\/post\/.*)$/,
                 handler: 'NetworkFirst',
                 options: {
-                    cacheName: 'articles',
+                    cacheName: 'posts',
                     expiration: {
                         maxAgeSeconds: 60 * 60 * 24 * 3
                     }
