@@ -98,5 +98,5 @@ Intinya setiap kader dan aktivis dakwah wajib memiliki amaliyah. Kalaupun hendak
 
 # Poster {.h1}
 
-![Poster Publikasi]({{ page.fileSlug | append: '.jpeg' | prepend: env.site.images }})
+![Poster Publikasi]({{ page.fileSlug | append: '.jpeg' | prepend: '/assets/img/' }})
 

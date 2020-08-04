@@ -19,7 +19,7 @@ module.exports = {
         logo: `${dir.images}/profile.jpg`,
         url: baseUrl,
         themeColor: "#0074D9",
-        images: `${baseUrl}/${dir.images}`,
-        favicons: `${baseUrl}/${dir.favicons}`
+        images: `${baseUrl}${dir.images}`,
+        favicons: `${baseUrl}${dir.favicons}`
     }
 }
