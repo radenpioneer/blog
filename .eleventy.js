@@ -48,6 +48,8 @@ module.exports = function(eleventyConfig) {
     let footnotes = require("markdown-it-footnote")
     let deflist = require("markdown-it-deflist")
     let emoji = require("markdown-it-emoji")
+    let anchor = require("markdown-it-anchor")
+    let toc = require("markdown-it-toc-done-right")
 
     let markdownLib = markdownIt({
                         html: true,
@@ -60,6 +62,8 @@ module.exports = function(eleventyConfig) {
                       .use(footnotes)
                       .use(deflist)
                       .use(emoji)
+                      .use(anchor)
+                      .use(toc)
 
     eleventyConfig.setLibrary("md", markdownLib)
 
@@ -88,12 +92,15 @@ module.exports = function(eleventyConfig) {
             output: 'dist'
         },
         imageOptimization : {
-            urlPath: '/assets/img/o/'
+            urlPath: '/assets/img/o/',
+            formats: ['webp']
         },
         validation: false
     })
 
-    eleventyConfig.addPlugin(typeset())
+    eleventyConfig.addPlugin(typeset({
+        disable: ['ligatures']
+    }))
 
     return {
         dir: {

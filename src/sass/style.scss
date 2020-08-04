@@ -3,12 +3,13 @@
 @import 'basscss';
 
 @import 'gfonts';
+@import 'typeset';
 @import 'colors';
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --heading-font: 'DM Serif Display', serif;
-    --body-font: "Libre Caslon Text", serif;
+    --body-font: "Noto Serif", serif;
     --link-color: var(--blue);
     --duration: 0.5s;
     --timing: ease;
