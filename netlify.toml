@@ -1,5 +1,5 @@
 [build]
-    command = "npm run --silent build:prod"
+    command = "npm run build:prod"
     publish = "dist/"
     
 [[redirects]]
