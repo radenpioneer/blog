@@ -31,7 +31,8 @@ gulp.task('service-worker', () => {
                 options: {
                     cacheName: 'images',
                     expiration: {
-                        maxEntries: 10
+                        maxEntries: 10,
+                        maxAgeSeconds: 60 * 60 * 24 * 3
                     }
                 }
             },
@@ -40,6 +41,16 @@ gulp.task('service-worker', () => {
                 handler: 'NetworkFirst',
                 options: {
                     cacheName: 'posts',
+                    expiration: {
+                        maxAgeSeconds: 60 * 60 * 24 * 3
+                    }
+                }
+            },
+            {
+                urlPattern: /(.*\/page\/.*)$/,
+                handler: 'NetworkFirst',
+                options: {
+                    cacheName: 'pages',
                     expiration: {
                         maxAgeSeconds: 60 * 60 * 24 * 3
                     }
