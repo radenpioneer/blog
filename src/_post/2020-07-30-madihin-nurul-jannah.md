@@ -5,6 +5,7 @@ category:
     - esai
     - nurul jannah
     - dokumentasi
+image: /assets/img/madihin-nurul-jannah.jpg
 ---
 
 Senin, 27 Juli 2020, ada yang berbeda dari penampilan Muhadhoroh di Pondok Pesantren Nurul Jannah. Untuk pertama kalinya diselenggarakan penampilan Madihin selain pembacaan puisi dan penampilan pantun yang sudah cukup lumrah dalam agenda Muhadhoroh di Nurul Jannah sejak Januari lalu.
