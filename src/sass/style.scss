@@ -3,12 +3,13 @@
 @import 'basscss';
 
 @import 'gfonts';
+@import 'typeset';
 @import 'colors';
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --heading-font: 'DM Serif Display', serif;
-    --body-font: "Libre Caslon Text", serif;
+    --body-font: "Noto Serif", serif;
     --link-color: var(--blue);
     --duration: 0.5s;
     --timing: ease;
@@ -146,6 +147,8 @@ article {
     figure {
         text-align: center;
         max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         img {
             max-width: 100%;
             object-fit: contain;
@@ -157,6 +160,9 @@ article {
         color: var(--mute-color);
         margin-top: 0.5em;
         font-size: 90%;
+        a {
+            color: inherit;
+        }
     }
 
     embed {
@@ -189,9 +195,13 @@ section table {
     margin: 1em 0;
 }
 
+.footnotes {
+    font-size: 90%;
+}
+
 amp-social-share {
    &[type="system"] {
-        background-image: url("data:image/svg+xml,%0A%3Csvg fill='%23eeeeee' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'%3E%3Cpath d='M 20 0 C 17.789063 0 16 1.789063 16 4 C 16 4.277344 16.039063 4.550781 16.09375 4.8125 L 7 9.375 C 6.265625 8.535156 5.203125 8 4 8 C 1.789063 8 0 9.789063 0 12 C 0 14.210938 1.789063 16 4 16 C 5.203125 16 6.265625 15.464844 7 14.625 L 16.09375 19.1875 C 16.039063 19.449219 16 19.722656 16 20 C 16 22.210938 17.789063 24 20 24 C 22.210938 24 24 22.210938 24 20 C 24 17.789063 22.210938 16 20 16 C 18.796875 16 17.734375 16.535156 17 17.375 L 7.90625 12.8125 C 7.960938 12.550781 8 12.277344 8 12 C 8 11.722656 7.960938 11.449219 7.90625 11.1875 L 17 6.625 C 17.734375 7.464844 18.796875 8 20 8 C 22.210938 8 24 6.210938 24 4 C 24 1.789063 22.210938 0 20 0 Z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%0A%3Csvg fill='%23eeeeee' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M 20 0 C 17.789063 0 16 1.789063 16 4 C 16 4.277344 16.039063 4.550781 16.09375 4.8125 L 7 9.375 C 6.265625 8.535156 5.203125 8 4 8 C 1.789063 8 0 9.789063 0 12 C 0 14.210938 1.789063 16 4 16 C 5.203125 16 6.265625 15.464844 7 14.625 L 16.09375 19.1875 C 16.039063 19.449219 16 19.722656 16 20 C 16 22.210938 17.789063 24 20 24 C 22.210938 24 24 22.210938 24 20 C 24 17.789063 22.210938 16 20 16 C 18.796875 16 17.734375 16.535156 17 17.375 L 7.90625 12.8125 C 7.960938 12.550781 8 12.277344 8 12 C 8 11.722656 7.960938 11.449219 7.90625 11.1875 L 17 6.625 C 17.734375 7.464844 18.796875 8 20 8 C 22.210938 8 24 6.210938 24 4 C 24 1.789063 22.210938 0 20 0 Z'/%3E%3C/svg%3E");
     }
     &[type="facebook"] {
         background-color: #1877F2;

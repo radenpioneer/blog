@@ -1,8 +1,10 @@
 ---
 title: Madrasah KAMMI Digital
 subtitle: Sebuah pengembangan dari esai yang saya tulis tiga tahun yang lalu, untuk memenuhi persyaratan DPMK KAMMI Tasikmalaya.
-category: ['esai', 'kammi']
-image: /assets/images/2020-04-07-madrasah-kammi-digital.jpg
+category:
+    - esai
+    - kammi
+image: /assets/img/madrasah-kammi-digital.jpg
 ---
 
 Pandemi COVID-19 yang sedang berlangsung (saat ditulisnya artikel ini) membuat kader KAMMI harus serba kreatif. Pasalnya pada saat wabah ini masih berlangsung, agenda-agenda kaderisasi reguler yang seharusnya berjalan, tidak bisa terlaksana dengan alasan kesehatan. Akhirnya, bermunculanlah agenda-agenda kaderisasi online, kajian-kajian online, hingga Madrasah KAMMI online berbasis aplikasi WhatsApp, Zoom, Skype, dan lain sebagainya, sementara agenda-agenda berbasis online ini belum begitu populer sebelum pandemi COVID-19.

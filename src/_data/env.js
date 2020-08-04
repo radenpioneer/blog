@@ -1,9 +1,14 @@
 const environment = process.env.ELEVENTY_ENV
 const PROD_ENV = 'prod'
-const prodUrl = 'https://radenpioneer.xyz'
-const devUrl = 'http://localhost:8080'
+const prodUrl = 'https://radenpioneer.xyz/'
+const devUrl = 'http://localhost:8080/'
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl
 const isProd = environment === PROD_ENV
+
+const dir = {
+    images: `assets/img/`,
+    favicons: `assets/favicon/`
+}
 
 module.exports = {
     environment,
@@ -11,9 +16,10 @@ module.exports = {
     site: {
         title: "Sastronegoro",
         description: "notes and thoughts",
-        logo: "/assets/images/profile.jpg",
+        logo: `${dir.images}/profile.jpg`,
         url: baseUrl,
         themeColor: "#0074D9",
-        favicons: `${baseUrl}/assets/favicon/`
+        images: `${baseUrl}${dir.images}`,
+        favicons: `${baseUrl}${dir.favicons}`
     }
 }

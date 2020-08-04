@@ -1,12 +1,13 @@
 const minify = require('html-minifier')
 const moment = require('moment')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
-const pwa = require('eleventy-plugin-pwa')
+const base64 = require('base-64')
+const typeset = require('eleventy-plugin-typeset')
 moment.locale('id')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
-        "assets/images": "assets/images",
+        "assets/img": "assets/img",
         "assets/favicon": "assets/favicon",
         "src/favicon.ico": "favicon.ico"
     })
@@ -22,6 +23,10 @@ module.exports = function(eleventyConfig) {
         }
 
         return coll
+    })
+
+    eleventyConfig.addFilter('base64', value => {
+        return base64.encode(value)
     })
 
     eleventyConfig.addFilter('dateIso', date => {
@@ -43,6 +48,8 @@ module.exports = function(eleventyConfig) {
     let footnotes = require("markdown-it-footnote")
     let deflist = require("markdown-it-deflist")
     let emoji = require("markdown-it-emoji")
+    let anchor = require("markdown-it-anchor")
+    let toc = require("markdown-it-toc-done-right")
 
     let markdownLib = markdownIt({
                         html: true,
@@ -55,6 +62,8 @@ module.exports = function(eleventyConfig) {
                       .use(footnotes)
                       .use(deflist)
                       .use(emoji)
+                      .use(anchor)
+                      .use(toc)
 
     eleventyConfig.setLibrary("md", markdownLib)
 
@@ -83,12 +92,15 @@ module.exports = function(eleventyConfig) {
             output: 'dist'
         },
         imageOptimization : {
-            urlPath: '/assets/images/o/'
+            urlPath: '/assets/img/o/',
+            formats: ['webp']
         },
         validation: false
     })
 
-    eleventyConfig.addPlugin(pwa)
+    eleventyConfig.addPlugin(typeset({
+        disable: ['ligatures']
+    }))
 
     return {
         dir: {

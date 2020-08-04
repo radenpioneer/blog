@@ -16,7 +16,7 @@
             <li class="center m1"><a class="mute" href="{{ item.url | prepend: env.site.url }}">{{ item.title }}</a></li>
             {% endfor %}
             {% unless env.isProd %}
-            <li class="center m1"><a class="mute" href="{{ page.url }}#development=1">Mode Pengembangan AMP</a></li>
+            <li class="center m1"><a class="mute" href="{{ page.url | replace: '.html', '' }}#development=1">Mode Pengembangan AMP</a></li>
             {% endunless %}
         </ul>
     </div>
