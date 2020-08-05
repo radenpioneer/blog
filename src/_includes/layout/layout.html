@@ -3,13 +3,13 @@ layout: layout/base
 ---
 
 <header id="siteheader" class="fixed pt2 mb1" style="width: 100vw; background-color: var(--background-color);">
-    <div class="max-width-3 mx-auto">
-        <a href="/" class="flex items-center justify-center">
+    <div class="max-width-3 mx-auto flex justify-center">
+        <a href="/" class="flex inline-block items-center">
             <amp-img class="profile circle" src="{{ env.site.logo }}" width="35" height="35" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
             <span class="h2 bold headings ml1">{{ env.site.title }}</span>
         </a>
-        <div class="divider" style="margin-bottom: 0;"></div>
     </div>
+    <div class="divider" style="margin-bottom: 0;"></div>
     <div id="sidebar-button">
         <button class="bold h3 p1" on="tap:sidebar.toggle">&#x2630;</button>
     </div>
