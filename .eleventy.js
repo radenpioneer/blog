@@ -92,8 +92,7 @@ module.exports = function(eleventyConfig) {
             output: 'dist'
         },
         imageOptimization : {
-            urlPath: '/assets/img/o/',
-            formats: ['webp']
+            urlPath: '/assets/img/o/'
         },
         validation: false
     })

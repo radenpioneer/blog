@@ -26,7 +26,7 @@ gulp.task('service-worker', () => {
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         runtimeCaching: [
             {
-                urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
+                urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif|webp)$/,
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'images',
