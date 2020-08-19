@@ -67,4 +67,4 @@ ku ingin kembali kepada-Mu...
 
 _(diubah dari lirik [Sudah Terlalu Lama Sendiri](https://www.youtube.com/watch?v=DANYP9wXGi0), oleh Kunto Aji)_
 
-![jauh di lubuk hati, ku ingin kembali pada-Mu...](https://source.unsplash.com/Y2oE2uNLSrs/1600x900)
+![jauh di lubuk hati, ku ingin kembali pada-Mu...](https://source.unsplash.com/Y2oE2uNLSrs/800x600)

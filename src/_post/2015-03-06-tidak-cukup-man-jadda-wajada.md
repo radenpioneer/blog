@@ -1,6 +1,6 @@
 ---
 title: Tidak cukup man jadda wajada
-image: "https://source.unsplash.com/-8ttvM3Ca94/1600x900"
+image: "https://source.unsplash.com/-8ttvM3Ca94/800x600"
 category:
     - esai
     - arsip

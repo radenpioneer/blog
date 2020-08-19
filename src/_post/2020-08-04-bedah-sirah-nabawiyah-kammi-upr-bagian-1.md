@@ -5,7 +5,7 @@ category:
     - kammi
     - talk
     - audio
-image: "https://source.unsplash.com/GgpqQSksjDY/1600x900"
+image: "https://source.unsplash.com/GgpqQSksjDY/800x600"
 ---
 
 Disampaikan dalam Bedah Mantuba KAMMI Komisariat Universitas Palangka Raya, Ahad 26 Juli 2020/5 Dzulhijjah 1441 H, melalui Grup WhatsApp.

@@ -1,6 +1,6 @@
 ---
 title: Manusia dan Keistimewaannya
-image: "https://source.unsplash.com/oko_4WnoM98/1600x900"
+image: "https://source.unsplash.com/oko_4WnoM98/800x600"
 category:
     - esai
     - arsip
@@ -16,7 +16,7 @@ Keistimewaan yang kedua, setelah manusia diciptakan Allah meniupkan sebagian ruh
 
 Keistimewaan yang ketiga adalah manusia diberi kemampuan untuk menamai segala sesuatu. Penamaan inilah yang merupakan modal awal dari ilmu pengetahuan dan pengajarannya dari generasi ke generasi. Kemampuan manusia menamai segala sesuatu membuat mereka mampu mempelajari keunikan-keunikan dunia, dan memanfaatkannya untuk kepentingan mereka. Kemampuan ini juga membuat manusia selalu belajar dari waktu ke waktu. Pengetahuan yang sudah mereka dapatkan dari para pendahulu mereka selalu akan mereka tambahkan dengan pengetahuan-pengetahuan baru yang mereka dapatkan dari orang tua mereka. Karena itu manusia pun selalu belajar dan belajar. Maka kita akan mendapati rumah-rumah manusia berkembang dan berubah sesuai perkembangan zaman. Rumah manusia di tahun 1800an berbeda dengan rumah manusia di tahun 1900an. Dan rumah manusia di tahun 1900an tidak sama dengan manusia di tahun 2000an. Padahal di waktu yang sama rumah burung tidak berubah sejak berabad abad yang lalu.
 
-![Ilustrasi peradaban manusia](https://source.unsplash.com/LY1eyQMFeyo/1600x900){title="Photo by Jonathan Roger on Unsplash"}
+![Ilustrasi peradaban manusia](https://source.unsplash.com/LY1eyQMFeyo/800x600){title="Photo by Jonathan Roger on Unsplash"}
 
 Dan saya tekankan di sini, bahwa manusia pada intinya adalah sama. Kita semua adalah umat manusia yang berasal dari satu spesies yang sama, nenek moyang yang sama yang sering kita sebut Nabi Adam. Tidak ada yang membedakan antara satu bangsa dengan bangsa yang lain kecuali keimanan dan ilmu pengetahuan mereka. Bangsa yang memiliki iman yang kokoh dan pengetahuan yang tinggi akan diangkat derajatnya oleh Allah dan seluruh makhluknya. Dan bangsa yang memiliki iman yang lemah dan pengetahuan yang rendah akan diturunkan derajatnya oleh Allah dan seluruh makhluknya.
 
