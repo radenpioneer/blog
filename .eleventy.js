@@ -1,9 +1,6 @@
 const minify = require('html-minifier')
-const moment = require('moment')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
-const base64 = require('base-64')
 const typeset = require('eleventy-plugin-typeset')
-moment.locale('id')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
@@ -23,22 +20,6 @@ module.exports = function(eleventyConfig) {
         }
 
         return coll
-    })
-
-    eleventyConfig.addFilter('base64', value => {
-        return base64.encode(value)
-    })
-
-    eleventyConfig.addFilter('dateIso', date => {
-        return moment(date).toISOString()
-    })
-
-    eleventyConfig.addFilter('dateReadable', date => {
-        return moment(date).format('LL')
-    })
-
-    eleventyConfig.addShortcode('currentYear', function() {
-        return moment().utc().format('YYYY')
     })
 
     //markdown configs
@@ -100,6 +81,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(typeset({
         disable: ['ligatures']
     }))
+
+    eleventyConfig.addPlugin(require('./plugins'))
 
     return {
         dir: {
