@@ -16,7 +16,7 @@ ${toc}
 
 # Audio Materi {.h1}
 
-<amp-iframe src="https://open.spotify.com/embed-podcast/episode/4jOcSAZjvWGI58LUptG6gJ" sandbox="allow-scripts allow-same-origin allow-forms" layout="fixed-height" width="auto" height="232" frameborder="0" allow="encrypted-media"><amp-fit-text height="232" width="auto" layout="fixed-height" max-font-size="18" class="mute center" style="z-index: -1;" placeholder>memuat audio...</amp-fit-text></amp-iframe>
+{% spotify '4jOcSAZjvWGI58LUptG6gJ' %}
 
 # Poin-Poin Penyampaian {.h1}
 

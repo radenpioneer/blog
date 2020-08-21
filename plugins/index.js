@@ -13,4 +13,9 @@ module.exports = function(eleventyConfig) {
         'currentYear',
         require('./currentYear')
     )
+
+    eleventyConfig.addShortcode(
+        'spotify',
+        require('./spotify')
+    )
 }
