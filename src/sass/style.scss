@@ -1,14 +1,13 @@
 
-@import 'normalize';
-@import 'basscss';
-
-@import 'gfonts';
-@import 'typeset';
-@import 'colors';
+@use 'typeset';
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'; //normalize.css
+@import 'https://unpkg.com/basscss@8.0.2/css/basscss.css'; //basscss
+@import 'https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css'; //colors.css
+@import 'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'; //google fonts
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --heading-font: 'DM Serif Display', serif;
+    --heading-font: 'DM Serif Text', serif;
     --body-font: "Noto Serif", serif;
     --link-color: var(--blue);
     --duration: 0.5s;

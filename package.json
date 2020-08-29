@@ -20,14 +20,18 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@ampproject/eleventy-plugin-amp": "^0.5.2",
+    "autoprefixer": "^9.8.6",
     "cross-env": "^7.0.2",
     "del-cli": "^3.0.1",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shell": "^0.8.0",
     "moment": "^2.27.0",
     "outdent": "^0.7.1",
+    "postcss-import-url": "^5.1.0",
     "require-dir": "^1.2.0",
     "sass": "^1.26.10",
     "workbox-build": "^5.1.3"
