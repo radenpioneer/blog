@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets/img": "assets/img",
         "assets/favicon": "assets/favicon",
+        "assets/media": "assets/media",
         "src/favicon.ico": "favicon.ico"
     })
 
@@ -69,7 +70,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(amphtml, {
-        filter: /^.*(index|post|page|about|404).*$/,
+        filter: /^.*(index|post|page|about|404|offline).*$/,
         dir: {
             output: 'dist'
         },

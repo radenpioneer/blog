@@ -1,11 +1,7 @@
 const gulp = require('gulp')
 const workbox = require('workbox-build')
 
-gulp.task('copyworkboxlib', () => {
-    return workbox.copyWorkboxLibraries('dist')
-})
-
-gulp.task('injectmanifest', () => {
+gulp.task('generatesw', () => {
     return workbox.injectManifest({
         swSrc: 'src/workbox/sw.js',
         swDest: 'dist/sw.js',
@@ -14,13 +10,12 @@ gulp.task('injectmanifest', () => {
             '*.*',
             '**/profile.jpg',
             '**/*-39.jpg',
-            '**/*-82.jpg'
+            '**/*-82.jpg',
+            'assets/media/madihin.mp4'
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024
     })
 })
-
-gulp.task('generatesw', gulp.series('copyworkboxlib', 'injectmanifest'))
 
 gulp.task('watchsw', function() {
     gulp.watch('./src/workbox/sw.js', gulp.parallel('generatesw'))
