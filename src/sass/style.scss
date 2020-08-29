@@ -79,8 +79,9 @@ a,
 #siteheader {
     width: 100vw;
     background-color: var(--background-color);
+    position: fixed;
+    overflow: hidden;
     top: 0;
-    left: 0;
     z-index: 1;
 }
 
