@@ -1,8 +1,6 @@
 const gulp = require('gulp')
-const shell = require('gulp-shell')
+const del = require('del')
 
-gulp.task('clean:dist', shell.task('npx del-cli dist'))
-gulp.task('clean:cache', shell.task('npx del-cli .cache'))
-gulp.task('clean:debuglog', shell.task('npx del-cli debug.log'))
-
-gulp.task('clean', gulp.parallel('clean:dist', 'clean:cache', 'clean:debuglog'))
+gulp.task('clean', async function() {
+    del(['dist', '.cache', 'debug.log'])
+})
