@@ -1,10 +1,13 @@
 const gulp = require('gulp')
 const workbox = require('workbox-build')
 
+const SWSRC = 'src/workbox/sw.js'
+const SWDEST = 'dist/sw.js'
+
 gulp.task('generatesw', () => {
     return workbox.injectManifest({
-        swSrc: 'src/workbox/sw.js',
-        swDest: 'dist/sw.js',
+        swSrc: SWSRC,
+        swDest: SWDEST,
         globDirectory: 'dist',
         globPatterns: [
             '*.*',
@@ -18,5 +21,5 @@ gulp.task('generatesw', () => {
 })
 
 gulp.task('watchsw', function() {
-    gulp.watch('./src/workbox/sw.js', gulp.parallel('generatesw'))
+    gulp.watch(SWDEST, gulp.parallel('generatesw'))
 })

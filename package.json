@@ -12,7 +12,8 @@
     "build": "ELEVENTY_ENV=dev npx gulp build",
     "debug": "DEBUG=* ELEVENTY_ENV=dev npm run build 2>&1 | tee debug.log",
     "prod": "ELEVENTY_ENV=prod npx gulp build",
-    "clean": "npx gulp clean"
+    "clean": "npx gulp clean",
+    "prestart": "npm run clean"
   },
   "keywords": [],
   "author": "R. Ilham Sastronegoro",
@@ -25,6 +26,7 @@
     "del-cli": "^3.0.1",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
@@ -32,6 +34,7 @@
     "moment": "^2.27.0",
     "outdent": "^0.7.1",
     "postcss-import-url": "^5.1.0",
+    "readable-stream": "^3.6.0",
     "require-dir": "^1.2.0",
     "sass": "^1.26.10",
     "workbox-build": "^5.1.3"

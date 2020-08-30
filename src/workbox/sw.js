@@ -5,8 +5,14 @@ const FALLBACK_URL = '/offline.html'
 workbox.core.skipWaiting()
 workbox.core.clientsClaim()
 workbox.googleAnalytics.initialize()
-workbox.routing.setDefaultHandler(new workbox.strategies.NetworkFirst())
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
+
+
+workbox.routing.setDefaultHandler(
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'general'
+    })
+)
 
 workbox.routing.registerRoute(
     ({url}) => url.origin === 'https://fonts.gstatic.com',
@@ -118,3 +124,9 @@ workbox.routing.setCatchHandler(({event}) => {
         default: return Response.error()
     }
 })
+
+if(env.process.ELEVENTY_ENV === 'prod') {
+    workbox.setConfig({debug: false})
+} else {
+    workbox.setConfig({debug: true})
+}

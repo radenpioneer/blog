@@ -1,25 +1,36 @@
 const gulp = require('gulp')
+const replace = require('gulp-replace')
+const pipeline = require('readable-stream').pipeline
+const changed = require('gulp-changed')
+
+//SASS Compiler
 const sass = require('gulp-sass')
 sass.compiler = require('sass')
-const replace = require('gulp-replace')
 
 //PostCSS and plugins
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
 
+const SRC = './src/sass/style.scss'
+const DEST = './src/_includes/partials/'
+const WATCH = './src/sass/*.scss'
+
 gulp.task('generatecss', function() {
     let processors = [
         autoprefixer,
         importcss
     ]
-    return gulp.src('./src/sass/style.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(postcss(processors))
-    .pipe(replace(' !important', ''))
-    .pipe(gulp.dest('./src/_includes/partials/'))
+    return pipeline(
+        gulp.src(SRC),
+        changed(DEST),
+        sass({outputStyle: 'compressed'}),
+        postcss(processors),
+        replace(' !important', ''),
+        gulp.dest(DEST)
+    )
 })
 
 gulp.task('watchcss', function() {
-    gulp.watch('./src/sass/*.scss', gulp.parallel('generatecss'))
+    gulp.watch(WATCH, gulp.parallel('generatecss'))
 })
