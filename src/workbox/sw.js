@@ -9,7 +9,7 @@ workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
 
 
 workbox.routing.setDefaultHandler(
-    new workbox.strategies.StaleWhileRevalidate({
+    new workbox.strategies.NetworkFirst({
         cacheName: 'general'
     })
 )
@@ -30,21 +30,23 @@ workbox.routing.registerRoute(
 )
 
 workbox.routing.registerRoute(
+    ({url}) => url.origin === 'https://cdn.ampproject.org',
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'amp-scripts'
+    })
+)
+
+workbox.routing.registerRoute(
     ({request}) => request.destination === 'script' || request.destination === 'style',
     new workbox.strategies.StaleWhileRevalidate({
-        cacheName: 'static-resources',
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            })
-        ]
+        cacheName: 'static-resources'
     })
 )
 
 workbox.routing.registerRoute(
     ({request}) => request.destination === 'image',
     new workbox.strategies.CacheFirst({
-        cacheName: 'images',
+        cacheName: 'image',
         plugins: [
             new workbox.cacheableResponse.CacheableResponsePlugin({
                 statuses: [0, 200],
@@ -120,13 +122,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.setCatchHandler(({event}) => {
     switch (event.request.destination) {
-        case 'document': return matchPrecache(FALLBACK_URL)
+        case 'document': return workbox.precaching.matchPrecache(FALLBACK_URL)
         default: return Response.error()
     }
 })
-
-if(env.process.ELEVENTY_ENV === 'prod') {
-    workbox.setConfig({debug: false})
-} else {
-    workbox.setConfig({debug: true})
-}
