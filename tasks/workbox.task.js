@@ -14,7 +14,7 @@ gulp.task('generatesw', () => {
             '**/profile.jpg',
             '**/*-39.jpg',
             '**/*-82.jpg',
-            'assets/media/madihin.mp4'
+            'assets/media/offline.gif'
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024
     })
