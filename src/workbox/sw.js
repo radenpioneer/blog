@@ -77,25 +77,9 @@ workbox.routing.registerRoute(
 )
 
 workbox.routing.registerRoute(
-    ({url}) => url.pathname.includes('post'),
+    ({url}) => url.pathname.includes('post') || url.pathname.includes('page') || url.pathname.includes('story') || url.pathname === '/',
     new workbox.strategies.NetworkFirst({
         cacheName: 'posts',
-        plugins: [
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200],
-            }),
-            new workbox.expiration.ExpirationPlugin({
-                maxAgeSeconds: 60 * 60 * 24 * 7,
-                maxEntries: 10
-            })
-        ]
-    })
-)
-
-workbox.routing.registerRoute(
-    ({url}) => url.pathname.includes('page'),
-    new workbox.strategies.NetworkFirst({
-        cacheName: 'pages',
         plugins: [
             new workbox.cacheableResponse.CacheableResponsePlugin({
                 statuses: [0, 200],

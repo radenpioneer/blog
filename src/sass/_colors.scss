@@ -39,3 +39,6 @@ $black:  #111111;
     --gray:   #{$gray};
     --black:  #{$black};
 }
+
+.white { color: var(--white); }
+.black { color: var(--black); }

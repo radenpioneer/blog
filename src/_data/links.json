@@ -6,5 +6,9 @@
     {
         "title": "Informasi Teknis",
         "url": "/about#informasiteknis"
+    },
+    {
+        "title": "Sitemap",
+        "url": "/sitemap.xml"
     }
 ]

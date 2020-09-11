@@ -1,15 +1,23 @@
 ---
 layout: layout/layout
-pagination:
-    data: collections.post
-    size: 6
-    reverse: true
-    alias: posts
-permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
 ---
-
 <div class="px2">
-    <section class="mt3 content clearfix mxn2">
+    {% if stories %}
+    {% if pagination.pageNumber == 0 %}
+    <section id="webstories" class="mb3 mxn1">
+        <h1 id="webstories-label" class="h4 mute mx1 mb1">{{ "story terbaru" | upcase }}</h1>
+        <div id="webstories-carousel" class="flex items-start">
+            {% for story in collections.story reversed limit:5 %}
+            <a class="m1" href="{{ story.url }}">
+                <amp-img class="rounded" src="{{ story.data.image }}" width="90" height="160" layout="fixed"></amp-img>
+            </a>
+            {% endfor %}
+            <a id="webstories-index" class="rounded m1 flex items-center justify-center" href="/story"><span class="h1 bold">&rarr;</span></a>
+        </div>
+    </section>
+    {% endif %}
+    {% endif %}
+    <section class="content clearfix mxn2">
     {% for post in posts %}
         <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb3">
             {% if post.data.image %}

@@ -30,3 +30,8 @@ layout: layout/base
         </div>
     </div>
 </footer>
+<amp-install-serviceworker
+    src="{{ env.site.url }}sw.js"
+    data-iframe-src="{{ env.site.url }}sw.html"
+    layout="nodisplay">
+</amp-install-serviceworker>

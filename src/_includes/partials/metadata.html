@@ -44,7 +44,7 @@
     <!--opengraph-->
     <meta name="author" content="{{ env.site.title }}" />
     <meta name="description" content="{{ description }}" />
-    <meta name="keywords" content="{{ category | join: ', ' }}" />
+    <meta name="keywords" content="article, {% if category %}{{ category | join: ', ' }}{% endif %}"/>
     <meta property="og:site_name" content="{{ env.site.title }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ title }}"/>

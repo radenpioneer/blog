@@ -70,7 +70,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(amphtml, {
-        filter: /^.*(index|post|page|about|404|offline).*$/,
+        filter: /^.*(index|post|page|story|about|404|offline).*$/,
         dir: {
             output: 'dist'
         },

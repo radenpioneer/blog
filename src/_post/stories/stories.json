@@ -1,0 +1,6 @@
+{
+    "tags": "story",
+    "layout": "layout/story",
+    "permalink": "story/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html",
+    "comments": false
+}
