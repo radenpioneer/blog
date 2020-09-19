@@ -83,6 +83,7 @@ a,
     overflow: hidden;
     top: 0;
     z-index: 1;
+    box-shadow: 1px 1px 3px var(--gray);
 }
 
 #webstories {
@@ -124,6 +125,9 @@ a,
 .postbox, .storybox {
     @media (min-width: 40em) {
         min-height: 420px;
+    }
+    amp-img {
+        box-shadow: 2px 2px 5px var(--gray);
     }
     img {
         object-fit: cover;
@@ -170,6 +174,10 @@ article {
             margin-top: 0;
             margin-bottom: 0;
         }
+    }
+
+    amp-img, amp-iframe {
+        box-shadow: 2px 2px 5px var(--gray);
     }
 
     figure {
