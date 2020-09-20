@@ -1,0 +1,26 @@
+---
+layout: layout/home
+pagination:
+    data: collections.story
+    size: 6
+    reverse: true
+    alias: posts
+permalink: "/story/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
+title: Story
+subtitle: Postingan dalam format visual, seperti Snapchat, Instagram Stories dan TikTok.
+---
+{% for post in posts %}
+<div class="storybox col col-12 md-col-6 lg-col-6 px2 mb3">
+    <a href="{{ post.url }}">
+        <div class="relative">
+            <amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }}" width="352" height="352" layout="responsive"></amp-img>
+            <div class="absolute mr2" style="top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <h1 class="white m0 center">{{ post.data.title }}</h1>
+                {% if post.data.subtitle %}
+                <p class="h5 white m0" style="font-family: var(--system-font);">{{ post.data.subtitle | upcase }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %}

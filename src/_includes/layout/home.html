@@ -1,0 +1,19 @@
+---
+layout: layout/layout
+---
+<div class="px2">
+    {% if title %}
+    <div class="center">
+        <h1 class="mt2 mb1 headings">{{ title }}</h1>
+        {% if subtitle %}
+            <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
+        {% endif %}
+    </div>
+    <div class="divider"></div>
+    {% endif %}
+    {% include partials/storiescarousel.html %}
+    <section class="content clearfix mxn2">
+        {{ content }}
+    </section>
+    {% include partials/paginationlinks.html %}
+</div>

@@ -10,4 +10,4 @@
 
 [dev]
     command = "npm start"
-    port = 4000
+    autoLaunch = false
