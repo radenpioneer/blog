@@ -5,7 +5,9 @@
 </head>
 <body>
     {% if env.isProd %}
+    {% unless page.url contains '/story/' %}
     {% include partials/analytics.html %}
+    {% endunless %}
     {% endif %}
     
     {{ content }}
