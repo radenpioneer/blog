@@ -5,7 +5,7 @@ layout: layout/base
 standalone  
 title="{{ title }}"
 publisher="{{ env.site.title }}"
-publisher-logo-src="{{ env.site.logo }}"
+publisher-logo-src="/{{ env.site.logo }}"
 poster-portrait-src="{{ image }}"
 {%- if audio -%}
 background-audio="{{ audio }}"
@@ -16,7 +16,12 @@ background-audio="{{ audio }}"
             {
                 "bookendVersion": "v1.0",
                 "shareProviders": [
-                    "twitter"
+                    "whatsapp",
+                    "twitter",
+                    {
+                        "provider": "facebook",
+                        "app_id": "3244379695600109"
+                    }
                 ],
                 "components": [
                     {%- if collections.story.size > 1 -%}
@@ -41,7 +46,7 @@ background-audio="{{ audio }}"
                         "text": "Artikel"
                     },
                     {%- assign posts =  collections.post | sort: date | reverse -%}
-                    {%- for item in posts limit: 4 -%}
+                    {%- for item in posts limit: 5 -%}
                     {
                         "type": "small",
                         "title": "{{ item.data.title }}",
@@ -62,11 +67,11 @@ background-audio="{{ audio }}"
                         "type": "cta-link",
                         "links": [
                             {
-                                "text": "Kembali Ke Beranda",
+                                "text": "Beranda",
                                 "url": "/"
                             },
                             {
-                                "text": "Semua Story",
+                                "text": "Story",
                                 "url": "/story"
                             }
                         ]
