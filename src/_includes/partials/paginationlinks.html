@@ -1,0 +1,18 @@
+{% if pagination.href.previous or pagination.href.next %}
+<section class="postlink">
+    <div class="clearfix">
+        {% if pagination.href.previous %}
+        <div class="left col-12 md-col-6 flex justify-start items-center mb1">
+            <span class="h3 bold mr1">&#x2770;</span>
+            <a href="{{ pagination.href.previous | replace: '.html', '' }}" title="Artikel lama"><i>Artikel terbaru</i></a>
+        </div>
+        {% endif %}
+        {% if pagination.href.next %}
+        <div class="right col-12 md-col-6 flex justify-end items-center mb1">
+            <a href="{{ pagination.href.next | replace: '.html', '' }}" title="Artikel terbaru"><i>Artikel lama</i></a>
+            <span class="h3 bold ml1">&#x2771;</span>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}

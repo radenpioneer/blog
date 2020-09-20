@@ -2,58 +2,18 @@
 layout: layout/layout
 ---
 <div class="px2">
-    {% if stories %}
-    {% if pagination.pageNumber == 0 %}
-    <section id="webstories" class="mb3 mxn1">
-        <h1 id="webstories-label" class="h4 mute mx1 mb1">{{ "story terbaru" | upcase }}</h1>
-        <div id="webstories-carousel" class="flex items-start">
-            {% for story in collections.story reversed limit:5 %}
-            <a class="m1" href="{{ story.url }}">
-                <amp-img class="rounded" src="{{ story.data.image }}" width="90" height="160" layout="fixed"></amp-img>
-            </a>
-            {% endfor %}
-            <a id="webstories-index" class="rounded m1 flex items-center justify-center" href="/story"><span class="h1 bold">&rarr;</span></a>
-        </div>
-    </section>
+    {% if title %}
+    <div class="center">
+        <h1 class="mt2 mb1 headings">{{ title }}</h1>
+        {% if subtitle %}
+            <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
+        {% endif %}
+    </div>
+    <div class="divider"></div>
     {% endif %}
-    {% endif %}
+    {% include partials/storiescarousel.html %}
     <section class="content clearfix mxn2">
-    {% for post in posts %}
-        <div class="postbox col col-12 md-col-6 lg-col-6 px2 mb3">
-            {% if post.data.image %}
-            <a href="{{ post.url }}"><amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
-            <h1 class="h3 my1"><a href="{{ post.url | replace: '.html', '' }}">{{ post.data.title }}</a></h1>
-            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 75 | strip_html }}</p>
-            {% else %}
-            <div style="border-top: 3px solid var(--link-color);"></div>
-            <h1 class="mt0 mb1"><a href="{{ post.url | replace: '.html', '' }}">{{ post.data.title }}</a></h1>
-            <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 250 | strip_html }}</p>
-            {% endif %}
-            <a class="bold italic" style="font-size: 80%; line-height: 1.5;" href="{{ post.url | replace: '.html', '' }}">Selengkapnya &raquo;</a>
-            <div class="mt1" style="border-top: 1px solid var(--gray); font-size: 75%; font-family: var(--system-font);">
-                {% for category in post.data.category %}
-                <a class="mute" href="#">{{ category | upcase }}{% unless forloop.last %}{{ ',&nbsp;' }}{% endunless %}</a>
-                {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
+        {{ content }}
     </section>
-    {% if pagination.href.previous or pagination.href.next %}
-    <section class="postlink">
-        <div class="clearfix">
-            {% if pagination.href.previous %}
-            <div class="left col-12 md-col-6 flex justify-start items-center mb1">
-                <span class="h3 bold mr1">&#x2770;</span>
-                <a href="{{ pagination.href.previous | replace: '.html', '' }}" title="Artikel lama"><i>Artikel terbaru</i></a>
-            </div>
-            {% endif %}
-            {% if pagination.href.next %}
-            <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-                <a href="{{ pagination.href.next | replace: '.html', '' }}" title="Artikel terbaru"><i>Artikel lama</i></a>
-                <span class="h3 bold ml1">&#x2771;</span>
-            </div>
-            {% endif %}
-        </div>
-    </section>
-    {% endif %}
+    {% include partials/paginationlinks.html %}
 </div>

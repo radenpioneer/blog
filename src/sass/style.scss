@@ -1,14 +1,16 @@
 
 @use 'typeset';
 @use 'colors';
-@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'; //normalize.css
-@import 'https://unpkg.com/basscss@8.0.2/css/basscss.css'; //basscss
-@import 'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'; //google fonts
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css'); //normalize.css
+@import url('https://unpkg.com/basscss@8.0.2/css/basscss.css'); //basscss
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@300;400;700&display=swap'); //google fonts
+@import url('https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.css'); //clrs.cc
 
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --heading-font: 'DM Serif Text', serif;
     --body-font: "Noto Serif", serif;
+    --story-font: 'Kumbh Sans', var(--system-font), sans-serif;
     --link-color: var(--blue);
     --duration: 0.5s;
     --timing: ease;
@@ -83,7 +85,7 @@ a,
     overflow: hidden;
     top: 0;
     z-index: 1;
-    box-shadow: 1px 1px 3px var(--gray);
+    box-shadow: 2px 2px 5px var(--gray);
 }
 
 #webstories {
@@ -94,13 +96,11 @@ a,
         overflow: auto;
         white-space: nowrap;
 
-        > #webstories-index {
-            background-color: var(--gray);
-            width: 90px;
-            height: 160px;
+        amp-img {
+            box-shadow: 2px 2px 5px var(--gray);
         }
 
-        amp-img, img {
+        img {
             object-fit: cover;
             object-position: center center;
         }
@@ -138,7 +138,6 @@ a,
 .storybox {
     img {
         filter: brightness(60%);
-
     }
 }
 
@@ -255,8 +254,8 @@ amp-social-share {
 }
 
 amp-story {
-    p {
-        font-family: var(--system);
+    p, ol, ul {
+        font-family: var(--story-font);
     }
     amp-story-grid-layer.bottom {
         align-content: end;

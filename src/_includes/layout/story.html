@@ -6,17 +6,10 @@ standalone
 title="{{ title }}"
 publisher="{{ env.site.title }}"
 publisher-logo-src="{{ env.site.logo }}"
-poster-portrait-src="{{ image }}">
-    <amp-story-page id="cover" auto-advance-after="5s">
-        <amp-story-grid-layer template="fill">
-            <amp-img src="{{ image }}" width="720" height="1280" layout="responsive"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-            <p class="center white bold m0" style="font-size: 80%;">{{ env.site.title | prepend: "oleh " | upcase }}</p>
-            <h1 class="center white m0">{{ title }}</h1>
-            <p class="center white m0">{{ subtitle | upcase }}</p>
-        </amp-story-grid-layer>
-    </amp-story-page>
+poster-portrait-src="{{ image }}"
+{%- if audio -%}
+background-audio="{{ audio }}"
+{%- endif -%}>
     {{ content }}
     <amp-story-bookend layout="nodisplay">
         <script type="application/json">
@@ -26,6 +19,7 @@ poster-portrait-src="{{ image }}">
                     "twitter"
                 ],
                 "components": [
+                    {%- if collections.story.size > 1 -%}
                     {
                         "type": "heading",
                         "text": "Story Lainnya"
@@ -40,6 +34,26 @@ poster-portrait-src="{{ image }}">
                     },
                     {%- endunless -%}
                     {%- endfor -%}
+                    {%- endif -%}
+                    {%- if collections.post.size > 1 -%}
+                    {
+                        "type": "heading",
+                        "text": "Artikel"
+                    },
+                    {%- assign posts =  collections.post | sort: date | reverse -%}
+                    {%- for item in posts limit: 4 -%}
+                    {
+                        "type": "small",
+                        "title": "{{ item.data.title }}",
+                        "url": "{{ item.url }}",
+                        {%- if item.data.image -%}
+                        "image": "{{ item.data.image }}"
+                        {%- else -%}
+                        "image": "/{{ env.site.logo }}"
+                        {%- endif -%}
+                    },
+                    {%- endfor -%}
+                    {%- endif -%}
                     {
                         "type": "heading",
                         "text": "Navigasi"

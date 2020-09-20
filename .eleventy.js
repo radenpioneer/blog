@@ -24,14 +24,14 @@ module.exports = function(eleventyConfig) {
     })
 
     //markdown configs
-    let markdownIt = require("markdown-it")
-    let attrs = require("markdown-it-attrs")
-    let figures = require("markdown-it-implicit-figures")
-    let footnotes = require("markdown-it-footnote")
-    let deflist = require("markdown-it-deflist")
-    let emoji = require("markdown-it-emoji")
-    let anchor = require("markdown-it-anchor")
-    let toc = require("markdown-it-toc-done-right")
+    const markdownIt = require("markdown-it")
+    const attrs = require("markdown-it-attrs")
+    const figures = require("markdown-it-implicit-figures")
+    const footnotes = require("markdown-it-footnote")
+    const deflist = require("markdown-it-deflist")
+    const emoji = require("markdown-it-emoji")
+    const anchor = require("markdown-it-anchor")
+    const toc = require("markdown-it-toc-done-right")
 
     let markdownLib = markdownIt({
                         html: true,
@@ -77,11 +77,12 @@ module.exports = function(eleventyConfig) {
         imageOptimization : {
             urlPath: '/assets/img/o/'
         },
+        minifyCSS: false,
         validation: false
     })
 
     eleventyConfig.addPlugin(typeset({
-        disable: ['ligatures']
+        disable: ['ligatures', 'hyphenate']
     }))
 
     eleventyConfig.addPlugin(require('./plugins'))

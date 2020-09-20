@@ -1,5 +1,5 @@
 ---
-layout: layout/layout
+layout: layout/home
 pagination:
     data: collections.story
     size: 6
@@ -7,41 +7,20 @@ pagination:
     alias: posts
 permalink: "/story/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
 title: Story
-description: Postingan dalam format visual, seperti Snapchat, Instagram Stories dan TikTok.
+subtitle: Postingan dalam format visual, seperti Snapchat, Instagram Stories dan TikTok.
 ---
-<div class="px2">
-    <section class="mb3">
-        <h1 class="center mx0 mb1">{{ title }}</h1>
-        <p class="h4 center m0">{{ description }}</p>
-    </section>
-    <section class="content clearfix mxn2">
-    {% for post in posts %}
-        <div class="storybox col col-12 md-col-6 lg-col-6 px2 mb3">
-            <a href="{{ post.url }}">
-                <div class="relative">
-                    <amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }}" width="352" height="352" layout="responsive"></amp-img>
-                    <h1 class="absolute white my0 mr2" style="bottom: 15px; left: 15px;">{{ post.data.title }}</h1>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
-    </section>
-    {% if pagination.href.previous or pagination.href.next %}
-    <section class="postlink">
-        <div class="clearfix">
-            {% if pagination.href.previous %}
-            <div class="left col-12 md-col-6 flex justify-start items-center mb1">
-                <span class="h3 bold mr1">&#x2770;</span>
-                <a href="{{ pagination.href.previous | replace: '.html', '' }}" title="Artikel lama"><i>Artikel terbaru</i></a>
+{% for post in posts %}
+<div class="storybox col col-12 md-col-6 lg-col-6 px2 mb3">
+    <a href="{{ post.url }}">
+        <div class="relative">
+            <amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }}" width="352" height="352" layout="responsive"></amp-img>
+            <div class="absolute mr2" style="top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <h1 class="white m0 center">{{ post.data.title }}</h1>
+                {% if post.data.subtitle %}
+                <p class="h5 white m0" style="font-family: var(--system-font);">{{ post.data.subtitle | upcase }}</p>
+                {% endif %}
             </div>
-            {% endif %}
-            {% if pagination.href.next %}
-            <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-                <a href="{{ pagination.href.next | replace: '.html', '' }}" title="Artikel terbaru"><i>Artikel lama</i></a>
-                <span class="h3 bold ml1">&#x2771;</span>
-            </div>
-            {% endif %}
         </div>
-    </section>
-    {% endif %}
+    </a>
 </div>
+{% endfor %}

@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npx gulp serve",
     "build": "ELEVENTY_ENV=dev npx gulp build",
-    "debug": "DEBUG=* ELEVENTY_ENV=dev npm run build 2>&1 | tee debug.log",
+    "debug": "DEBUG=* npm run build 2>&1 | tee debug.log",
     "prod": "ELEVENTY_ENV=prod npx gulp build",
     "clean": "npx gulp clean",
     "prestart": "npm run clean",
@@ -32,6 +32,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shell": "^0.8.0",
+    "markdown-it": "^11.0.1",
     "moment": "^2.27.0",
     "outdent": "^0.7.1",
     "postcss-import-url": "^5.1.0",
