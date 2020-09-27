@@ -13,8 +13,7 @@
     "debug": "DEBUG=* npm run build 2>&1 | tee debug.log",
     "prod": "ELEVENTY_ENV=prod npx gulp build",
     "clean": "npx gulp clean",
-    "prestart": "npm run clean",
-    "postprod": "npx gulp archive"
+    "prestart": "npm run clean"
   },
   "keywords": [],
   "author": "R. Ilham Sastronegoro",
