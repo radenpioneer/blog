@@ -6,6 +6,8 @@
     {% endif %}
     {% if subtitle %}
         {% assign description = subtitle %}
+    {% else if page.url contains "/story/" %}
+        {% assign description = title | append: " - Story oleh " | append: env.site.title %}
     {% else %}
         {% assign description = title | append: " - Artikel oleh " | append: env.site.title %}
     {% endif %}
