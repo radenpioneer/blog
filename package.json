@@ -38,7 +38,7 @@
     "readable-stream": "^3.6.0",
     "require-dir": "^1.2.0",
     "sass": "^1.26.10",
-    "workbox-build": "^5.1.3"
+    "workbox-build": "^5.1.4"
   },
   "dependencies": {
     "html-minifier": "^4.0.0",
