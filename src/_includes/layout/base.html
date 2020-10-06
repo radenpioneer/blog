@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ⚡ lang="id">
+<html lang="id">
 <head>
-    {% include partials/head.html %}
+    {% include component/head.html %}
 </head>
-<body>
+<body class="flex flex-column">
     {% if env.isProd %}
     {% unless page.url contains '/story/' %}
-    {% include partials/analytics.html %}
+    {% include component/analytics.html %}
     {% endunless %}
     {% endif %}
     

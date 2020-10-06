@@ -1,19 +1,28 @@
 ---
 layout: layout/layout
 ---
-<div class="px2">
-    {% if title %}
-    <div class="center">
-        <h1 class="mt2 mb1 headings">{{ title }}</h1>
-        {% if subtitle %}
-            <span class="block italic center mb2" style="font-size: 125%">{{ subtitle }}</span>
-        {% endif %}
+{% if title %}
+<div class="col-right col-12">
+    <div class="px2">
+        <div class="center">
+            <h1 class="mt2 mb2 title">{{ title }}</h1>
+            {% if subtitle %}
+                <span class="block italic center mb3" style="font-size: 125%">{{ subtitle }}</span>
+            {% endif %}
+        </div>
     </div>
-    <div class="divider"></div>
-    {% endif %}
-    {% include partials/storiescarousel.html %}
-    <section class="content clearfix mxn2">
+</div>
+{% endif %}
+{% if stories %}
+{% if pagination.pageNumber == 0 %}
+<div class="col-right col-12 lg-col-4 px3">
+    {% include component/storiescarousel.html %}
+</div>
+{% endif %}
+{% endif %}
+<div class="col col-12 lg-col-8">
+    <section class="clearfix">
         {{ content }}
     </section>
-    {% include partials/paginationlinks.html %}
 </div>
+{% include component/paginationlinks.html %}

@@ -15,7 +15,7 @@ subtitle: Postingan dalam format visual, seperti Snapchat, Instagram Stories dan
         <div class="relative">
             <amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }}" width="352" height="352" layout="responsive"></amp-img>
             <div class="absolute mr2" style="top: 50%; left: 50%; transform: translate(-50%,-50%);">
-                <h1 class="white m0 center">{{ post.data.title }}</h1>
+                <h1 class="white m0 center title">{{ post.data.title }}</h1>
                 {% if post.data.subtitle %}
                 <p class="h5 white m0" style="font-family: var(--system-font);">{{ post.data.subtitle | upcase }}</p>
                 {% endif %}
