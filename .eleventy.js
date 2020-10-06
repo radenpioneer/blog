@@ -49,24 +49,6 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setLibrary("md", markdownLib)
 
-    eleventyConfig.addTransform("minify", function(content, outputPath) {
-        if (outputPath.endsWith(".html")) {
-            let minified  = minify.minify(content, {
-                useShortDoctype: true,
-                removeComments: true,
-                collapseWhitespace: true,
-                minifyJS: true,
-                minifyCSS: true,
-                processScripts: [
-                    "text/javascript",
-                    "application/ld+json"
-                ]
-            })
-            return minified
-        }
-        return content
-    })
-
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(amphtml, {
@@ -86,6 +68,24 @@ module.exports = function(eleventyConfig) {
     }))
 
     eleventyConfig.addPlugin(require('./plugins'))
+
+    eleventyConfig.addTransform("minify", function(content, outputPath) {
+        if (outputPath.endsWith(".html")) {
+            let minified  = minify.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyJS: true,
+                minifyCSS: true,
+                processScripts: [
+                    "text/javascript",
+                    "application/ld+json"
+                ]
+            })
+            return minified
+        }
+        return content
+    })
 
     return {
         dir: {

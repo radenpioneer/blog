@@ -2,28 +2,29 @@
 layout: layout/home
 pagination:
     data: collections.post
-    size: 6
+    size: 5
     reverse: true
     alias: posts
 permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
 stories: true
 ---
 {% for post in posts %}
-<div class="postbox col col-12 md-col-6 lg-col-6 px2 mb3">
-    {% if post.data.image %}
-    <a href="{{ post.url }}"><amp-img class="rounded" src="{{ post.data.image }}" alt="{{ post.data.title }} thumbnail" width="352" height="235" layout="responsive"></amp-img></a>
-    <h1 class="h3 my1"><a href="{{ post.url | replace: '.html', '' }}">{{ post.data.title }}</a></h1>
-    <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 75 | strip_html }}</p>
-    {% else %}
-    <div style="border-top: 3px solid var(--link-color);"></div>
-    <h1 class="mt0 mb1"><a href="{{ post.url | replace: '.html', '' }}">{{ post.data.title }}</a></h1>
-    <p class="my0" style="font-size: 80%; line-height: 1.5;">{{ post.templateContent | truncate: 250 | strip_html }}</p>
-    {% endif %}
-    <a class="bold italic" style="font-size: 80%; line-height: 1.5;" href="{{ post.url | replace: '.html', '' }}">Selengkapnya &raquo;</a>
-    <div class="mt1" style="border-top: 1px solid var(--gray); font-size: 75%; font-family: var(--system-font);">
-        {% for category in post.data.category %}
-        <a class="mute" href="#">{{ category | upcase }}{% unless forloop.last %}{{ ',&nbsp;' }}{% endunless %}</a>
-        {% endfor %}
+<div class="col col-12 mb3">
+    <div class="my2 px3 flex">
+        <amp-img class="circle mr1" src="{{ env.site.logo }}" layout="fixed" height="40" width="40"></amp-img>
+        <div class="flex flex-column justify-center">
+            <p class="h5 mute link m0">{{ post.data.author }}</p>
+            <p class="h5 mute m0"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></p>
+        </div>
     </div>
+    <h1 class="title px3 my3"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+    {% if post.data.image %}
+    <a href="{{ post.url }}"><amp-img src="{{ post.data.image }}" alt="{{ post.data.title | slug | append: '-thumbnail' }}" layout="responsive" height="2" width="3"></amp-img></a>
+    {% endif %}
+    <div class="posts-templatecontent px3 mb2"><p>{{ post.templateContent | strip_html | truncatewords: 50 }}</p></div>
+    <div class="flex">
+        <a class="h5 mute link px3" href="{{ post.url }}">{{ "lanjutkan membaca" | upcase }}</a>
+    </div>
+    <div class="border-c mt2"></div>
 </div>
 {% endfor %}

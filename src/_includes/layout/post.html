@@ -1,36 +1,43 @@
 ---
 layout: layout/layout
 ---
-
-<article class="px2">
-    <div>
-        <h1 class="mt0 mb1 center headings">{{ title }}</h1>
+<article>
+    <div class="px3 mb3">
+        <div class="my2 flex">
+            <amp-img class="circle mr1" src="{{ env.site.logo }}" layout="fixed" height="40" width="40"></amp-img>
+            <div class="flex flex-column justify-center">
+                <p class="h5 mute link m0">{{ author }}</p>
+                <p class="h5 mute m0"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></p>
+            </div>
+        </div>
+        <h1 class="mt0 mb3 title" style="font-size: 3rem;">{{ title }}</h1>
         {% if subtitle %}
-        <span class="h3 block italic center mb2">{{ subtitle }}</span>
+        <span class="h2 block italic">{{ subtitle }}</span>
         {% endif %}
-        {% include partials/post-infobox.html %}
     </div>
-    <div class="divider"></div>
-    <div class="content">
+    {% if image %}
+    <amp-img class="mb3" src="{{ image }}" alt="{{ title | slug | append: '-thumbnail' }}" layout="responsive" height="2" width="3"></amp-img>
+    {% endif %}
+    <div class="content px3 mb3">
         {{ content }}
     </div>
 </article>
-<section class="px2">
-    {% include partials/social.html %}
+<section class="px2 mb3">
+    {% include component/social.html %}
 </section>
 {% if nextPost.url or prevPost.url %}
-<section class="postlink px2">
+<section class="postlink px2 mb3">
     <div class="divider"></div>
     <div class="clearfix">
         {% if nextPost.url %}
-        <div class="left col-12 md-col-6 flex justify-start items-center mb1">
+        <div class="mute link left col-6 flex justify-start items-center mb1">
             <span class="h3 bold mr1">&#x2770;</span>
-            <a href="{{ nextPost.url | replace: '.html', '' }}" title="{{ nextPost.data.title }}"><i>{{ nextPost.data.title | truncate: 25 }}</i></a>
+            <a href="{{ nextPost.url | replace: '.html', '' }}" title="{{ nextPost.data.title }}">{{ nextPost.data.title | truncate: 10 | upcase }}</a>
         </div>
         {% endif %}
         {% if prevPost.url %}
-        <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-            <a href="{{ prevPost.url | replace: '.html', '' }}" title="{{ prevPost.data.title }}"><i>{{ prevPost.data.title | truncate: 25 }}</i></a>
+        <div class="mute link right col-6 flex justify-end items-center mb1">
+            <a href="{{ prevPost.url | replace: '.html', '' }}" title="{{ prevPost.data.title }}">{{ prevPost.data.title | truncate: 10 | upcase }}</a>
             <span class="h3 bold ml1">&#x2771;</span>
         </div>
         {% endif %}
@@ -38,8 +45,8 @@ layout: layout/layout
 </section>
 {% endif %}
 {% if comments %}
-<section class="px2">
+<section class="px2 mb3">
     <div class="divider"></div>
-    {% include partials/comment.html %}
+    {% include component/comment.html %}
 </section>
 {% endif %}

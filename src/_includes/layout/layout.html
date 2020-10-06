@@ -2,27 +2,28 @@
 layout: layout/base
 ---
 
-<header id="siteheader" class="pt2 mb1" amp-fx="float-in-top">
-    <div class="max-width-3 mx-auto flex justify-center">
-        <a href="/" class="flex inline-block items-center">
+<header id="siteheader" class="fixed overflow-hidden top-0 py2 mb1" amp-fx="float-in-top">
+    <div class="flex">
+        <div id="sidebar-button">
+            <button class="bold h3 p1 ml2" on="tap:sidebar.toggle">&#x2630;</button>
+        </div>
+        <a href="/" class="flex mx-auto items-center">
             <amp-img class="profile circle" src="{{ env.site.logo }}" width="35" height="35" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
-            <span class="h2 bold headings ml1">{{ env.site.title }}</span>
+            <span class="h2 title ml1">{{ env.site.title }}</span>
         </a>
+        <div class="pr3 mr3"></div>
     </div>
-    <div class="divider" style="margin-bottom: 0;"></div>
-    <div id="sidebar-button">
-        <button class="bold h3 p1" on="tap:sidebar.toggle">&#x2630;</button>
-    </div>
+
 </header>
-{% include partials/sidebar.html %}
-<main style="margin-top: 6rem;">
-    <div class="max-width-3 mx-auto">
+{% include component/sidebar.html %}
+<main class="flex-auto" style="margin-top: 6rem;">
+    <div class="max-width-4 mx-auto">
         <div class="clearfix">
             {{ content }}
         </div>
     </div>
 </main>
-<footer class="center">
+<footer class="center p3">
     <div class="max-width-3 mx-auto">
         <div class="divider"></div>
         <div>

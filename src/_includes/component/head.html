@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<!--title-->
+{% if title %}
+<title>{{ title }} - {{ env.site.title }}</title>
+{% else %}
+<title>{{ env.site.title }} - {{ env.site.description }}</title>
+{% endif %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--machine-readable metadata-->
+{% unless norobots %}
+{% include component/metadata.html %}
+{% endunless %}
+
+{% if norobots %}
+<meta name="robots" content="noindex"/>
+{% endif %}
+
+<!--facebook comments-->
+{% if comments %}
+<meta property="fb:admins" content="100045738520329"/>
+{% endif %}
+
+<!--custom css-->
+{% include component/style.html %}
+
+<!--favicons-->
+{% include component/favicon.html %}

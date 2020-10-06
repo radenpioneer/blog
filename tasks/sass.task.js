@@ -12,8 +12,8 @@ const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
 
-const SRC = './src/sass/style.scss'
-const DEST = './src/_includes/partials/'
+const SRC = './src/sass/main.scss'
+const DEST = './src/_includes/styles/'
 const WATCH = './src/sass/*.scss'
 
 gulp.task('generatecss', function() {
@@ -24,7 +24,7 @@ gulp.task('generatecss', function() {
     return pipeline(
         gulp.src(SRC),
         changed(DEST),
-        sass({outputStyle: 'compressed'}),
+        sass(),
         postcss(processors),
         replace(' !important', ''),
         gulp.dest(DEST)

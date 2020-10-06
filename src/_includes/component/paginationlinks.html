@@ -2,14 +2,14 @@
 <section class="postlink">
     <div class="clearfix">
         {% if pagination.href.previous %}
-        <div class="left col-12 md-col-6 flex justify-start items-center mb1">
+        <div class="mute link col col-6 flex justify-start items-center pl1 mb1">
             <span class="h3 bold mr1">&#x2770;</span>
-            <a href="{{ pagination.href.previous | replace: '.html', '' }}" title="Artikel lama"><i>Artikel terbaru</i></a>
+            <a href="{{ pagination.href.previous }}" title="Artikel lama">{{ "Artikel terbaru" | upcase }}</a>
         </div>
         {% endif %}
         {% if pagination.href.next %}
-        <div class="right col-12 md-col-6 flex justify-end items-center mb1">
-            <a href="{{ pagination.href.next | replace: '.html', '' }}" title="Artikel terbaru"><i>Artikel lama</i></a>
+        <div class="mute link col-right col-6 flex justify-end items-center pr1 mb1">
+            <a href="{{ pagination.href.next }}" title="Artikel terbaru">{{ "Artikel lama" | upcase }}</a>
             <span class="h3 bold ml1">&#x2771;</span>
         </div>
         {% endif %}
