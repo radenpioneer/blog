@@ -23,7 +23,7 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.2",
     "autoprefixer": "^9.8.6",
     "cross-env": "^7.0.2",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
