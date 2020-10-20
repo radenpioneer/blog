@@ -5,9 +5,8 @@ const typeset = require('eleventy-plugin-typeset')
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets/img": "assets/img",
-        "assets/favicon": "assets/favicon",
-        "assets/media": "assets/media",
-        "src/favicon.ico": "favicon.ico"
+        "assets/static": ".",
+        "assets/media": "assets/media"
     })
 
     eleventyConfig.addCollection("post", function(collection) {
@@ -52,7 +51,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(amphtml, {
-        filter: /^.*(index|post|page|story|about|404|offline).*$/,
         dir: {
             output: 'dist'
         },

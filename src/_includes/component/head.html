@@ -10,11 +10,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--machine-readable metadata-->
-{% unless norobots %}
+{% unless eleventyExcludeFromCollections %}
 {% include component/metadata.html %}
 {% endunless %}
 
-{% if norobots %}
+{% if eleventyExcludeFromCollections %}
 <meta name="robots" content="noindex"/>
 {% endif %}
 
