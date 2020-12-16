@@ -1,13 +1,7 @@
 [build]
-    command = "npm run prod"
+    command = "cross-env ELEVENTY_ENV=prod npm run build"
     publish = "dist/"
     
-[[redirects]]
-    from = "https://radenpioneer.netlify.app/*"
-    to = "https://radenpioneer.xyz/:splat"
-    status = 301
-    force = true
-
 [dev]
     command = "npm start"
     autoLaunch = false

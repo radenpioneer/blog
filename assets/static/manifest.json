@@ -1,6 +1,7 @@
 {
     "name": "Sastronegoro",
     "short_name": "Sastronegoro",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png?v=WGN04bvLAE",
