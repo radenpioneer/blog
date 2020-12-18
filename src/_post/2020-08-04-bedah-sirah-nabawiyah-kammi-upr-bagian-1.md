@@ -10,23 +10,19 @@ image: "https://source.unsplash.com/GgpqQSksjDY/800x600"
 
 Disampaikan dalam Bedah Mantuba KAMMI Komisariat Universitas Palangka Raya, Ahad 26 Juli 2020/5 Dzulhijjah 1441 H, melalui Grup WhatsApp.
 
-# Daftar Isi {.h1}
-
-${toc}
-
-# Audio Materi {.h1}
+# Audio Materi
 
 {% spotify '4jOcSAZjvWGI58LUptG6gJ' %}
 
-# Poin-Poin Penyampaian {.h1}
+# Poin-Poin Penyampaian
 
-## (1:00) Kontekstualisasi pembelajaran sirah di KAMMI {.h2}
+## (1:00) Kontekstualisasi pembelajaran sirah di KAMMI
 
 - Pembelajaran sirah di KAMMI jangan dibuat sama dengan pembelajaran sirah di forum kajian sirah umum, atau seperti dalam acara kemasyarakatan seperti Maulid, haul, atau majelis-majelis shalawat/dzikir. Jangan dianggap ini untuk menyalahkan, namun untuk menempatkan sesuatu pada tempatnya. Semuanya saling melengkapi dan sama-sama pentingnya.
 - Pembelajaran sirah di KAMMI jangan hanya bertujuan sekedar mengetahui keagungan akhlak Rasulullah SAW, atau hanya mengikuti sunnah-sunnah pribadi beliau, namun lebih tepatnya untuk mempelajari dan nantinya mengaplikasikan bagaimana cara Rasulullah dalam menyusun strategi berdakwah, bagaimana beliau merekrut para sahabat, cara-cara beliau dalam berhubungan dengan kawan maupun lawan, serta bagaimana nanti sosok kepemimpinan Rasulullah, dll. Intinya sesuai dengan konteks KAMMI sebagai *harokatu-tajnid-wa-l-'amal.*
 - Yang perlu diketahui juga bahwa pembelajaran sirah ini menekankan Rasulullah SAW selayaknya seorang manusia, yang artinya semua yang kita pelajari tentang beliau ini dapat dicontoh dan ditiru sebaik mungkin.
 
-## (5:49) Mengapa kita belajar sirah? {.h2}
+## (5:49) Mengapa kita belajar sirah?
 
 - Kehidupan Rasulullah SAW, terdokumentasikan secara detil dalam sirah, tidak sama dengan tokoh-tokoh besar dunia lain yang terkadang hanya dipandang kehebatan pemikiran atau karyanya saja. Sehingga kita tidak melihat sisi kemanusiaan dari tokoh-tokoh tersebut. Namun Rasulullah SAW, dapat dilihat sisi kemanusiaannya, yang artinya mudah untuk diteladani.
 - Empat alasan menurut Syaikh Ramadhan Al-Buthy:
@@ -35,7 +31,7 @@ ${toc}
     - Memahami kitabullah dengan sirah nabawiyah. (Di antaranya, mempelajari tentang asbabun nuzul dari sebuah ayat.)
     - Memahami bagaimana Rasulullah membina para sahabat dan umat.
 
-## (16:28) Sumber-sumber Sirah Nabawiyah {.h2}
+## (16:28) Sumber-sumber Sirah Nabawiyah
 
 - Al-Qur'anul Karim.
     ~ Ada beberapa kisah kehidupan Rasulullah SAW yang didokumentasikan langsung dalam Al-Qur'anul Karim. Selain itu, Al-Qur'an juga mengomentari sebagian jalan hidup Rasulullah SAW. Hanya saja, Al-Qur'an, sekali lagi merupakan sebuah kitab yang *mujmal*[^1] sehingga harus dilengkapi dengan sumber-sumber lainnya.
@@ -46,7 +42,7 @@ ${toc}
 
 [^1]: Al-Qur'an merupakan sumber hukum dalam fiqh yang bersifat *mujmal*, atau umum. Sehingga tidak semua terbahas dengan rinci di dalam Al-Qur'an.
 
-## (25:55) Siapa itu orang Arab? {.h2}
+## (25:55) Siapa itu orang Arab?
 
 - Tiga klasifikasi orang Arab dalam kitab-kitab sirah/tarikh Islam:
     - *Al-Arab Al-Ba'idah*
@@ -69,16 +65,16 @@ ${toc}
 
 [^2]: *Buffer Zone* adalah sebuah zona yang berada di antara dua negara yang saling berperang.
 
-## (48:38) Mengapa Islam turun di Arab? {.h2}
+## (48:38) Mengapa Islam turun di Arab?
 
 - Peradaban yang lebih maju, sebagaimana analogi kota dan desa, biasanya sudah kompleks secara sosial sehingga masyarakat yang tinggal di budaya yang maju seringkali meninggalkan tradisi dan kebudayaan lamanya. Khususnya, dalam soal tutur kata, sopan santun, dan lain sebagainya.
 - Orang Arab yang peradabannya masih sederhana, lebih mudah dikembalikan kepada tradisi yang hanif, meski berawal dari peradaban yang primitif dan barbar, namun orang Arab masih memegang teguh nilai-nilai dan tradisi pendahulunya.
 - Perlu dicatat juga, orang Arab kebanyakan masih berpegang teguh pada ajaran tauhid meski cara mengaplikasikannya salah. Namun bagaimanapun, ini masih lebih baik ketimbang tatanan masyarakat yang betul-betul sesat, hedonis, bahkan tidak percaya Tuhan.
 - Turunnya Islam di Arab menjadi sebuah pembuktian kekuasaan Allah, bahwa dengan diturunkannya Islam di daerah yang sangat primitif, namun dalam waktu yang relatif singkat mampu memutarbalikkan Arab yang primitif menjadi bangsa yang maju hingga saat ini.
 
-# QnA {.h1}
+# QnA
 
-## Hadi Nur Rofik (KAMMI UPR):{.h2}  
+## Hadi Nur Rofik (KAMMI UPR):  
 Izin bertanya bang. Pada saat terputusnya wahyu kepada Rasulullah selama kurang lebih enam bulan (mohon koreksi kalau salah), muncul ketidaktenangan dan kekhawatiran dalam diri Rasulullah. Pertanyaannya, jika hal tersebut dikaitkan ke kita sebagai kader dakwah gitu ya jika tidak ada amanah yang diberikan dan kita masih saja merasa tenang damai seolah-olah bebas tuntutan, padahal kita mengakunya aktivis dakwah. Apa yg harus kita lakukan sebagai intropeksi bagi diri kita?
 
 ### Jawaban:  
@@ -94,7 +90,6 @@ Intinya setiap kader dan aktivis dakwah wajib memiliki amaliyah. Kalaupun hendak
 
 [^3]: *'Uzlah* adalah aktivitas menyendiri untuk beribadah kepada Allah. Namun rincian ibadah apa yang dilakukan Rasulullah SAW dalam aktivitas ini, penulis tidak tahu karena ibadah ini dilaksanakan sebelum diturunkannya syari'at.
 
-# Poster {.h1}
+# Poster
 
 ![Poster Publikasi]({{ page.fileSlug | append: '.jpeg' | prepend: '/assets/img/' }})
-

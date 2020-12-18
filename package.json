@@ -46,6 +46,7 @@
     "readable-stream": "^3.6.0",
     "require-dir": "^1.2.0",
     "sass": "^1.30.0",
+    "tailwindcss": "^2.0.2",
     "wayback-sitemap-archive": "^1.0.1",
     "workbox-build": "^5.1.4"
   },

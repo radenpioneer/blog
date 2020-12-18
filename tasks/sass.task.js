@@ -11,13 +11,15 @@ sass.compiler = require('sass')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
+const tailwind = require('tailwindcss')
 
-const SRC = './src/sass/main.scss'
+const SRC = './src/_scss/main.scss'
 const DEST = './src/_includes/styles/'
-const WATCH = './src/sass/*.scss'
+const WATCH = './src/_scss/*.scss'
 
 gulp.task('generatecss', function() {
     let processors = [
+        tailwind,
         autoprefixer,
         importcss
     ]

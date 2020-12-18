@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Martel:wght@400;700;800;900&display=swap'); //google-fonts
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-customHeading font-black;
+}
+
+h1, .h1 {
+    @apply text-3xl;
+}
+
+h2, .h2 {
+    @apply text-2xl;
+}
+
+h3, .h3 {
+    @apply text-xl;
+}
+
+h4, .h4 {
+    @apply text-lg;
+}
+
+h5, .h5 {
+    @apply text-base;
+}
+
+h6, .h6 {
+    @apply text-sm;
+}
+
+ol {
+    @apply list-decimal;
+}
+
+ul {
+    @apply list-disc
+}
+
+#body {
+    @apply flex flex-col min-h-screen font-sans;
+}
+
+#siteheader {
+    @apply fixed overflow-hidden top-0 bg-white w-screen z-10 py-4 mb-1;
+    #siteheader-container {
+        @apply max-w-screen-xl grid grid-cols-3 place-items-center mx-auto px-4;
+        #siteheader-logo {
+            @apply col-start-2
+        }
+        #sidebar-button {
+            @apply hidden place-self-start bg-none border-none font-bold text-4xl;
+            button {
+                @apply ring-blue-300;
+            }
+        }
+    }
+
+}
+
+#sitemain {
+    @apply flex-1 pb-24 mt-24;
+}
+
+#postindex {
+    @apply max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 mx-auto;
+    .postindex-item {
+        @apply p-4 mb-4;
+        amp-img {
+            @apply rounded-lg mb-4;
+        }
+        h1 {
+            @apply text-xl mb-2;
+            &.noimage {
+                @apply text-2xl lg:text-4xl border-t-4 border-blue-500 pt-4;
+            }
+        }
+        .postindex-excerpt {
+            @apply text-base mb-2;
+        }
+        .postindex-meta {
+            @apply flex flex-row flex-wrap;
+            p {
+                @apply text-xs text-blue-500 border border-blue-500 rounded-full p-2 mr-2 mb-2;
+            }
+        }
+    }
+}
+
+#homeNav {
+    @apply max-w-screen-xl grid grid-cols-1 md:grid-cols-2 justify-items-center px-8 mx-auto;
+    #homeNavPrev {
+        @apply md:col-start-1 md:justify-self-start;
+    }
+    #homeNavNext {
+        @apply md:col-start-2 md:justify-self-end;
+    }
+    #homeNavPrev, #homeNavNext {
+        @apply border-2 border-blue-500 text-blue-500 rounded-full flex flex-row items-center p-2 mb-2;
+    }
+}
+
+#postcontent, #pagecontent {
+    @apply max-w-screen-lg grid grid-cols-4 gap-4 px-10 mx-auto;
+    #postcontent-header, #pagecontent-header {
+        @apply col-span-4 mb-4;
+        #pagecontent-title {
+            @apply text-center text-2xl md:text-6xl;
+        }
+        #postcontent-title {
+            @apply text-center text-2xl md:text-4xl;
+            &.noimage{
+                @apply text-left md:text-6xl;
+            }
+        }
+        #postcontent-subtitle, #pagecontent-subtitle {
+            @apply text-center italic text-lg text-gray-500;
+            &.noimage{
+                @apply text-left;
+            }
+        }
+        #postcontent-fimage, #pagecontent-fimage {
+            @apply rounded-lg mt-4;
+        }
+    }
+    #postcontent-aside {
+        @apply col-span-4 md:col-span-1;
+        #postcontent-date {
+            @apply text-base md:text-xl font-bold mb-4;
+        }
+    }
+    #postcontent-main {
+        @apply col-span-4 md:col-span-3;
+    }
+    #pagecontent-main {
+        @apply col-span-4;
+    }
+    #postcontent-main, #pagecontent-main {
+        p, ol, ul {
+            @apply text-lg mb-4;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply mb-4;
+        }
+        amp-img, amp-youtube, amp-video, amp-anim, amp-iframe {
+            @apply rounded-lg;
+        }
+        figure {
+            @apply grid mb-4;
+            amp-img,  amp-anim {
+                @apply place-self-center;
+            }
+            figcaption {
+                @apply text-center text-base text-gray-500 mt-2;
+            }
+        }
+    }
+    #postcontent-footer {
+        @apply col-span-4 col-start-1 md:col-start-2 md:col-span-3;
+    }
+}
+
+.mute {
+    @apply text-gray-500;
+}
+
+amp-social-share {
+    @apply mr-4 mb-4;
+    &[type='facebook'] {
+        mask-image: url('https://simpleicons.org/icons/facebook.svg');
+        background-image: none;
+        background-color: #1877F2;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='twitter'] {
+        mask-image: url('https://simpleicons.org/icons/twitter.svg');
+        background-image: none;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='pinterest'] {
+        mask-image: url('https://simpleicons.org/icons/pinterest.svg');
+        background-image: none;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='whatsapp'] {
+        mask-image: url('https://simpleicons.org/icons/whatsapp.svg');
+        background-image: none;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='line'] {
+        mask-image: url('https://simpleicons.org/icons/line.svg');
+        background-image: none;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='sms'] {
+        mask-image: url('https://simpleicons.org/icons/googlemessages.svg');
+        background-image: none;
+        background-color: #1A73E8;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    &[type='system'] {
+        mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%23fff' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z'/%3E%3C/svg%3E");
+        background-image: none;
+        background-color: #000000;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+}

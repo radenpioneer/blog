@@ -1,3 +1,4 @@
+const execSync = require('child_process').execSync
 const minify = require('html-minifier')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
 const typeset = require('eleventy-plugin-typeset')
@@ -20,6 +21,15 @@ module.exports = function(eleventyConfig) {
         }
 
         return coll
+    })
+
+    // build events
+    eleventyConfig.on('beforeBuild', function() {
+        execSync('npx gulp generatecss')
+    })
+
+    eleventyConfig.on('afterBuild', function() {
+        execSync('npx gulp generatesw')
     })
 
     //markdown configs
@@ -62,6 +72,7 @@ module.exports = function(eleventyConfig) {
     })
 
     eleventyConfig.addPlugin(typeset({
+        only: '#postcontent, #pagecontent',
         disable: ['ligatures', 'hyphenate']
     }))
 

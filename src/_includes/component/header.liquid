@@ -1,0 +1,11 @@
+<header id="siteheader" amp-fx="float-in-top">
+    <div id="siteheader-container">
+        <div id="sidebar-button">
+            <button on="tap:sidebar.toggle">&#x2630;</button>
+        </div>
+        <a id="siteheader-logo" href="/">
+            <amp-img src="{{ env.site.logo }}" width="50" height="50" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
+        </a>
+        <div class="pr3 mr3"></div>
+    </div>
+</header>
