@@ -35,16 +35,16 @@ permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | p
 </div>
 {% if pagination.href.previous or pagination.href.next %}
 <div id="homeNav">
-    {% if pagination.href.next %}
-    <a id="homeNavNext" href="{{ pagination.href.next }}">
-        <span class="mr-2">{{ "Tulisan Sebelumnya" | upcase }}</span>
-        <span class="text-4xl">&#x2771;</span>
-    </a>
-    {% endif %}
     {% if pagination.href.previous %}
     <a id="homeNavPrev" href="{{ pagination.href.previous }}">
         <span class="text-4xl">&#x2770;</span>
         <span class="ml-2">{{ "Tulisan Terbaru" | upcase }}</span>
+    </a>
+    {% endif %}
+    {% if pagination.href.next %}
+    <a id="homeNavNext" href="{{ pagination.href.next }}">
+        <span class="mr-2">{{ "Tulisan Sebelumnya" | upcase }}</span>
+        <span class="text-4xl">&#x2771;</span>
     </a>
     {% endif %}
 </div>

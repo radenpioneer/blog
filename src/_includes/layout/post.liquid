@@ -41,16 +41,16 @@ layout: layout/layout
 </article>
 {% if nextPost.url or prevPost.url %}
 <div id="homeNav">
-    {% if nextPost.url %}
-    <a id="homeNavNext" href="{{ nextPost.url }}">
-        <span class="mr-2">{{ nextPost.data.title | truncate: 20, '...' | upcase }}</span>
-        <span class="text-4xl">&#x2771;</span>
-    </a>
-    {% endif %}
     {% if prevPost.url %}
     <a id="homeNavPrev" href="{{ prevPost.url }}">
         <span class="text-4xl">&#x2770;</span>
         <span class="ml-2">{{ prevPost.data.title | truncate: 20, '...' | upcase }}</span>
+    </a>
+    {% endif %}
+    {% if nextPost.url %}
+    <a id="homeNavNext" href="{{ nextPost.url }}">
+        <span class="mr-2">{{ nextPost.data.title | truncate: 20, '...' | upcase }}</span>
+        <span class="text-4xl">&#x2771;</span>
     </a>
     {% endif %}
 </div>
