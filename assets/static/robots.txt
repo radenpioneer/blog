@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: {{ env.site.url }}/sitemap.xml
+Sitemap: /sitemap.xml
