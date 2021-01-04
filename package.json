@@ -8,8 +8,8 @@
     "url": "https://github.com/radenpioneer/blog.git"
   },
   "scripts": {
-    "start": "npx gulp serve",
-    "build": "npx gulp build",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "debug": "DEBUG=* npm run build 2>&1 | tee debug.log",
     "clean": "npx gulp clean",
     "prestart": "npm run clean"
@@ -24,6 +24,7 @@
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
+    "fibers": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
     "gulp-postcss": "^9.0.0",

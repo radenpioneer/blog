@@ -1,10 +1,9 @@
-const gulp = require('gulp')
 const workbox = require('workbox-build')
 
 const SWSRC = 'src/_sw/sw.js'
 const SWDEST = 'dist/sw.js'
 
-gulp.task('generatesw', () => {
+function main() {
     return workbox.injectManifest({
         swSrc: SWSRC,
         swDest: SWDEST,
@@ -18,8 +17,6 @@ gulp.task('generatesw', () => {
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024
     })
-})
+}
 
-gulp.task('watchsw', function() {
-    gulp.watch(SWDEST, gulp.parallel('generatesw'))
-})
+exports.default = main

@@ -1,4 +1,4 @@
-const gulp = require('gulp')
+const {src, dest} = require('gulp')
 const replace = require('gulp-replace')
 const pipeline = require('readable-stream').pipeline
 const changed = require('gulp-changed')
@@ -6,6 +6,7 @@ const changed = require('gulp-changed')
 //SASS Compiler
 const sass = require('gulp-sass')
 sass.compiler = require('sass')
+const Fiber = require('fibers')
 
 //PostCSS and plugins
 const postcss = require('gulp-postcss')
@@ -15,24 +16,21 @@ const tailwind = require('tailwindcss')
 
 const SRC = './src/_scss/main.scss'
 const DEST = './src/_includes/styles/'
-const WATCH = './src/_scss/*.scss'
 
-gulp.task('generatecss', function() {
+function main() {
     let processors = [
         tailwind,
         autoprefixer,
         importcss
     ]
     return pipeline(
-        gulp.src(SRC),
+        src(SRC),
         changed(DEST),
-        sass(),
+        sass({fiber: Fiber}),
         postcss(processors),
         replace(' !important', ''),
-        gulp.dest(DEST)
+        dest(DEST)
     )
-})
+}
 
-gulp.task('watchcss', function() {
-    gulp.watch(WATCH, gulp.parallel('generatecss'))
-})
+exports.default = main

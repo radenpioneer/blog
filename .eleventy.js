@@ -26,14 +26,15 @@ module.exports = function(eleventyConfig) {
     // watch targets
     eleventyConfig.addWatchTarget('./src/_scss/')
     eleventyConfig.addWatchTarget('./src/_sw/')
+    eleventyConfig.addWatchTarget('./tailwind.config.js')
 
     // build events
     eleventyConfig.on('beforeBuild', function() {
-        execSync('npx gulp generatecss')
+        execSync('npx gulp sass')
     })
 
     eleventyConfig.on('afterBuild', function() {
-        execSync('npx gulp generatesw')
+        execSync('npx gulp workbox')
     })
 
     //markdown configs
