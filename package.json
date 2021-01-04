@@ -42,7 +42,7 @@
     "markdown-it-toc-done-right": "^4.2.0",
     "moment": "^2.29.1",
     "outdent": "^0.7.1",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.2",
     "postcss-import-url": "^6.0.0",
     "readable-stream": "^3.6.0",
     "sass": "^1.30.0",
