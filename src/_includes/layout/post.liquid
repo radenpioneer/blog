@@ -8,7 +8,7 @@ layout: layout/layout
         <p id="postcontent-subtitle" {% unless image %}class="noimage"{% endunless %}>{{ subtitle }}</p>
         {% endif %}
         {% if image %}
-        <amp-img id="postcontent-fimage" src="{{ image }}" width="960" height="600" layout="responsive"></amp-img>
+        <amp-img id="postcontent-fimage" src="{{ image }}" width="960" height="600" layout="responsive" alt="{{ title }}"></amp-img>
         {% endif %}
     </header>
     <aside id="postcontent-aside">

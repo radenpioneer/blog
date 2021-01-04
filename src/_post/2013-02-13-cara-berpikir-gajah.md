@@ -1,6 +1,6 @@
 ---
 title: Cara Berpikir Gajah
-image: "https://source.unsplash.com/QJbyG6O0ick/800x600"
+image: "https://source.unsplash.com/QJbyG6O0ick/1600x1000"
 category:
     - esai
     - arsip

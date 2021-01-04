@@ -1,6 +1,6 @@
 ---
 title: Jas Kebesaran
-image: https://source.unsplash.com/SpqyMw0lrhw/800x600
+image: https://source.unsplash.com/SpqyMw0lrhw/1600x1000
 category:
     - diary
     - arsip
