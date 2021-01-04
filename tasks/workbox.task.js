@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const workbox = require('workbox-build')
 
-const SWSRC = 'src/workbox/sw.js'
+const SWSRC = 'src/_sw/sw.js'
 const SWDEST = 'dist/sw.js'
 
 gulp.task('generatesw', () => {

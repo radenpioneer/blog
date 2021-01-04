@@ -1,13 +1,13 @@
 const environment = process.env.ELEVENTY_ENV
 const PROD_ENV = 'prod'
-const prodUrl = 'https://radenpioneer.netlify.app/'
-const devUrl = 'http://localhost:8888/'
+const prodUrl = 'https://radenpioneer.netlify.app'
+const devUrl = 'http://localhost:8888'
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl
 const isProd = environment === PROD_ENV
 
 const dir = {
-    images: `assets/img/`,
-    favicons: `assets/favicon/`
+    images: `/assets/img/`,
+    favicons: `/assets/favicon/`
 }
 
 module.exports = {

@@ -23,6 +23,10 @@ module.exports = function(eleventyConfig) {
         return coll
     })
 
+    // watch targets
+    eleventyConfig.addWatchTarget('./src/_scss/')
+    eleventyConfig.addWatchTarget('./src/_sw/')
+
     // build events
     eleventyConfig.on('beforeBuild', function() {
         execSync('npx gulp generatecss')
@@ -60,23 +64,20 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
-    eleventyConfig.addPlugin(amphtml, {
-        dir: {
-            output: 'dist'
-        },
-        imageOptimization : {
-            urlPath: '/assets/img/o/'
-        },
-        minifyCSS: false,
-        validation: false
-    })
-
     eleventyConfig.addPlugin(typeset({
         only: '#postcontent, #pagecontent',
         disable: ['ligatures', 'hyphenate']
     }))
 
     eleventyConfig.addPlugin(require('./plugins'))
+
+    eleventyConfig.addPlugin(amphtml, {
+        dir: {
+            output: 'dist'
+        },
+        imageOptimization : false,
+        minifyCSS: false
+    })
 
     eleventyConfig.addTransform("minify", function(content, outputPath) {
         if (outputPath.endsWith(".html")) {
