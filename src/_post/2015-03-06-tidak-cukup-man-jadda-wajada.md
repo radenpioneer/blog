@@ -1,9 +1,7 @@
 ---
 title: Tidak cukup man jadda wajada
-image: "https://source.unsplash.com/-8ttvM3Ca94/1600x1000"
 category:
-    - esai
-    - arsip
+    - restored
 ---
 
 
@@ -13,7 +11,7 @@ Mengikuti trilogi ‘Negeri 5 Menara’ yang beliau tulis, sejatinya beliau memp
 
 *Man shobaro zhofiro*, secara bahasa artinya ‘barangsiapa bersabar, beruntung’. Ingin mencapai tujuan yang diinginkan, kita sebagaimana manusia tidak bisa melakukan semuanya secara instan, karena jurus ‘kun fayakun‘ itu hanya Allah *jalla sya’nuhu* saja yang memilikinya. Manusia, hanya bisa berusaha. Butuh kesabaran untuk menjalani semuanya, dan bersyukur.
 
-![Barangsiapa berjalan pada jalannya, maka sampailah ia.]({{ image }}){title="Photo by Bruno Bergher on Unsplash"}
+![Barangsiapa berjalan pada jalannya, maka sampailah ia.](https://source.unsplash.com/-8ttvM3Ca94/1600x1000){title="Photo by Bruno Bergher on Unsplash"}
 
 *Man saaro ‘ala darbi washola*, itu artinya ‘barangsiapa berjalan pada jalannya, maka sampailah ia’. Ibarat kata kalau mau pergi ke Jakarta, carilah kendaraan yang arahnya ke Jakarta, karena kalau pilih nanti tidak akan pernah sampai ke Jakarta. Sampainya nanti entah ke Papua atau ke kutub utara sana. Maksudnya, apabila kita ingin mencapai sebuah cita-cita, maka kita juga harus menempuh jalan yang tepat untuk mencapainya. Contoh, ingin jadi pengusaha sukses, maka mulailah belajar membangun usaha dari sekarang. Ingin punya keluarga bahagia, maka jangan pacaran, langsung menikah saja dengan wanita yang sholehah. Ingin jadi kyai belajarlah di pesantren, dan lain-lain.
 

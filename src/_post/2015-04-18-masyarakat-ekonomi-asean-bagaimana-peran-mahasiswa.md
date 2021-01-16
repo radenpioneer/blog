@@ -1,16 +1,14 @@
 ---
 title: Masyarakat Ekonomi ASEAN, Bagaimana Peran Mahasiswa?
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ASEAN_Nations_Flags_in_Jakarta_3.jpg/1280px-ASEAN_Nations_Flags_in_Jakarta_3.jpg"
 category:
-    - esai
-    - arsip
+    - restored
 ---
 
 Tak terasa, sudah tahun 2015. Tantangan bangsa ini kian sulit, karena pada akhir tahun ini akan segera dimulai Masyarakat Ekonomi ASEAN. Masyarakat Ekonomi ASEAN (MEA), merupakan suatu asosiasi yang dimana akan berlaku aturan perdagangan bebas (free trade) dan artinya, batas-batas (border) dari negara-negara ASEAN kian menipis, dan aturan-aturan border antar negara di ASEAN akan semakin melunak demi terlaksananya MEA. Tentu saja, ada dampak baik dan buruknya dari berlakunya MEA. Dampak baiknya, tentu saja akan ada kesempatan yang lebih luas terutama bagi para jobseeker â€” para pencari kerja â€” untuk bekerja di wilayah ASEAN lain selain negaranya sendiri. Artinya lapangan kerja semakin lebar, dan setiap perusahaan di  negara anggota MEA dapat merekrut karyawan di luar wilayah negaranya (selama masih anggota MEA) tanpa terhalang oleh peraturan border masing-masing negara.
 
 Indonesia, dengan wilayahnya yang meliputi sebagian besar wilayah MEA, tentu akan menjadi pasar yang seksi bagi para investor asing yang akan melakukan aktivitas perdagangan di wilayah Negara Kesatuan Republik Indonesia. Perilaku penduduknya yang cenderung konsumtif, jaminan jumlah pelanggan yang besar, banyaknya pengguna layanan telekomunikasi dan internet di Indonesia dan tentu saja, luas wilayahnya yang paling luas dibandingkan negara-negara lain di kawasan Asia Tenggara menjadi pertimbangan sendiri bagi para investor asing. Sayangnya, kesempatan ini tidak didukung dengan kesiapan yang matang dari pemerintah maupun warga negara Indonesia. Kualitas sumber daya manusia Indonesia pada saat ini hanya menduduki peringkat 6 dari 10 negara ASEAN, jauh di bawah Singapura dan Malaysia. Belum lagi kualitas pendidikan yang rata-rata yang masih di bawah standar, dengan 70% sekolah dasar dan menengah yang tersebar di seluruh penjuru negeri ini belum memenuhi kelayakan berdasarkan standar pendidikan nasional. Kurikulum pendidikan tinggi di negeri ini pun belum mampu untuk setara dengan pendidikan tinggi dari negara-negara jiran.
 
-![Bendera negara-negara anggota ASEAN. *Gunawan Kartapranata / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)*]({{ image }})
+![Bendera negara-negara anggota ASEAN. *Gunawan Kartapranata / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)*](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ASEAN_Nations_Flags_in_Jakarta_3.jpg/1280px-ASEAN_Nations_Flags_in_Jakarta_3.jpg)
 
 Mahasiswa, tentunya menjadi salah satu yang terdampak paling besar dalam kebijakan MEA ini. Lulusan perguruan tinggi di Indonesia tidak hanya bersaing dengan para jobseeker lokal lainnya, akan tetapi juga harus bersaing dengan jobseeker internasional. Tentu dengan ketidaksiapan yang tadi dipaparkan di atas, tentu akan sulit lulusan perguruan tinggi Indonesia untuk bersaing dengan lulusan perguruan tinggi di negara-negara lain. Itu baru lulusan perguruan tinggi, bagaimana dengan lulusan SMK, SMA atau yang lainnya?
 

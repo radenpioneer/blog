@@ -1,16 +1,14 @@
 ---
 title: Manusia dan Keistimewaannya
-image: "https://source.unsplash.com/oko_4WnoM98/1600x1000"
 category:
-    - esai
-    - arsip
+    - restored
 ---
 
 Manusia memiliki banyak keistimewaan. Keistimewaan yang pertama, Manusia terlahir sebagai makhluk yang mulia, manusia adalah makhluk yang lebih mulia dari malaikat, jin, dan seluruh seluruh makhluk penghuni surga lainnya dan setelah penciptaan manusia selesai Allah memerintahkan seluruh penduduk surga untuk bersujud kepadanya.
 
 Mengapa begitu? Mengapa manusia yang notabene diciptakan dari tanah bisa lebih mulia dari malaikat yang diciptakan dari cahaya? Dan bisa lebih mulia dari jin yang diciptakan dari api? Jin yang tidak terima pun kemudian protes dan didepak dari surga. Sebenarnya, Allah lebih tahu tentang hambanya yang mulia. Manusia diciptakan dari tanah. Tanah adalah komponen alam yang sangat menarik, tanah mengandung kehidupan, dan bisa menumbuhkan. Tanah juga elastis dan bisa dibentuk. Tanah juga bersifat menetap Dan di atas tanah kita bisa membangun apa pun ang kita inginkan. Mungkin karena itu zaman sekarang tanah begitu mahal.
 
-![Ilustrasi bayi manusia]({{ image }}){title="Photo by Filip Mroz on Unsplash"}
+![Ilustrasi bayi manusia](https://source.unsplash.com/oko_4WnoM98/1600x1000){title="Photo by Filip Mroz on Unsplash"}
 
 Keistimewaan yang kedua, setelah manusia diciptakan Allah meniupkan sebagian ruhnya ke dalam diri sang Adam. Maka dari itu manusia sekali lagi menjadi lebih mulia karena manusia memiliki komposisi diri yang unik, ruh yang ada dalam diri manusia berasa dari Allah. Ruh ini memang bisa kita artika apa pun yang kita mau, saya sendiri memiliki pemahaman bahwa sebenarnya Allah berkenan memberikan beberapa kesamaan antara kita dengan diri-Nya. Dan ruh kita ini sebenarnya memiliki hubungan yang sangat dekat dengan Allah. Dan karena ruh kita berasal dari Allah maka ruh kita memiliki sebagian kecil dari kekuatan Allah yang Maha Besar. Dan dengan ruh kita ini, kita bisa begitu dekat dengan Allah dan memintaNya membantu kita di setiap waktu. Dan ruh juga bisa saya artikan sebagai semangat. Dan manusia tanpa semangat sama saja dengan manusia mati. Karena itu saya melarang siapa pun, apalagi penduduk Indonesia untuk tidak pernah kehilangan semangat. Karena tanpa semangat, kita tidak ada bedanya dengan mayat.
 

@@ -1,9 +1,7 @@
 ---
 title: Jas Kebesaran
-image: https://source.unsplash.com/SpqyMw0lrhw/1600x1000
 category:
-    - diary
-    - arsip
+    - restored
 ---
 
 Iseng-iseng kuketikkan beberapa nama, nama yang dulu kukenal akrab di pondok. Lalu kubaca profil mereka dan isi postingan mereka, tak lupa foto-foto kenangan mereka yang terunggah rapi di laman profil mereka. Nihil. Lalu dengan isengnya kembali jariku mengetikkan nama sebuah organisasi dakwah ekstrakampus yang terkenal dengan aksinya itu. Keluar sebuah nama grup. Kucari nama yang mungkin dulu aku kenal. Ujung jariku terus menggulir trackpad laptop dan nama-nama itu…. semuanya kukenal baru di universitas, dan satu kejutan: Ternyata adik kelasku di SD yang tampak dalam daftar anggota grup tersebut. Tapi teman-teman pondok tetap nihil.
@@ -16,7 +14,7 @@ Dan mereka inilah yang kupertanyakan. Mengapa dari sekian ratus orang teman sean
 
 Ingat dulu ada ustadz pernah bilang: “Jas pondokmu itu terlalu besar buat kalian.”
 
-![Ilustrasi jas]({{ image }}){title="Photo by Dennis Ottink on Unsplash"}
+![Ilustrasi jas](https://source.unsplash.com/SpqyMw0lrhw/1600x1000){title="Photo by Dennis Ottink on Unsplash"}
 
 ---
 

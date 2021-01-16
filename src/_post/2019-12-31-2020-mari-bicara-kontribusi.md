@@ -1,8 +1,7 @@
 ---
 title: 2020, Mari Bicara Kontribusi
 category:
-    - esai
-    - kammi
+    - organisasi
 image: /assets/img/2020-mari-bicara-kontribusi.jpg
 ---
 

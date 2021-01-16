@@ -2,8 +2,7 @@
 title: Madrasah KAMMI Digital
 subtitle: Sebuah pengembangan dari esai yang saya tulis tiga tahun yang lalu, untuk memenuhi persyaratan DPMK KAMMI Tasikmalaya.
 category:
-    - esai
-    - kammi
+    - organisasi
 image: /assets/img/madrasah-kammi-digital.jpg
 ---
 
