@@ -14,7 +14,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      customHeading: ['Martel', ...defaultTheme.fontFamily.serif]
+      customHeading: ['Fraunces', ...defaultTheme.fontFamily.serif]
     },
     extend: {
       fontFamily: {
@@ -25,5 +25,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

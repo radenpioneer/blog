@@ -30,12 +30,22 @@ module.exports = function(eleventyConfig) {
 
     // build events
     eleventyConfig.on('beforeBuild', function() {
-        execSync('npx gulp sass')
+        execSync('npx gulp sass', {stdio: 'inherit'})
     })
 
     eleventyConfig.on('afterBuild', function() {
-        execSync('npx gulp workbox')
+        execSync('npx gulp workbox', {stdio: 'inherit'})
     })
+
+    //liquidjs libs
+    const { Liquid } = require('liquidjs')
+    const liquidOptions = {
+        extname: '.liquid',
+        dynamicPartials: false,
+        strict_filters: true,
+        root: ['src']
+    }
+    eleventyConfig.setLibrary('liquid', new Liquid(liquidOptions))
 
     //markdown configs
     const markdownIt = require("markdown-it")
