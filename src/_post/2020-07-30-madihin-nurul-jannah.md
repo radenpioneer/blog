@@ -1,7 +1,8 @@
 ---
 title: Madihin Nurul Jannah
 subtitle: Penampilan Madihin dalam agenda Latihan Muhadhoroh di PP Nurul Jannah Sawahan, Sampit.
-category:
+tags:
+    - non_tech
     - islami
 image: /assets/img/madihin-nurul-jannah.jpg
 ---

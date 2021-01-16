@@ -1,0 +1,28 @@
+---
+layout: layout/layout
+---
+<div id="posts">
+    <h1>{{ title }}</h1>
+    {% for post in posts %}
+    <article class="postsItem">
+        <header>
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <p>
+                <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time>
+                &bull;
+                {% for tag in post.data.tags %}
+                {% unless tag == 'post' %}
+                <span>{{ tag | replace: '_', ' ' | upcase }}</span>
+                {% unless forloop.last %}
+                &bull;
+                {% endunless %}
+                {% endunless %}
+                {% endfor %}
+            </p>
+        </header>
+        <main>
+            {{ post.templateContent | truncatewords: 30 }}
+        </main>
+    </article>
+    {% endfor %}
+</div>

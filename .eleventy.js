@@ -70,9 +70,12 @@ module.exports = function(eleventyConfig) {
                       .use(emoji)
                       .use(anchor)
                       .use(toc)
-
     eleventyConfig.setLibrary("md", markdownLib)
 
+    //deep merge
+    eleventyConfig.setDataDeepMerge(true)
+
+    //browsersync
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(typeset({

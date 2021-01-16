@@ -1,6 +1,6 @@
 ---
 title: Jas Kebesaran
-category:
+tags:
     - restored
 ---
 

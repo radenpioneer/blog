@@ -1,6 +1,7 @@
 ---
 title: Fakta Menarik Santri MDA Nurul Jannah
-category:
+tags:
+    - non_tech
     - islami
 ---
 

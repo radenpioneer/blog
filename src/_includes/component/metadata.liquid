@@ -78,8 +78,6 @@
     <meta name="twitter:image" content="{{ post_image | prepend: env.site.url }}">
     {% endif %}
     <meta name="twitter:creator" content="@radenpioneer">
-
-    <link rel="canonical" href="{{ absoluteUrl }}">
 {% else %}
     <script type="application/ld+json">
     {
@@ -109,6 +107,4 @@
     <meta name="twitter:description" content="{{ description }}">
     <meta name="twitter:image" content="{{ env.site.logo | prepend: env.site.url }}">
     <meta name="twitter:creator" content="@radenpioneer">
-
-    <link rel="canonical" href="{{ env.site.url }}">
 {% endif %}

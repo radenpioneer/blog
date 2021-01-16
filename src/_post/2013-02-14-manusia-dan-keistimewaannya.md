@@ -1,6 +1,6 @@
 ---
 title: Manusia dan Keistimewaannya
-category:
+tags:
     - restored
 ---
 

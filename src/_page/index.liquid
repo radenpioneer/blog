@@ -1,51 +1,23 @@
 ---
 layout: layout/layout
-pagination:
-    data: collections.post
-    size: 6
-    reverse: true
-    alias: posts
-permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
+permalink: "index.html"
 ---
-<div id="postindex">
-    {% for post in posts %}
-    <article class="postindex-item">
-        {% if post.data.image %}
+<div id="homePage">
+    <div id="featuredPosts">
+        <h1>{{ "Pos Terbaru" }}</h1>
+        {% assign posts = collections.post | sort: 'date' | reverse %}
+        {% for post in posts limit: 4 %}
         <a href="{{ post.url }}">
-            <amp-img src="{{ post.data.image }}" width="480" height="300" layout="responsive" alt="{{ post.data.title }}"></amp-img></a>
-        {% endif %}
-        <h1 {% unless post.data.image %}class="noimage"{% endunless %}>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </h1>
-        <main class="postindex-excerpt">
             {% if post.data.image %}
-            {{ post.templateContent | strip_html | truncatewords: 15 }}
-            {% else %}
-            {{ post.templateContent | strip_html | truncatewords: 25 }}
+            <amp-img src="{{ post.data.image }}" height="1" width="1" layout="responsive"></amp-img>
             {% endif %}
-        </main>
-        <aside class="postindex-meta">
-            <p><a href="{{ post.url }}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></a></p>
-            {% for item in post.data.category %}
-            <p>{{ item | upcase }}</p>
-            {% endfor %}
-        </aside>
-    </article>
-    {% endfor %}
+            <div>
+                <h2 class="{% unless post.data.image %}noimage{% endunless %}">{{ post.data.title }}</h2>
+                <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></p>
+            </div>
+        </a>
+        {% endfor %}
+        <p><a href="/post">Tulisan Lainnya</a></p>
+    </div>
 </div>
-{% if pagination.href.previous or pagination.href.next %}
-<div id="homeNav">
-    {% if pagination.href.previous %}
-    <a id="homeNavPrev" href="{{ pagination.href.previous }}">
-        <span class="text-4xl">&#x2770;</span>
-        <span class="ml-2">{{ "Tulisan Terbaru" | upcase }}</span>
-    </a>
-    {% endif %}
-    {% if pagination.href.next %}
-    <a id="homeNavNext" href="{{ pagination.href.next }}">
-        <span class="mr-2">{{ "Tulisan Sebelumnya" | upcase }}</span>
-        <span class="text-4xl">&#x2771;</span>
-    </a>
-    {% endif %}
-</div>
-{% endif %}
+

@@ -75,7 +75,10 @@
             @apply font-customHeading font-extrabold lg:text-center text-4xl lg:text-6xl;
         }
         > p {
-            @apply text-xl lg:text-2xl lg:text-center mt-4;
+            @apply text-base lg:text-xl lg:text-center mt-4;
+            > time, > span {
+                @apply transition text-gray-500 hover:text-blue-400;
+            }
         }
     }
     > main {
@@ -114,6 +117,66 @@
     }
 }
 
+#posts {
+    @apply max-w-screen-md mx-auto px-4 mt-10 lg:mt-20;
+    h1 {
+        @apply font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 transition text-black hover:text-blue-400;
+    }
+    article.postsItem {
+        @apply my-8;
+        header {
+            @apply mb-4;
+            h2 {
+                @apply font-customHeading font-extrabold text-2xl lg:text-4xl transition text-black hover:text-blue-400;
+            }
+            p {
+                @apply text-sm mt-2;
+                time, span {
+                    @apply transition text-gray-500 hover:text-blue-400 hover:underline
+                }
+            }
+        }
+        main {
+            @apply prose-lg;
+        }
+    }
+}
+
+#homePage {
+    @apply max-w-screen-lg mx-auto px-4;
+}
+
+#featuredPosts {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+    > h1 {
+        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-customHeading font-extrabold text-2xl lg:text-4xl transition hover:text-blue-400;
+    }
+    > a {
+        @apply rounded-lg shadow hover:shadow-lg p-2;
+        amp-img {
+            img {
+                @apply object-cover object-center rounded-lg;
+            }
+        }
+        > div {
+            @apply mt-2;
+            h2 {
+                @apply font-customHeading font-extrabold text-2xl break-words transition hover:text-blue-400;
+                &.noimage {
+                    @apply text-4xl;
+                }
+            } 
+            p {
+                @apply text-sm text-gray-500 transition hover:text-blue-400 ;
+            }
+        }
+    }
+    > p {
+        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right transition hover:text-blue-400;
+    }
+}
+
+/*
 .mute {
     @apply text-gray-500;
 }
@@ -166,3 +229,4 @@ amp-social-share {
         mask-size: contain;
     }
 }
+*/

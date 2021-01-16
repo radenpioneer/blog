@@ -4,7 +4,18 @@ layout: layout/layout
 <article id="content">
     <header>
         <h1>{{ title }}</h1>
-        <p><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></p>
+        <p>
+            <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable | upcase }}</time>
+            &bull;
+            {% for tag in tags %}
+            {% unless tag == 'post' %}
+            <span>{{ tag | replace: '_', ' ' | upcase }}</span>
+            {% unless forloop.last %}
+            &bull;
+            {% endunless %}
+            {% endunless %}
+            {% endfor %}
+        </p>
     </header>
     <main>
         {{ content }}
@@ -14,7 +25,7 @@ layout: layout/layout
             <h1>{{ "Tulisan Lainnya" | upcase }}</h1>
             <ul>
             {% assign posts = collections.post | sort: 'date' | reverse %}
-            {% for post in posts limit: 10 %}
+            {% for post in posts limit: 5 %}
             <li class="related">
                 <span class="text-gray-500 w-52 pr-4">{{ post.date | dateReadable }}</span>
                 <a class="relatedItem" href="{{ post.url }}">{{ post.data.title }}</a>

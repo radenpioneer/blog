@@ -1,6 +1,6 @@
 ---
 title: Tidak cukup man jadda wajada
-category:
+tags:
     - restored
 ---
 

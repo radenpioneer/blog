@@ -1,7 +1,8 @@
 ---
 title: 2020, Mari Bicara Kontribusi
-category:
+tags:
     - organisasi
+    - non_tech
 image: /assets/img/2020-mari-bicara-kontribusi.jpg
 ---
 

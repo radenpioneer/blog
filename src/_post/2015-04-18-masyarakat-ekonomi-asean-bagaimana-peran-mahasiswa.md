@@ -1,6 +1,6 @@
 ---
 title: Masyarakat Ekonomi ASEAN, Bagaimana Peran Mahasiswa?
-category:
+tags:
     - restored
 ---
 
