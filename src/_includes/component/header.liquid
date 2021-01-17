@@ -1,11 +1,13 @@
 <header id="siteheader" amp-fx="float-in-top">
     <div id="siteheader-container">
-        <div id="sidebar-button">
-            <button on="tap:sidebar.toggle">&#x2630;</button>
-        </div>
         <a id="siteheader-logo" href="/">
             <amp-img src="{{ env.site.logo }}" width="50" height="50" alt="{{ env.site.title | append: ' logo' }}"></amp-img>
+            <h1>{{ env.site.title | upcase }}</h1>
         </a>
-        <div class="pr3 mr3"></div>
+        <div id="siteheader-menu">
+            {% for item in menu %}
+            <a href="{{ item.url }}">{{ item.title | upcase }}</a>
+            {% endfor %}
+        </div>
     </div>
 </header>

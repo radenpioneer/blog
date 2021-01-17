@@ -79,7 +79,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(typeset({
-        only: '#content',
+        only: '#content, .postsItem',
         disable: ['ligatures', 'hyphenate']
     }))
 
