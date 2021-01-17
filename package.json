@@ -43,7 +43,7 @@
     "markdown-it-implicit-figures": "^0.10.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "moment": "^2.29.1",
-    "outdent": "^0.7.1",
+    "outdent": "^0.8.0",
     "postcss": "^8.2.4",
     "postcss-import-url": "^6.0.0",
     "readable-stream": "^3.6.0",
