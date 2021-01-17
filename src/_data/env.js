@@ -14,9 +14,9 @@ module.exports = {
     environment,
     isProd,
     site: {
-        title: "Sastronegoro",
+        title: "radenpioneer",
         description: "notes and thoughts",
-        logo: `${dir.images}/logo-rdnpnr-black.png`,
+        logo: `${dir.images}/profile.jpg`,
         url: baseUrl,
         themeColor: "#0074D9",
         images: `${baseUrl}${dir.images}`,

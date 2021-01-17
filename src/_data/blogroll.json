@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Max Böck",
+        "url": "https://mxb.dev/",
+        "description": "Inspirasi ide awal desain blog ini, terinspirasi dari blog ini.",
+        "category": "dev"
+    },
+    {
+        "title": "web.dev",
+        "url": "https://web.dev/blog/",
+        "description": "Resource bagus untuk belajar web development. Hampir semua trik saya belajarnya di sini.",
+        "category": "dev" 
+    },
+    {
+        "title": "Jecelyn Yeen",
+        "url": "https://jec.fyi/",
+        "description": "Blognya developer Chrome, orang Malaysia. Rujukan kalau baru belajar Eleventy. Skema peletakan file aku nyontoh dia.",
+        "category": "dev" 
+    }
+]

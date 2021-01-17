@@ -1,10 +1,22 @@
 [
     {
-        "title": "About",
-        "url": "/about"
+        "title": "Proyek",
+        "url": "/proyek"
     },
     {
-        "title": "Stories",
-        "url": "/story"
+        "title": "Tekno",
+        "url": "/post/tech"
+    },
+    {
+        "title": "Tulisan",
+        "url": "/post"
+    },
+    {
+        "title": "Lama",
+        "url": "/post/old"
+    },
+    {
+        "title": "Tentang",
+        "url": "/about"
     }
 ]

@@ -1,4 +1,5 @@
 ---
+layout: false
 title: Offline
 permalink: "offline.html"
 norobots: true

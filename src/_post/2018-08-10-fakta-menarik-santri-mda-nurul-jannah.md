@@ -1,9 +1,8 @@
 ---
 title: Fakta Menarik Santri MDA Nurul Jannah
-category:
-    - esai
-    - nurul jannah
-    - dokumentasi
+tags:
+    - non_tech
+    - islami
 ---
 
 Mungkin hal-hal berikut di bawah ini akan jarang kita temukan di sekolah umum manapun. Berdasarkan pengalaman saya ketika mengajar di PP Nurul Jannah Sawahan:

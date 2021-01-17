@@ -1,7 +1,24 @@
-<footer class="hidden">
-    <div>
-        <div>
-            <span class="mute">&copy; {% currentYear %} {{ env.site.title | upcase }}</span>
+<footer id="sitefooter">
+    <div id="sitefooter-container">
+        <div class="sitefooter-item">
+            <p>&copy; 2012 - {% currentYear %}</p>
+            <p><a href="{{ env.site.url }}">{{ env.site.title }}</a></p>
+        </div>
+        <div class="sitefooter-item">
+            <p>{{ "Links" }}</p>
+            {% for link in links %}
+            <p><a href="{{ link.url }}">{{ link.title }}</a></p>
+            {% endfor %}
+        </div>
+        <div class="sitefooter-item">
+            <p>{{ "Social" }}</p>
+            {% for link in social %}
+            <p><a href="{{ link.url }}">{{ link.title }}</a></p>
+            {% endfor %}
+        </div>
+        <div class="sitefooter-icons">
+            <a href="/feed">{% include component/svg/rss.svg %}</a>
+            <a href="https://github.com/radenpioneer/blog">{% include component/svg/github.svg %}</a>
         </div>
     </div>
 </footer>

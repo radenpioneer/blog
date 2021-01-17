@@ -1,5 +1,4 @@
 {
     "tags": "static",
-    "layout": "layout/page",
     "permalink": "{{ page.fileSlug }}.html"
 }

@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 
 <!--title-->
-{% if title %}
+{% if title and page.url != '/' %}
 <title>{{ title }} - {{ env.site.title }}</title>
 {% else %}
 <title>{{ env.site.title }} - {{ env.site.description }}</title>
@@ -13,6 +13,8 @@
 {% unless eleventyExcludeFromCollections %}
 {% include component/metadata %}
 {% endunless %}
+
+<link rel="canonical" href="{{ page.url | prepend: env.site.url }}">
 
 {% if eleventyExcludeFromCollections %}
 <meta name="robots" content="noindex"/>

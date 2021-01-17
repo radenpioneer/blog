@@ -1,57 +1,37 @@
 ---
 layout: layout/layout
 ---
-<article id="postcontent">
-    <header id="postcontent-header">
-        <h1 id="postcontent-title" {% unless image %}class="noimage"{% endunless %}>{{ title }}</h1>
-        {% if subtitle %}
-        <p id="postcontent-subtitle" {% unless image %}class="noimage"{% endunless %}>{{ subtitle }}</p>
-        {% endif %}
-        {% if image %}
-        <amp-img id="postcontent-fimage" src="{{ image }}" width="960" height="600" layout="responsive" alt="{{ title }}"></amp-img>
-        {% endif %}
+<article id="content">
+    <header>
+        <h1>{{ title }}</h1>
+        <p>
+            <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable | upcase }}</time>
+            &bull;
+            {% for tag in tags %}
+            {% unless tag == 'post' %}
+            <span>{{ tag | replace: '_', ' ' | upcase }}</span>
+            {% unless forloop.last %}
+            &bull;
+            {% endunless %}
+            {% endunless %}
+            {% endfor %}
+        </p>
     </header>
-    <aside id="postcontent-aside">
-        <div class="mb-2">
-            <p class="mute text-xs">Diterbitkan pada tanggal</p>
-            <p id="postcontent-date"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></p>
-        </div>
-        <div class="mb-2">
-            <p class="block mute text-xs mb-1">Tulisan ini tentang</p>
-            <div class="flex flex-row flex-wrap">
-                {% for item in category %}
-                <p class="border border-blue-500 text-xs text-blue-500 rounded-full p-1 mr-1 mb-1">{{ item | upcase }}</p>
-                {% endfor %}
-            </div>
-        </div>
-        <div>
-            <h1 class="h4 mb-4">Share Artikel ini</h1>
-            {% include component/social %}
-        </div>
-    </aside>
-    <main id="postcontent-main">
+    <main>
         {{ content }}
     </main>
-    <footer id="postcontent-footer">
-        <div>
-            <h1 class="h3">Komentar Anda</h1>
-            {% include component/comment %}
+    <footer>
+        <div id="contentRelated">
+            <h1>{{ "Tulisan Lainnya" | upcase }}</h1>
+            <ul>
+            {% assign posts = collections.post | sort: 'date' | reverse %}
+            {% for post in posts limit: 5 %}
+            <li class="related">
+                <span class="text-gray-500 w-52 pr-4">{{ post.date | dateReadable }}</span>
+                <a class="relatedItem" href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+            {% endfor %}
+            </ul>
         </div>
     </footer>
 </article>
-{% if nextPost.url or prevPost.url %}
-<div id="homeNav">
-    {% if prevPost.url %}
-    <a id="homeNavPrev" href="{{ prevPost.url }}">
-        <span class="text-4xl">&#x2770;</span>
-        <span class="ml-2">{{ prevPost.data.title | truncate: 20, '...' | upcase }}</span>
-    </a>
-    {% endif %}
-    {% if nextPost.url %}
-    <a id="homeNavNext" href="{{ nextPost.url }}">
-        <span class="mr-2">{{ nextPost.data.title | truncate: 20, '...' | upcase }}</span>
-        <span class="text-4xl">&#x2771;</span>
-    </a>
-    {% endif %}
-</div>
-{% endif %}

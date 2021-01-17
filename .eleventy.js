@@ -30,12 +30,22 @@ module.exports = function(eleventyConfig) {
 
     // build events
     eleventyConfig.on('beforeBuild', function() {
-        execSync('npx gulp sass')
+        execSync('npx gulp sass', {stdio: 'inherit'})
     })
 
     eleventyConfig.on('afterBuild', function() {
-        execSync('npx gulp workbox')
+        execSync('npx gulp workbox', {stdio: 'inherit'})
     })
+
+    //liquidjs libs
+    const { Liquid } = require('liquidjs')
+    const liquidOptions = {
+        extname: '.liquid',
+        dynamicPartials: false,
+        strict_filters: true,
+        root: ['src']
+    }
+    eleventyConfig.setLibrary('liquid', new Liquid(liquidOptions))
 
     //markdown configs
     const markdownIt = require("markdown-it")
@@ -60,13 +70,16 @@ module.exports = function(eleventyConfig) {
                       .use(emoji)
                       .use(anchor)
                       .use(toc)
-
     eleventyConfig.setLibrary("md", markdownLib)
 
+    //deep merge
+    eleventyConfig.setDataDeepMerge(true)
+
+    //browsersync
     eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(typeset({
-        only: '#postcontent, #pagecontent',
+        only: '#content, .postsItem',
         disable: ['ligatures', 'hyphenate']
     }))
 
