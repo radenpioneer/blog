@@ -1,0 +1,15 @@
+---
+layout: layout/layout
+title: Blogroll
+---
+<div id="blogroll">
+    <h1>Blogroll</h1>
+    {% assign links = blogroll | sort: 'title' %}
+    {% for item in links %}
+    <div class="blogrollItem">
+        <h1>{{ item.title }}</h1>
+        <p class="blogrollUrl"><a href="{{ item.url }}">{{ item.url }}</a> &bull; {{ item.category | upcase }}</p>
+        <p class="blogrollDesc">{{ item.description }}</p>
+    </div>
+    {% endfor %}
+</div>
