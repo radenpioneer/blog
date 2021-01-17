@@ -9,13 +9,13 @@
 }
 
 #siteheader {
-    @apply fixed overflow-hidden top-0 bg-white w-screen z-10 py-4 mb-1;
+    @apply fixed overflow-hidden top-0 bg-white w-screen shadow-sm z-10 py-4 lg:py-8 mb-1;
     #siteheader-container {
-        @apply max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 mx-auto px-4;
+        @apply max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 gap-y-2 mx-auto px-8;
         #siteheader-logo {
             @apply flex flex-row items-center;
             >h1 {
-                @apply font-extrabold tracking-widest text-lg ml-2;
+                @apply font-extrabold tracking-widest text-lg transition hover:text-blue-400 ml-2;
             }
         }
         #siteheader-menu {
@@ -29,7 +29,7 @@
             }
 
             a {
-                @apply font-bold p-2 rounded transition hover:text-blue-400 hover:bg-blue-400 hover:bg-opacity-10;
+                @apply font-bold p-2 rounded-lg transition hover:text-blue-400 hover:bg-blue-400 hover:bg-opacity-10;
             }
         }
     }
@@ -95,7 +95,7 @@
         @apply font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 transition text-black hover:text-blue-400;
     }
     article.postsItem {
-        @apply my-8;
+        @apply rounded-lg shadow hover:shadow-lg p-4 my-8;
         header {
             @apply mb-4;
             h2 {
@@ -115,16 +115,38 @@
 }
 
 #homePage {
-    @apply max-w-screen-lg mx-auto px-4;
+    @apply max-w-screen-lg grid grid-cols-1 gap-16 mx-auto px-8;
+}
+
+#hello {
+    > p {
+        @apply text-base font-bold tracking-wider mb-4; 
+        > span {
+            @apply transition text-gray-500 hover:text-blue-400;
+        }
+    }
+    > h1 {
+        @apply font-customHeading font-extrabold text-4xl lg:text-6xl;
+        > span {
+            @apply transition hover:text-blue-400;
+        }
+    }
+
+    #description {
+        @apply prose prose-lg lg:prose-2xl mt-4;
+    }
 }
 
 #featuredPosts {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
     > h1 {
-        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-customHeading font-extrabold text-2xl lg:text-4xl transition hover:text-blue-400;
+        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-customHeading font-extrabold text-2xl lg:text-4xl;
+        > span {
+            @apply transition hover:text-blue-400;
+        }
     }
     > a {
-        @apply rounded-lg shadow hover:shadow-lg p-2;
+        @apply rounded-lg shadow hover:shadow-lg p-4;
         amp-img {
             img {
                 @apply object-cover object-center rounded-lg;
@@ -144,7 +166,10 @@
         }
     }
     > p {
-        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right transition hover:text-blue-400;
+        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right ;
+        >a {
+            @apply rounded-lg transition text-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transform translate-x-0 hover:translate-x-2 p-2 -mr-2;
+        }
     }
 }
 

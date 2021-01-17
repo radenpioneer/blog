@@ -1,23 +1,5 @@
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
-
-{% assign icons = "128, 196" | split: ", " %}
-{% for icon in icons %}
-<link rel="icon" type="image/png" href="{{ env.site.favicons }}favicon-{{ icon }}.png" sizes="{{ icon }}x{{ icon }}">
-{% endfor %}
-
-<!--apple-->
-<link rel="mask-icon" href="{{ env.site.favicons }}favicon.svg" color="{{ env.site.themeColor }}">
-
-{% assign appleIcons = "120, 152, 180" | split: ", " %}
-{% for icon in appleIcons %}
-<link rel="apple-touch-icon" href="{{ env.site.favicons }}favicon-{{ icon }}.png" sizes="{{ icon }}x{{ icon }}">
-{% endfor %}
-
-<!--windows-->
-<meta name="msapplication-TileColor" content="#2b5797" />
-<meta name="msapplication-TileImage" content="{{ env.site.favicons }}favicon-144.png" />
-<meta name="msapplication-config" content="browserconfig.xml" />
-
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="{{ env.site.themeColor }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">

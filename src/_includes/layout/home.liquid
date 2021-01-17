@@ -1,10 +1,16 @@
 ---
 layout: layout/layout
-permalink: "index.html"
 ---
 <div id="homePage">
+    <div id="hello">
+        <p><span>{{ subtitle | upcase }}</span></p>
+        <h1><span>{{ title }}</span></h1>
+        <div id="description">
+            {{ content }}
+        </div>
+    </div>
     <div id="featuredPosts">
-        <h1>{{ "Pos Terbaru" }}</h1>
+        <h1><span>{{ "Pos Terbaru" }}</span></h1>
         {% assign posts = collections.post | sort: 'date' | reverse %}
         {% for post in posts limit: 4 %}
         <a href="{{ post.url }}">
@@ -17,7 +23,6 @@ permalink: "index.html"
             </div>
         </a>
         {% endfor %}
-        <p><a href="/post">Tulisan Lainnya</a></p>
+        <p><a href="/post">{{ "Tulisan Lainnya" | upcase }} <span>&rarr;</span></a></p>
     </div>
 </div>
-
