@@ -24,4 +24,4 @@ dist
 debug.log
 
 # css output
-src/_includes/styles/main.css
+src/_includes/styles/
