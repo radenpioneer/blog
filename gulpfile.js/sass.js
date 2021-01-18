@@ -14,7 +14,7 @@ const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
 const tailwind = require('tailwindcss')
 
-const SRC = './src/_scss/main.scss'
+const SRC = './src/_scss/*.scss'
 const DEST = './src/_includes/styles/'
 
 function main() {

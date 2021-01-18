@@ -16,5 +16,17 @@
         "url": "https://jec.fyi/",
         "description": "Blognya developer Chrome, orang Malaysia. Rujukan kalau baru belajar Eleventy. Skema peletakan file aku nyontoh dia.",
         "category": "dev" 
+    },
+    {
+        "title": "Zach Leatherman",
+        "url": "https://www.zachleat.com/",
+        "description": "Authornya Eleventy.",
+        "category": "dev" 
+    },
+    {
+        "title": "Eleventy",
+        "url": "https://11ty.dev/",
+        "description": "Eleventy, generator situs statik yang jadi bahan utama blog ini.",
+        "category": "dev" 
     }
 ]

@@ -2,17 +2,11 @@
 layout: layout/layout
 ---
 
-<article id="pagecontent">
-    <header id="pagecontent-header">
-        <h1 id="pagecontent-title" {% unless image %}class="noimage"{% endunless %}>{{ title }}</h1>
-        {% if subtitle %}
-        <p id="pagecontent-subtitle" {% unless image %}class="noimage"{% endunless %}>{{ subtitle }}</p>
-        {% endif %}
-        {% if image %}
-        <amp-img id="pagecontent-fimage" src="{{ image }}" width="960" height="600" layout="responsive"></amp-img>
-        {% endif %}
+<article id="content">
+    <header>
+        <h1>{{ title }}</h1>
     </header>
-    <main id="pagecontent-main">
+    <main>
         {{ content }}
     </main>
 </article>
