@@ -86,11 +86,12 @@
             @apply font-customHeading;
         }
         figure {
+            @apply grid grid-cols-1 place-items-center;
             img {
                 @apply object-cover object-center rounded-lg m-0;
             }
             figcaption {
-                @apply text-base text-center text-gray-500;
+                @apply text-base text-center text-gray-500 m-0 py-2;
             }
         }
     }
