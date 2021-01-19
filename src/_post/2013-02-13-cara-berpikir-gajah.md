@@ -1,5 +1,6 @@
 ---
 title: Cara Berpikir Gajah
+date: 2013-02-13
 tags:
     - restored
 ---

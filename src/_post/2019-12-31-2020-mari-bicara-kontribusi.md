@@ -1,5 +1,6 @@
 ---
 title: 2020, Mari Bicara Kontribusi
+date: 2019-12-31
 tags:
     - organisasi
     - non_tech
