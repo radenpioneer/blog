@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+public_folder: "img/uploads"
+collections:
+  - name: "post"
+    label: "Tulisan"
+    folder: "src/_post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Subjudul"
+        name: "subtitle"
+        widget: "string"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
+      - label: "Kategori"
+        name: "tags"
+        widget: "list"
+      - label: "Gambar"
+        name: "image"
+        widget: "image"
+      - label: "Konten"
+        name: "body"
+        widget: "markdown"
