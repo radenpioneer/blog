@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-publish_mode: editorial_workflow
+site_url: https://radenpioneer.netlify.app
 media_folder: "assets/img/uploads"
 public_folder: "img/uploads"
 collections:
@@ -34,3 +34,5 @@ collections:
       - label: "Konten"
         name: "body"
         widget: "markdown"
+    editor:
+      preview: false
