@@ -1,5 +1,6 @@
 ---
 title: Pesantren Elit
+date: 2020-09-04
 tags:
     - islami
     - non_tech

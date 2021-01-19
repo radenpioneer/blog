@@ -16,6 +16,7 @@ collections:
       - label: "Subjudul"
         name: "subtitle"
         widget: "string"
+        required: false
       - label: "Tanggal"
         name: "date"
         widget: "datetime"
@@ -25,6 +26,11 @@ collections:
       - label: "Gambar"
         name: "image"
         widget: "image"
+        required: false
+      - label: "Sembunyikan"
+        name: "eleventyExcludeFromCollections"
+        widget: "boolean"
+        required: false
       - label: "Konten"
         name: "body"
         widget: "markdown"
