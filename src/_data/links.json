@@ -4,6 +4,10 @@
         "url": "/blogroll"
     },
     {
+        "title": "Manajer Konten",
+        "url": "/admin"
+    },
+    {
         "title": "Kebijakan Privasi",
         "url": "/privacy"
     },
