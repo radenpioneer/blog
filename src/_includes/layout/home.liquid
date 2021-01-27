@@ -17,10 +17,8 @@ layout: layout/layout
             {% if post.data.image %}
             <amp-img src="{{ post.data.image }}" height="1" width="1" layout="responsive" alt="{{ post.data.title }}" title="{{ post.data.title }}"></amp-img>
             {% endif %}
-            <div>
-                <h2 class="{% unless post.data.image %}noimage{% endunless %}">{{ post.data.title }}</h2>
-                <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></p>
-            </div>
+            <h2 class="{% unless post.data.image %}noimage{% endunless %}">{{ post.data.title }}</h2>
+            <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></p>
         </a>
         {% endfor %}
         <p><a href="/post">{{ "Tulisan Lainnya" | upcase }} <span>&rarr;</span></a></p>

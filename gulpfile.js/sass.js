@@ -10,7 +10,7 @@ const Fiber = require('fibers')
 
 //PostCSS and plugins
 const postcss = require('gulp-postcss')
-const autoprefixer = require('autoprefixer')
+const polyfills = require('postcss-preset-env')
 const importcss = require('postcss-import-url')
 const tailwind = require('tailwindcss')
 
@@ -20,8 +20,8 @@ const DEST = './src/_includes/styles/'
 function main() {
     let processors = [
         tailwind,
-        autoprefixer,
-        importcss
+        importcss,
+        polyfills
     ]
     return pipeline(
         src(SRC),
