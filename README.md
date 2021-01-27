@@ -1,6 +1,6 @@
 # radenpioneer.netlify.app
 
-Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan [Eleventy](https://11ty.dev) dan [Tailwind CSS](https://tailwindcss.com/).
+Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan [Eleventy](https://11ty.dev) dan [Tailwind CSS](https://tailwindcss.com/). [AMP](https://amp.dev)-first blog.
 
 ## Development lokal
 
