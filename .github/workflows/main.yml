@@ -1,12 +1,12 @@
 # .github/workflows/main.yml
 
-name: Daily Build
+name: Annual Build
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 1 1 1 *'
 jobs:
   build:
-    name: Netlify Daily Build
+    name: Netlify Annual Build
     runs-on: ubuntu-latest
     steps:
       - name: Curl request

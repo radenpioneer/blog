@@ -15,7 +15,7 @@ layout: layout/layout
         {% for post in posts limit: 4 %}
         <a href="{{ post.url }}">
             {% if post.data.image %}
-            <amp-img src="{{ post.data.image }}" height="1" width="1" layout="responsive"></amp-img>
+            <amp-img src="{{ post.data.image }}" height="1" width="1" layout="responsive" alt="{{ post.data.title }}" title="{{ post.data.title }}"></amp-img>
             {% endif %}
             <div>
                 <h2 class="{% unless post.data.image %}noimage{% endunless %}">{{ post.data.title }}</h2>

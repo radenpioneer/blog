@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+site_url: https://radenpioneer.netlify.app
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 public_folder: "img/uploads"
@@ -34,3 +35,31 @@ collections:
       - label: "Konten"
         name: "body"
         widget: "markdown"
+    editor:
+      preview: false
+  - name: "page"
+    label: "Halaman"
+    folder: "src/_page/static"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Subjudul"
+        name: "subtitle"
+        widget: "string"
+        required: false
+      - label: "Gambar"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Sembunyikan"
+        name: "eleventyExcludeFromCollections"
+        widget: "boolean"
+        required: false
+      - label: "Konten"
+        name: "body"
+        widget: "markdown"
+    editor:
+      preview: false
