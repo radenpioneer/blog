@@ -16,4 +16,4 @@ kemudian buka alamat [localhost:8080](http://localhost:8080)
 ## Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/086d0742-8310-42b8-a5c5-f2dc4589ca13/deploy-status)](https://app.netlify.com/sites/radenpioneer/deploys)
-[![devDependencies](https://david-dm.org/radenpioneer/blog.svg?type=dev)](https://david-dm.org/radenpioneer/blog?type=dev)
+[![devDependencies](https://david-dm.org/radenpioneer/blog/dev-status.svg/)](https://david-dm.org/radenpioneer/blog/?type=dev)
