@@ -3,7 +3,7 @@ backend:
 site_url: https://radenpioneer.netlify.app
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
-public_folder: "/img/uploads"
+public_folder: "assets/img/uploads"
 collections:
   - name: "post"
     label: "Tulisan"
