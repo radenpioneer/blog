@@ -75,11 +75,11 @@
         }
         > p {
             @apply text-base lg:text-xl lg:text-center mt-4;
-            > time, > span {
+            &.time > time, &.time > span {
                 @apply transition text-gray-500 hover:text-blue-400;
             }
             &.description {
-                @apply font-bold text-blue-400;
+                @apply text-base lg:text-lg font-bold text-blue-400 mb-2;
             }
         }
     }

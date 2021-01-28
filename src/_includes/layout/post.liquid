@@ -3,9 +3,9 @@ layout: layout/layout
 ---
 <article id="content">
     <header>
-        <p class="description">{{ description }}</p>
+        <p class="description">{{ description | upcase }}</p>
         <h1>{{ title }}</h1>
-        <p>
+        <p class="time">
             <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable | upcase }}</time>
             &bull;
             {% for tag in tags %}
