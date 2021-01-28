@@ -4,6 +4,7 @@ date: 2021-01-28T01:40:49.701Z
 tags:
   - tech
   - web
+image: https://miro.medium.com/max/2400/1*8h_5UEnN1erjyU-1DDKJFg.png
 ---
 Belakangan ini mencoba lagi hal-hal baru di JAMstack. Sebenarnya sejak beberapa bulan yang lalu ingin sedikit bermain-main dengan *front-end framework* berbasis JS, seperti Vue. Tapi cuma belajar dari dokumentasi ofisial kok kayaknya susah banget ya.
 
