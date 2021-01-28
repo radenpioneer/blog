@@ -1,6 +1,6 @@
 ---
 title: Madrasah KAMMI Digital
-description: Sebuah pengembangan dari esai yang saya tulis tiga tahun yang lalu
+description: Pengembangan Esai DPMK Tasikmalaya 2017
 date: 2020-04-07
 tags:
   - organisasi
