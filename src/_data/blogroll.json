@@ -2,31 +2,31 @@
     {
         "title": "Max Böck",
         "url": "https://mxb.dev/",
-        "description": "Inspirasi ide awal desain blog ini, terinspirasi dari blog ini.",
+        "description": "Desainer dan web developer berbasis di Wina, Austria.",
         "category": "dev"
     },
     {
         "title": "web.dev",
         "url": "https://web.dev/blog/",
-        "description": "Resource bagus untuk belajar web development. Hampir semua trik saya belajarnya di sini.",
+        "description": "Wadah untuk belajar membangun web modern. Baik yang sudah pro atau baru belajar.",
         "category": "dev" 
     },
     {
         "title": "Jecelyn Yeen",
         "url": "https://jec.fyi/",
-        "description": "Blognya developer Chrome, orang Malaysia. Rujukan kalau baru belajar Eleventy. Skema peletakan file aku nyontoh dia.",
+        "description": "Developer Google Chrome berbasis di Malaysia.",
         "category": "dev" 
     },
     {
         "title": "Zach Leatherman",
         "url": "https://www.zachleat.com/",
-        "description": "Authornya Eleventy.",
+        "description": "Author Eleventy. Developer web bekerja di Netlify.",
         "category": "dev" 
     },
     {
         "title": "Eleventy",
         "url": "https://11ty.dev/",
-        "description": "Eleventy, generator situs statik yang jadi bahan utama blog ini.",
+        "description": "Generator situs statik berbasis Javascript/NodeJS. Alternatif sekaligus kompetitor dari Jekyll. Bisa digunakan tanpa konfigurasi sama sekali.",
         "category": "dev" 
     }
 ]

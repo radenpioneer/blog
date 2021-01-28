@@ -1,6 +1,6 @@
 ---
 title: Peran Pemuda dalam Menghadapi Pilkada di Era 4.0
-subtitle: Studium Generale Musda VI KAMMI Palangka Raya
+description: Studium Generale Musda VI KAMMI Palangka Raya
 date: 2019-12-27
 image: "/assets/img/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg"
 tags:

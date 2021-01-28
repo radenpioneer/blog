@@ -14,8 +14,8 @@ collections:
       - label: "Judul"
         name: "title"
         widget: "string"
-      - label: "Subjudul"
-        name: "subtitle"
+      - label: "Deskripsi"
+        name: "description"
         widget: "string"
         required: false
       - label: "Tanggal"

@@ -78,6 +78,9 @@
             > time, > span {
                 @apply transition text-gray-500 hover:text-blue-400;
             }
+            &.description {
+                @apply font-bold text-blue-400;
+            }
         }
     }
     > main {
@@ -204,7 +207,7 @@
         @apply lg:col-span-4 font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 transition text-black hover:text-blue-400;
     }
     .blogrollItem {
-        @apply shadow hover:shadow-lg p-4;
+        @apply rounded-lg shadow hover:shadow-lg p-4;
         h1 {
             @apply font-customHeading font-extrabold text-xl lg:text-3xl mb-2
         }
