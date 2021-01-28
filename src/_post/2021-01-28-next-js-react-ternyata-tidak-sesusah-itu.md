@@ -10,4 +10,8 @@ Belakangan ini mencoba lagi hal-hal baru di JAMstack. Sebenarnya sejak beberapa 
 
 Nah baru-baru ini menjajal kemampuan [Next.JS](https://nextjs.org/), framework berbasis React/JSX. Dari dulu pingin bermain-main dengan framework semacam ini karena kecepatannya dan kalau dalam persepsi *user-interface* lebih mendekati aplikasi *native*. Apalagi selama ini sudah membuat aplikasi PWA. Sehingga dapat mengurangi batasan yang selama ini kalau menggunakan vanilla HTML + AMP.
 
-Saya menggunakan project lama saya yang saat ini masih ongoing -- website [DPC PKS Mentawa Baru Ketapang](https://pksmbketapang.org/) -- yang memang saya ingin redesign sebab ada beberapa batasan yang saya alami ketika men
+Saya menggunakan project lama saya yang saat ini masih ongoing -- website [DPC PKS Mentawa Baru Ketapang](https://pksmbketapang.org/) -- yang memang saya ingin redesign. 
+
+![Website DPC PKS MB Ketapang yang berbasis Eleventy.](img/uploads/pksmbketapang.org_.png "Website DPC PKS MB Ketapang yang berbasis Eleventy.")
+
+Setelah menggunakan NextJS ternyata React tidak sesulit yang saya rasakan selama ini. Bahkan lebih mudah dipahami berkat dokumentasinya yang mudah dipahami. Dalam hanya waktu sekitar 3 hari saya berhasil mentransformasikan project yang sebelumnya menggunakan Eleventy + AMP + Basscss, menjadi berbasis NextJS. Namun bagaimanapun proses perubahan itu mengharuskan saya untuk menghapus semua kode untuk kemudian digantikan dengan kode-kode NextJS.
