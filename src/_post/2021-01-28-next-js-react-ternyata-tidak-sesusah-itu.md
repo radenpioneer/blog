@@ -15,3 +15,5 @@ Saya menggunakan project lama saya yang saat ini masih ongoing -- website [DPC P
 ![Website DPC PKS MB Ketapang yang berbasis Eleventy.](img/uploads/pksmbketapang.org_.png "Website DPC PKS MB Ketapang yang berbasis Eleventy.")
 
 Setelah menggunakan NextJS ternyata React tidak sesulit yang saya rasakan selama ini. Bahkan lebih mudah dipahami berkat dokumentasinya yang mudah dipahami. Dalam hanya waktu sekitar 3 hari saya berhasil mentransformasikan project yang sebelumnya menggunakan Eleventy + AMP + Basscss, menjadi berbasis NextJS. Namun bagaimanapun proses perubahan itu mengharuskan saya untuk menghapus semua kode untuk kemudian digantikan dengan kode-kode NextJS.
+
+Sementara ini project tersebut sudah saya *deploy* dalam mode *branch deploy*, dan belum saya gabungkan ke *main branch*. Karena belum semua fitur terselesaikan sebagaimana permintaan. Namun project tersebut dapat dicek di link ini: [dev.pksmbketapang.org](https://dev.pksmbketapang.org)
