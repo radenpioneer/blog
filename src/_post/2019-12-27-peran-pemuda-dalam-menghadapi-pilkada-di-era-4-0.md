@@ -2,17 +2,16 @@
 title: Peran Pemuda dalam Menghadapi Pilkada di Era 4.0
 description: Studium Generale Musda VI KAMMI Palangka Raya
 date: 2019-12-27
-image: "/assets/img/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg"
 tags:
-    - non_tech
-    - organisasi
+  - non_tech
+  - organisasi
+image: /assets/img/uploads/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg
 ---
-
 Sebelumnya sudah banyak yang disampaikan oleh bang Teguh Nababan (Aktivis GMKI) terkait dengan generasi milenial, 4.0 dan hal-hal terkait. Maka saya akan lebih spesifik menjelaskan terkait Pilkada, dari sisi permasalahan dan tawaran solusi apa yang akan saya berikan untuk kawan-kawan dalam rangka menghadapi Pilkada Kalteng 2020.
 
 Sebelumnya saya sempat terlibat dalam Pemilu Serentak 2019 sebagai Relawan Demokrasi KPU Kab. Kotawaringin Timur. Kebetulan saya terdaftar sebagai Relawan Basis Pemilih Pemuda, namun faktanya saya lebih banyak bersosialisasi ke daerah-daerah pedesaan di pinggiran kota Sampit, Kab. Kotawaringin Timur. Karena di daerah-daerah pedesaan banyak masyarakat yang tidak begitu mengerti soal Pemilu, padahal puluhan tahun sistem Pemilu kita tidak banyak berubah, dari 1955 sampai sekarang, metodenya tetap mencoblos. (Kecuali tahun 2009 di mana sempat berubah menjadi mencentang, dan itu juga ternyata menyebabkan turunnya partisipasi pemilih akibat perubahan sistem).
 
-![Pembukaan Musda VI PD KAMMI Palangka Raya]({{ image }})
+![Pembukaan Musda VI PD KAMMI Palangka Raya](/assets/img/uploads/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg "Pembukaan Musda VI PD KAMMI Palangka Raya")
 
 Bagi saya, mau di era 4.0 atau apapun, tidak akan banyak mempengaruhi pelaksanaan pemilihan umum. Buktinya sistem pemilu Indonesia tidak banyak berubah baik secara metode, sistem penghitungan dan sebagainya. Indonesia juga sepertinya dalam waktu dekat tidak akan beralih ke sistem *e-voting*. (Menurut saya, sistem *e-voting* ini lebih banyak mudaratnya, berdasarkan penjelasan di link [ini](https://www.youtube.com/watch?v=w3_0x6oaDmI)).
 
@@ -43,7 +42,6 @@ Inilah mengapa bagi saya, pemuda harus mengembalikan lagi demokrasi kepada yang 
 Dari apa yang telah saya paparkan di atas, saya menyimpulkan permasalahan-permasalahan pilkada kita sebagai berikut:
 
 1. **Rasionalisasi masyarakat terhadap politik dan pemilu.** Rakyat menginginkan agar proses pemilu benar-benar berpengaruh bagi kehidupan mereka, sementara fakta yang ada menunjukkan bahwa hasil pemilu tidak berpihak kepada kepentingan masyarakat luas, selain sekedar menjadi jalan kepada segelintir orang yang ingin meraih kuasa. Hal ini kemudian menjadi alasan mengapa sebagian masyarakat memilih golput dan menurunkan angka partisipasi pemilu bahkan hingga di bawah 50%.
-
 2. **Rendahnya Angka Partisipasi Pemilu.** Selain alasan tersebut di atas, ternyata permasalahan-permasalahan teknis pemilu juga berkontribusi terhadap rendahnya angka partisipasi pemilu. Banyak masyarakat yang merasa proses pemilu cukup rumit meskipun sebenarnya proses pemilu di Indonesia cukup sederhana, khususnya untuk pemilihan kepala pemerintahan (Presiden) dan kepala daerah (Bubernur, Bupati dan Walikota) khususnya dalam penentuan *eligibilitas* partisipasi.
 
 Lalu, apa yang dapat dilakukan pemuda?
@@ -55,14 +53,13 @@ Tawaran yang saya berikan ini sebenarnya sudah ada yang melakukannya di daerah y
 Ada dua tawaran yang saya berikan, semua merujuk kepada masing-masing masalah:
 
 1. Saya rasa kita perlu menangkap rasionalisasi politik masyarakat ini dan mengkonversinya menjadi sebuah gerakan. Di Palangka Raya ini ada banyak kampus, dan masing-masing kampus saya rasa menghasilkan banyak sumberdaya-sumberdaya yang mumpuni di bidangnya. Beberapa pimpinan politik di level Kalteng banyak merupakan output dari kampus-kampus yang da di Palangka Raya. Sehingga saya rasa andai sumberdaya ini bisa kita pertemukan, lalu kita membahas isu-isu strategis bersama, salah satunya pencerdasan politik masyarakat, ini bisa melahirkan budaya baru dalam politik lokal yang akan melahirkan pemimpin yang benar-benar berkualitas dan kapabel, menguasai masalah, tidak hanya menang dari sisi keturunan atau modal finansial belaka. Salah satu yang bisa menjadi rujukan adalah Bandung Strategic Leadership Forum (BSLF), saya pernah sekali mengikuti diskusinya, ini forum lintas gerakan dan latar belakang, bahkan pernah ketika di awal-awal wacana terkait Pilwalkot Kota Bandung forum ini hendak mengajukan calon alternatif dari kalangan muda. Sebagaimana yang disampaikan bang Teguh Nababan terkait diskusi-diskusi egaliter, saya rasa hadirnya forum semacam ini dapat menjadi wadah lintas gerakan, latar belakang agama dan kebudayaan, serta latar belakang akademik dan bidang keahlian yang kemudian benar-benar melahirkan pemimpin-pemimpin muda yang visioner, berkualitas, dan memahami masalah serta mampu menghadirkan solusi untuk permasalahan-permasalahan daerah. Nah diskusi-diskusi ini kemudian kita publikasikan untuk menjadi referensi masyarakat serta sebagai bentuk pencerdasan politik kepada masyarakat.
-
 2. Kemarin PP KAMMI dalam momen Pemilu 2019 sudah mencanangkan Lembaga Pemantau Pemilu (LPP) KAMMI. Namun untuk Kalimantan Tengah, saya lebih menawarkan sebuah gerakan sosialisasi pemilu. Gerakan ini bersifat partisipatif, dan kita akan bekerjasama dengan KPU dan Bawaslu untuk mensosialisasikan lebih jauh kepada masyarakat terkait proses pemilihan umum, peraturan-peraturan Pemilu, serta mengadvokasi masyarakat yang hendak berpartisipasi namun terkendala dalam beberapa hal, seperti lokasi dapil, pengurusan surat domisili, dan lain sebagainya. Saya rasa gerakan ini lebih sesuai mengingat kondisi KAMMI Kalteng saat ini, ketimbang melibatkan diri dalam pemantauan pemilu yang mungkin kader-kader belum siap untuk terjun sebagai pemantau. Teknisnya mungkin bisa beberapa orang melibatkan diri sebagai Relawan Demokrasi KPU atau lain sebagainya, kemudian bergerak bersama Gerakan Sosialisasi Pilkada KAMMI yang sudah dibentuk, atau dapat pula mengundang anggota KPU setempat sebagai narasumber.
 
 # Penutup
 
 Demikian pokok-pokok pikiran ini saya sampaikan, untuk melengkapi apa yang telah saya sampaikan pada Studium Generale PD KAMMI Palangka Raya yang lalu.
 
-![Penyerahan cinderamata untuk PW KAMMI Kalteng]({{image | replace: '1.jpg', '2.jpg'}})
+![Penyerahan cinderamata untuk PW KAMMI Kalteng](/assets/img/uploads/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-2.jpg "Penyerahan cinderamata untuk PW KAMMI Kalteng")
 
 *Disampaikan (secara bebas) dalam Studium General Pembukaan Musyawarah Daerah VI PD KAMMI Palangka Raya, Sabtu, 21 Desember 2019.*
 
