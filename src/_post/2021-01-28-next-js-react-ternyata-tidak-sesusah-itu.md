@@ -12,7 +12,7 @@ Nah baru-baru ini menjajal kemampuan [Next.JS](https://nextjs.org/), framework b
 
 Saya menggunakan project lama saya yang saat ini masih ongoing -- website [DPC PKS Mentawa Baru Ketapang](https://pksmbketapang.org/) -- yang memang saya ingin redesign. 
 
-![Website DPC PKS MB Ketapang berbasis Next.JS](/assets/img/uploads/dev.pksmbketapang.org_-laptop-rakyat-jelata-.png "Website DPC PKS MB Ketapang berbasis Next.JS")
+![Website DPC PKS MB Ketapang berbasis Next.JS](/assets/img/uploads/pksmbketapang.png "Website DPC PKS MB Ketapang berbasis Next.JS")
 
 Setelah menggunakan NextJS ternyata React tidak sesulit yang saya rasakan selama ini. Bahkan lebih mudah dipahami berkat dokumentasinya yang mudah dipahami. Dalam hanya waktu sekitar 3 hari saya berhasil mentransformasikan project yang sebelumnya menggunakan Eleventy + AMP + Basscss, menjadi berbasis NextJS. Namun bagaimanapun proses perubahan itu mengharuskan saya untuk menghapus semua kode untuk kemudian digantikan dengan kode-kode NextJS.
 
