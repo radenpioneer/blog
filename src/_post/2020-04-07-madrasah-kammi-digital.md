@@ -5,9 +5,8 @@ date: 2020-04-07
 tags:
   - organisasi
   - non_tech
-image: /assets/img/madrasah-kammi-digital.jpg
+image: /assets/img/uploads/madrasah-kammi-digital.jpg
 ---
-
 Pandemi COVID-19 yang sedang berlangsung (saat ditulisnya artikel ini) membuat kader KAMMI harus serba kreatif. Pasalnya pada saat wabah ini masih berlangsung, agenda-agenda kaderisasi reguler yang seharusnya berjalan, tidak bisa terlaksana dengan alasan kesehatan. Akhirnya, bermunculanlah agenda-agenda kaderisasi online, kajian-kajian online, hingga Madrasah KAMMI online berbasis aplikasi WhatsApp, Zoom, Skype, dan lain sebagainya, sementara agenda-agenda berbasis online ini belum begitu populer sebelum pandemi COVID-19.
 
 Tiga tahun yang lalu, dalam rangka memenuhi prasyarat pendaftaran Dauroh Pemandu Madrasah KAMMI Tasikmalaya, saya menulis sebuah esai yang berjudul *"Peran Madrasah KAMMI Dalam Pembentukan Karakter Kader KAMMI Generasi Digital Native".* Secara garis besar esai ini membahas tentang karakter generasi digital native dan tawaran solusi saya untuk Madrasah KAMMI dalam rangka rekrutmen generasi digital native. Jika anda tertarik untuk membacanya, silahkan download di bawah ini.
@@ -42,10 +41,10 @@ Madrasah KAMMI Digital bukan hanya sekedar pengalihan trafik kajian dari dunia n
 
 *Wallahu a'lam bis-shawab.*
 
-**R. Ilham Sastronegoro**  
+**R. Ilham Sastronegoro**\
 *Sekjend PW KAMMI Kalteng*
 
-![DPMK Tasikmalaya 2017]({{ image }})
+![DPMK Tasikmalaya 2017](/assets/img/uploads/madrasah-kammi-digital.jpg "DPMK Tasikmalaya 2017")
 
 ## Referensi
 
@@ -58,6 +57,6 @@ Madrasah KAMMI Digital bukan hanya sekedar pengalihan trafik kajian dari dunia n
 ## Footnote
 
 [^1]: (dalam Purnomo, 2017)
-[^2]: *Digital Aristoteles* adalah sebuah istilah yang dikemukakan oleh [CGP Grey](https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w) dalam sebuah [video](https://youtu.be/7vsCAM17O-M) yang juga mengemukakan argumentasi soal masa depan pendidikan. Menurut CGP Grey, pendidikan yang sempurna adalah dimana setiap murid memiliki satu guru dan setiap guru memiliki satu murid, selayaknya hubungan antara Aristoteles dan Alexander Agung. Link video: [https://youtu.be/7vsCAM17O-M](https://youtu.be/7vsCAM17O-M)
+[^2]: *Digital Aristoteles* adalah sebuah istilah yang dikemukakan oleh [CGP Grey](https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w) dalam sebuah [video](https://youtu.be/7vsCAM17O-M) yang juga mengemukakan argumentasi soal masa depan pendidikan. Menurut CGP Grey, pendidikan yang sempurna adalah dimana setiap murid memiliki satu guru dan setiap guru memiliki satu murid, selayaknya hubungan antara Aristoteles dan Alexander Agung. Link video: <https://youtu.be/7vsCAM17O-M>
 [^3]: Hubungan *murabbi-mutarabbi* atau pemandu-kader sering dikaitkan dengan hubungan kakak-adik, orangtua-anak, dan guru-murid dalam perihal kedekatan personal. Abbas As-Sisi dalam buku Bagaimana Menyentuh Hati, selalu menitikkan hubungan seorang pendakwah dengan yang didakwahi itu dengan kedekatan emosional, ketimbang sekedar hubungan edukasional. Namun, perangkat teknologi dapat menghadirkan rasa kedekatan emosional seseorang, terlepas dari fakta bahwa perangkat tersebut bukan benda hidup. Hal ini dapat dilihat dari frekuensi interaksi seseorang dengan dunia maya melalui perangkat tersebut. Sehingga, penulis menganggap "hubungan personal seseorang dengan perangkat teknologi lebih dekat dbandingkan hubungannya sendiri dengan orang di dunia nyata, termasuk *murabbi* yang seharusnya, mampu mendekatkan diri secara emosional dengan kadernya.
 [^4]: *Massively Open Online Course*, format kelas digital yang sangat populer.
