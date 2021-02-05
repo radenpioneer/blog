@@ -2,11 +2,10 @@
 title: 2020, Mari Bicara Kontribusi
 date: 2019-12-31
 tags:
-    - organisasi
-    - non_tech
-image: /assets/img/2020-mari-bicara-kontribusi.jpg
+  - organisasi
+  - non_tech
+image: /assets/img/uploads/2020-mari-bicara-kontribusi.jpg
 ---
-
 Sebuah kesyukuran, karena pada tahun ini KAMMI Kalimantan Tengah dalam beberapa waktu terakhir sudah melahirkan ideolog KAMMI baru, setelah selama beberapa tahun sebelumnya belum ada yang berhasil menembus jenjang AB3. Ini adalah prestasi yang luar biasa menurut saya, untuk para pemandu dan tim kaderisasi dalam lingkungan PW KAMMI Kalteng. Diawali dari kepala bidang Kaderisasi Ukh Nuli, dan Akh Syarif di DM3 Kalimantan Selatan bulan September lalu, kemudian Ukh Siti Nur Anisa dan Akh Hasan bulan November lalu di DM3 Jakarta.
 
 Maka apa yang tersisa dari AB3-AB3 yang ada? Sebagaimana kita tahu, AB3 saat ini merupakan jenjang tertinggi dalam sistem kaderisasi KAMMI. Terlepas dari faktor senioritas secara usia dan angkatan masuk KAMMI, sesama AB3 setara dalam jenjang. Sehingga AB3 tidak lagi memiliki pemandu atau *murabbi/yah* dari internal sistem. Posisinya sebagai ideolog, orang yang dianggap paling mengerti dan tahu ke mana organisasi ini akan dibawa. Setidaknya itulah asumsi dari kader-kader yang jenjangnya ada di bawahnya, terlepas seberapa rajin kemudian sang kader AB3 menyelesaikan pemahaman dan kapasitas baik yang terindikator dalam IJDK maupun di luar itu.
@@ -19,11 +18,11 @@ Kader-kader kita hari ini, menurut paparan instruktur materi saya pada saat itu,
 
 Saya mengira, inilah kemudian alasan mengapa PP KAMMI merilis gerakan *Impactivist* dalam Rapimnas II yang lalu. Meski sedikit dianggap keluar jalur oleh beberapa kader, namun pada akhirnya kita menyadari bahwa kita harus mengambil peran dalam dunia yang lebih luas. Karena untuk menopang narasi Kejayaan Indonesia 2045, menurut saya adalah dengan mengambil peran sebesar-besarnya dalam pelbagai bidang. Saya kira AB3 harus berorientasi lebih dari sekedar *qiyadiyah-siyasiyah*, namun menjadi bagian dari stakeholder yang mempengaruhi peran kaum muda lainnya dalam konteks berbangsa dan bernegara. Dan itu sekiranya, dimulai dari menggerakkan komunitas lokal.
 
-![Delegasi PW KAMMI Kalteng di Muktamar XI Malang]({{ image }})
+![Delegasi PW KAMMI Kalteng di Muktamar XI Malang](/assets/img/uploads/2020-mari-bicara-kontribusi.jpg)
 
 Maka menjelang pergantian tahun ini, saya mengajak kawan-kawan semua untuk berpikir kembali dengan kacamata seorang dai, idelog, dan *impact-maker*, peran apa yang akan kita ambil dekade ini? Seberapa jauh langkah kita dari Jayakan Indonesia 2045? Apa yang akan saya berikan untuk negeri? Atau saya akan biarkan orang lain mengambil peran tersebut. Pergantian tahun ini bukan lagi waktunya bicara resolusi-resolusi tidak jelas, namun waktunya kita menngevaluasi diri dan menyusun langkah panjang pergerakan kita sebagai orang yang benar-benar memberikan impact kepada masyarakat. Saya tantang antum yang membaca tulisan ini, 10 tahun ke depan mari bertemu dan bercerita apa *impact* yang sudah kita buat satu dekade ke belakang.
 
 2020, mari bicara kontribusi!
 
-**R. Ilham Sastronegoro**   
+**R. Ilham Sastronegoro**\
 *Sekjend PW KAMMI Kalteng*
