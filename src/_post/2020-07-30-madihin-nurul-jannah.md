@@ -5,7 +5,7 @@ date: 2020-07-30
 tags:
   - non_tech
   - islami
-image: /assets/img/madihin-nurul-jannah.jpg
+image: /assets/img/uploads/madihin-nurul-jannah.jpg
 ---
 
 Senin, 27 Juli 2020, ada yang berbeda dari penampilan Muhadhoroh di Pondok Pesantren Nurul Jannah. Untuk pertama kalinya diselenggarakan penampilan Madihin selain pembacaan puisi dan penampilan pantun yang sudah cukup lumrah dalam agenda Muhadhoroh di Nurul Jannah sejak Januari lalu.
