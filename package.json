@@ -19,9 +19,11 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-img": "^0.7.8",
     "@ampproject/eleventy-plugin-amp": "^0.5.5",
     "@tailwindcss/typography": "^0.4.0",
-    "autoprefixer": "^10.2.4",
+    "autoprefixer": "^10.2.3",
+    "cheerio": "^1.0.0-rc.5",
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",

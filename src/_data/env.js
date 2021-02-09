@@ -16,7 +16,7 @@ module.exports = {
     site: {
         title: "radenpioneer",
         description: "notes and thoughts",
-        logo: `${dir.images}/profile.jpg`,
+        logo: `${dir.images}profile.jpg`,
         url: baseUrl,
         themeColor: "#0074D9",
         images: `${baseUrl}${dir.images}`,

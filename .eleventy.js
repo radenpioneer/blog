@@ -83,7 +83,9 @@ module.exports = function(eleventyConfig) {
         disable: ['ligatures', 'hyphenate']
     }))
 
-    eleventyConfig.addPlugin(require('./plugins'))
+    // LOCAL PLUGINS //
+    eleventyConfig.addPlugin(require('./plugins/eleventy/dateFilters'))
+    eleventyConfig.addPlugin(require('./plugins/eleventy/imgTransform'))
 
     eleventyConfig.addPlugin(amphtml, {
         dir: {
