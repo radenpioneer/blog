@@ -87,6 +87,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(require('./plugins/eleventy/dateFilters'))
     eleventyConfig.addPlugin(require('./plugins/eleventy/imgTransform'))
 
+    
     eleventyConfig.addPlugin(amphtml, {
         dir: {
             output: 'dist'
@@ -95,8 +96,8 @@ module.exports = function(eleventyConfig) {
         minifyCSS: false
     })
 
-    eleventyConfig.addTransform("minify", function(content, outputPath) {
-        if (outputPath.endsWith(".html")) {
+    eleventyConfig.addTransform('minify', function(content, outputPath) {
+        if (outputPath.endsWith('.html')) {
             let minified  = minify.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,
@@ -112,7 +113,7 @@ module.exports = function(eleventyConfig) {
         }
         return content
     })
-
+    
     return {
         dir: {
             input: 'src',
