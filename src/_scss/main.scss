@@ -180,11 +180,11 @@
         @apply flex flex-col min-h-full rounded-lg shadow hover:shadow-lg p-4;
         amp-img {
             img {
-                @apply object-cover object-center rounded-lg mb-2;
+                @apply object-cover object-center rounded-lg;
             }
         }
         h2 {
-            @apply flex-1 font-customHeading font-extrabold text-2xl break-words transition hover:text-blue-400 mb-2;
+            @apply flex-1 font-customHeading font-extrabold text-2xl break-words transition hover:text-blue-400 my-2;
             &.noimage {
                 @apply text-4xl;
             }

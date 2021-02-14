@@ -2,7 +2,7 @@
 title: Masyarakat Ekonomi ASEAN, Bagaimana Peran Mahasiswa?
 date: 2015-04-18
 tags:
-    - restored
+    - archived
 ---
 
 Tak terasa, sudah tahun 2015. Tantangan bangsa ini kian sulit, karena pada akhir tahun ini akan segera dimulai Masyarakat Ekonomi ASEAN. Masyarakat Ekonomi ASEAN (MEA), merupakan suatu asosiasi yang dimana akan berlaku aturan perdagangan bebas (free trade) dan artinya, batas-batas (border) dari negara-negara ASEAN kian menipis, dan aturan-aturan border antar negara di ASEAN akan semakin melunak demi terlaksananya MEA. Tentu saja, ada dampak baik dan buruknya dari berlakunya MEA. Dampak baiknya, tentu saja akan ada kesempatan yang lebih luas terutama bagi para jobseeker â€” para pencari kerja â€” untuk bekerja di wilayah ASEAN lain selain negaranya sendiri. Artinya lapangan kerja semakin lebar, dan setiap perusahaan di  negara anggota MEA dapat merekrut karyawan di luar wilayah negaranya (selama masih anggota MEA) tanpa terhalang oleh peraturan border masing-masing negara.

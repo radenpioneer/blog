@@ -1,18 +1,14 @@
 [
     {
-        "title": "Proyek",
-        "url": "/proyek"
+        "title": "Beranda",
+        "url": "/"
     },
     {
-        "title": "Tekno",
-        "url": "/post/tech"
-    },
-    {
-        "title": "Tulisan",
+        "title": "Blog",
         "url": "/post"
     },
     {
-        "title": "Lama",
+        "title": "Arsip",
         "url": "/post/old"
     },
     {
