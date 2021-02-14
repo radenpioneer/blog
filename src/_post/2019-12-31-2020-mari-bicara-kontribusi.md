@@ -3,7 +3,7 @@ title: 2020, Mari Bicara Kontribusi
 date: 2019-12-31
 tags:
   - organisasi
-  - non_tech
+  - blog
 image: /assets/img/uploads/2020-mari-bicara-kontribusi.jpg
 ---
 Sebuah kesyukuran, karena pada tahun ini KAMMI Kalimantan Tengah dalam beberapa waktu terakhir sudah melahirkan ideolog KAMMI baru, setelah selama beberapa tahun sebelumnya belum ada yang berhasil menembus jenjang AB3. Ini adalah prestasi yang luar biasa menurut saya, untuk para pemandu dan tim kaderisasi dalam lingkungan PW KAMMI Kalteng. Diawali dari kepala bidang Kaderisasi Ukh Nuli, dan Akh Syarif di DM3 Kalimantan Selatan bulan September lalu, kemudian Ukh Siti Nur Anisa dan Akh Hasan bulan November lalu di DM3 Jakarta.
