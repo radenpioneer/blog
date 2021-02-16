@@ -189,7 +189,7 @@
 
         .featuredPost__inner {
 
-            @apply flex flex-col absolute inset-0 bg-black bg-opacity-10 rounded-lg p-4;
+            @apply flex flex-col absolute inset-0 rounded-lg p-4;
 
             h2 {
                 @apply flex-1 font-customHeading font-extrabold text-2xl lg:text-3xl break-words transition hover:text-blue-400 my-2;
@@ -197,6 +197,10 @@
     
             p {
                 @apply font-bold text-sm transition hover:text-blue-400 ;
+            }
+
+            &.withImage {
+                @apply bg-black bg-opacity-25;
             }
         }
 

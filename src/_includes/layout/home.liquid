@@ -17,8 +17,8 @@ layout: layout/layout
             {% if post.data.image %}
             <amp-img class="featuredPost__image" src="{{ post.data.image }}" height="400" width="300" layout="responsive" alt="{{ post.data.title }}"></amp-img>
             {% endif %}
-            <div class="featuredPost__inner">
-                <h2 class="text-white">{{ post.data.title }}</h2>
+            <div class="featuredPost__inner {% if post.data.image %}withImage{% endif %}">
+                <h2 class="{% if post.data.image %}text-white{% else %}text-black{% endif %}">{{ post.data.title }}</h2>
                 <p class="{% if post.data.image %}text-white{% else %}text-gray-500{% endif %}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></p>
             </div>
         </a>
