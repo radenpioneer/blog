@@ -1,0 +1,21 @@
+#blogroll {
+    @apply max-w-screen-lg grid grid-cols-1 lg:grid-cols-4 gap-4 mx-auto px-8;
+    > h1 {
+        @apply lg:col-span-4 font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 transition text-black hover:text-blue-400;
+    }
+    .blogrollItem {
+        @apply rounded-lg shadow hover:shadow-lg p-4;
+        h1 {
+            @apply font-customHeading font-extrabold text-xl lg:text-3xl mb-2
+        }
+        .blogrollUrl {
+            @apply text-sm text-gray-500 mb-4;
+            a {
+                @apply transition hover:underline hover:text-blue-400;
+            }
+        }
+        .blogrollDesc {
+            @apply prose;
+        }
+    }
+}

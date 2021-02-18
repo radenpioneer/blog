@@ -21,6 +21,7 @@ layout: layout/layout
     <main>
         {{ content }}
     </main>
+    {% unless tags contains 'notes' %}
     <footer>
         <div id="contentRelated">
             <h1>{{ "Tulisan Lainnya" | upcase }}</h1>
@@ -35,4 +36,5 @@ layout: layout/layout
             </ul>
         </div>
     </footer>
+    {% endunless %}
 </article>

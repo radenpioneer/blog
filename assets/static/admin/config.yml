@@ -64,3 +64,20 @@ collections:
         widget: "markdown"
     editor:
       preview: false
+  - name: "notes"
+    label: "Catatan"
+    folder: "src/_notes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
+      - label: "Konten"
+        name: "body"
+        widget: "markdown"
+    editor:
+      preview: false

@@ -8,6 +8,10 @@
         "url": "/post"
     },
     {
+        "title": "Catatan",
+        "url": "/notes"
+    },
+    {
         "title": "Arsip",
         "url": "/post/old"
     },
