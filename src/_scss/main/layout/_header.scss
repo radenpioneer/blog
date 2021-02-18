@@ -1,0 +1,29 @@
+#siteheader {
+    @apply fixed overflow-hidden top-0 bg-white w-screen shadow-sm z-10 py-4 lg:py-8 mb-1;
+    #siteheader-container {
+        @apply max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 gap-y-2 mx-auto px-8;
+        #siteheader-logo {
+            @apply flex flex-row items-center justify-items-start;
+            >h1 {
+                @apply font-extrabold tracking-widest text-lg transition hover:text-blue-400 ml-2;
+                > span {
+                    @apply hidden lg:inline transition text-gray-500 text-opacity-0 hover:text-opacity-50;
+                }
+            }
+        }
+        #siteheader-menu {
+            @apply flex flex-row justify-start overflow-x-auto lg:justify-end items-center -mx-2;
+
+            //hide scrollbar
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            a {
+                @apply font-bold p-2 rounded-lg transition hover:text-blue-400 hover:bg-blue-400 hover:bg-opacity-10;
+            }
+        }
+    }
+}

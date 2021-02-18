@@ -1,0 +1,10 @@
+@use 'layout/header';
+@use 'layout/footer';
+
+#body {
+    @apply flex flex-col min-h-screen font-sans;
+}
+
+#sitemain {
+    @apply flex-1 pb-24 mt-32;
+}

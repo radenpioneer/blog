@@ -1,0 +1,11 @@
+/*
+    PLEASE USE 'transition' FROM TAILWIND CLASSES
+*/
+
+@mixin move-up-on-hover {
+    @apply transform translate-y-0 lg:hover:-translate-y-2;
+}
+
+@mixin move-right-on-hover {
+    @apply transform translate-x-0 lg:hover:translate-x-2;
+}

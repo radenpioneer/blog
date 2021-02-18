@@ -20,7 +20,9 @@ const DEST = './src/_includes/styles/'
 function main() {
     let processors = [
         tailwind,
-        importcss,
+        importcss({
+            modernBrowser: true
+        }),
         polyfills
     ]
     return pipeline(
