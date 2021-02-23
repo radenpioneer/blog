@@ -1,0 +1,24 @@
+@use 'home/featured';
+
+#homePage {
+    @apply max-w-screen-lg grid grid-cols-1 gap-16 mx-auto px-8;
+}
+
+#hello {
+    > p {
+        @apply text-base font-bold tracking-wider mb-4; 
+        > span {
+            @apply text-blue-400;
+        }
+    }
+    > h1 {
+        @apply font-customHeading font-extrabold text-4xl lg:text-6xl;
+        > span {
+            @apply transition hover:text-blue-400;
+        }
+    }
+
+    #description {
+        @apply prose prose-lg lg:prose-2xl mt-8;
+    }
+}

@@ -7,7 +7,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets/img": "assets/img",
         "assets/static": ".",
-        "assets/media": "assets/media"
+        "assets/media": "assets/media",
+        "node_modules/speedlify-score/speedlify-score.*": "speedlify"
     })
 
     eleventyConfig.addCollection("post", function(collection) {

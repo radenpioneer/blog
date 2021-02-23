@@ -10,17 +10,19 @@ layout: layout/layout
         </div>
     </div>
     <div id="featuredPosts">
-        <h1><span>{{ "Pos Terbaru" }}</span></h1>
+        <h1><span>{{ "Terbaru" }}</span></h1>
         {% assign posts = collections.post | sort: 'date' | reverse %}
         {% for post in posts limit: 4 %}
-        <a href="{{ post.url }}">
+        <a class="featuredPost" href="{{ post.url }}">
             {% if post.data.image %}
-            <amp-img src="{{ post.data.image }}" height="1" width="1" layout="responsive" alt="{{ post.data.title }}" title="{{ post.data.title }}"></amp-img>
+            <amp-img class="featuredPost__image" src="{{ post.data.image }}" height="400" width="300" layout="responsive" alt="{{ post.data.title }}"></amp-img>
             {% endif %}
-            <h2 class="{% unless post.data.image %}noimage{% endunless %}">{{ post.data.title }}</h2>
-            <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></p>
+            <div class="featuredPost__inner {% if post.data.image %}withImage{% endif %}">
+                <h2 class="{% if post.data.image %}text-white{% else %}text-black{% endif %}">{{ post.data.title }}</h2>
+                <p class="{% if post.data.image %}text-white{% else %}text-gray-500{% endif %}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></p>
+            </div>
         </a>
         {% endfor %}
-        <p><a href="/post">{{ "Tulisan Lainnya" | upcase }} <span>&rarr;</span></a></p>
+        <p><a href="/post">{{ "Blog" | upcase }} <span>&rarr;</span></a></p>
     </div>
 </div>
