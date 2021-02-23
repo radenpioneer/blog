@@ -77,7 +77,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setDataDeepMerge(true)
 
     //browsersync
-    eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
+    eleventyConfig.setBrowserSyncConfig(require('./plugins/browsersync/browsersync.config')('dist'))
 
     eleventyConfig.addPlugin(typeset({
         only: '#content, .postsItem',

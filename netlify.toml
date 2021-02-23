@@ -5,3 +5,6 @@
 [dev]
     command = "npm start"
     autoLaunch = false
+
+[[plugins]]
+    package = "./plugins/netlify/cache"
