@@ -28,5 +28,11 @@
         "url": "https://11ty.dev/",
         "description": "Generator situs statik berbasis Javascript/NodeJS. Alternatif sekaligus kompetitor dari Jekyll. Bisa digunakan tanpa konfigurasi sama sekali.",
         "category": "dev" 
+    },
+        {
+        "title": "Monica Dinculescu",
+        "url": "https://meowni.ca/",
+        "description": "Senior Engineer di Magenta, Google. Dulu pernah di Polymer dan Chrome.",
+        "category": "dev" 
     }
 ]
