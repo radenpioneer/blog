@@ -85,15 +85,13 @@ module.exports = function(eleventyConfig) {
 
     // LOCAL PLUGINS //
     eleventyConfig.addPlugin(require('./plugins/eleventy/dateFilters'))
-
-    
+  
     eleventyConfig.addPlugin(amphtml, {
         dir: {
             output: 'dist'
         },
         imageOptimization : {
-            urlPath: '/assets/img/o/',
-            widths: [24, 60, 120, 240, 480, 640, 750, 828, 1080, 1200, 1920, null]
+            urlPath: '/assets/img/o/'
         },
         minifyCSS: false
     })
