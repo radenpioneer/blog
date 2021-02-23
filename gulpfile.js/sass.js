@@ -1,7 +1,5 @@
 const {src, dest} = require('gulp')
-const replace = require('gulp-replace')
 const pipeline = require('readable-stream').pipeline
-const changed = require('gulp-changed')
 
 //SASS Compiler
 const sass = require('gulp-sass')
@@ -25,10 +23,8 @@ function main() {
     ]
     return pipeline(
         src(SRC),
-        changed(DEST),
         sass({fiber: Fiber}),
         postcss(processors),
-        replace(' !important', ''),
         dest(DEST)
     )
 }
