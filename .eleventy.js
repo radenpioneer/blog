@@ -84,18 +84,21 @@ module.exports = function(eleventyConfig) {
         disable: ['ligatures', 'hyphenate']
     }))
 
-    eleventyConfig.addPlugin(require('./plugins'))
-
+    // LOCAL PLUGINS //
+    eleventyConfig.addPlugin(require('./plugins/eleventy/dateFilters'))
+  
     eleventyConfig.addPlugin(amphtml, {
         dir: {
             output: 'dist'
         },
-        imageOptimization : false,
+        imageOptimization : {
+            urlPath: '/assets/img/o/'
+        },
         minifyCSS: false
     })
 
-    eleventyConfig.addTransform("minify", function(content, outputPath) {
-        if (outputPath.endsWith(".html")) {
+    eleventyConfig.addTransform('minify', function(content, outputPath) {
+        if (outputPath.endsWith('.html')) {
             let minified  = minify.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,
@@ -111,7 +114,7 @@ module.exports = function(eleventyConfig) {
         }
         return content
     })
-
+    
     return {
         dir: {
             input: 'src',
