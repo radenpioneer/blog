@@ -2,8 +2,7 @@
 title: Fakta Menarik Santri MDA Nurul Jannah
 date: 2018-08-10
 tags:
-    - blog
-    - islami
+    - archived
 ---
 
 Mungkin hal-hal berikut di bawah ini akan jarang kita temukan di sekolah umum manapun. Berdasarkan pengalaman saya ketika mengajar di PP Nurul Jannah Sawahan:
