@@ -9,11 +9,13 @@ function main() {
         swDest: SWDEST,
         globDirectory: 'dist',
         globPatterns: [
-            '*.*',
             '**/profile.jpg',
             '**/*-39.jpg',
             '**/*-82.jpg',
-            'assets/media/offline.gif'
+            'android-chrome-*.jpg',
+            'apple-touch-icon.png',
+            'favicon-*.*',
+            'site.webmanifest'
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024
     })

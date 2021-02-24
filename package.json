@@ -47,9 +47,13 @@
     "readable-stream": "^3.6.0",
     "sass": "^1.32.6",
     "tailwindcss": "^2.0.2",
-    "workbox-build": "^5.1.4"
+    "workbox-build": "^6.1.1"
   },
   "dependencies": {
-    "speedlify-score": "^2.0.1"
+    "speedlify-score": "^2.0.1",
+    "workbox-precaching": "^6.1.1",
+    "workbox-recipes": "^6.1.1",
+    "workbox-routing": "^6.1.1",
+    "workbox-strategies": "^6.1.1"
   }
 }
