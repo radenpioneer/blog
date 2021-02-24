@@ -6,10 +6,10 @@ title: Blogroll
     <h1>Blogroll</h1>
     {% assign links = blogroll | sort: 'title' %}
     {% for item in links %}
-    <div class="blogrollItem">
+    <a href="{{ item.url }}" class="blogrollItem" target="_blank" rel="noreferrer">
         <h1>{{ item.title }}</h1>
-        <p class="blogrollUrl"><a href="{{ item.url }}">{{ item.url }}</a> &bull; {{ item.category | upcase }}</p>
+        <p class="blogrollUrl">{{ item.url }} &bull; {{ item.category | upcase }}</p>
         <p class="blogrollDesc">{{ item.description }}</p>
-    </div>
+    </a>
     {% endfor %}
 </div>
