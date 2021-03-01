@@ -1,38 +1,28 @@
-import { 
-    pageCache,
-    staticResourceCache,
-    imageCache,
-    googleFontsCache,
-    warmStrategyCache
- } from 'workbox-recipes'
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js')
 
-import { CacheFirst, NetworkOnly, NetworkFirst } from 'workbox-strategies'
-import { registerRoute, setDefaultHandler } from 'workbox-routing'
-import { precacheAndRoute } from 'workbox-precaching'
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
+workbox.routing.setDefaultHandler(new workbox.strategies.NetworkFirst({cacheName: 'default'}))
+workbox.recipes.pageCache()
+workbox.recipes.staticResourceCache()
+workbox.recipes.imageCache()
+workbox.recipes.googleFontsCache()
 
-precacheAndRoute(self.__WB_MANIFEST)
-setDefaultHandler(new NetworkFirst({cacheName: 'default'}))
-pageCache()
-staticResourceCache()
-imageCache()
-googleFontsCache()
-
-const warmStrategy = new CacheFirst()
+const warmStrategy = new workbox.strategies.CacheFirst()
 const urls = [
     '/offline.html',
     '/assets/img/offline.gif'
 ]
 
-warmStrategyCache({urls, warmStrategy})
+workbox.recipes.warmStrategyCache({urls, warmStrategy})
 
-registerRoute(
+workbox.routing.registerRoute(
     ({ url }) => url.pathname.includes('browser-sync'),
-    new NetworkOnly(),
+    new workbox.strategies.NetworkOnly(),
     'GET',
 )
 
-registerRoute(
+workbox.routing.registerRoute(
     ({ url }) => url.pathname.includes('browser-sync'),
-    new NetworkOnly(),
+    new workbox.strategies.NetworkOnly(),
     'POST'
 )

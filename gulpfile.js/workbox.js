@@ -1,10 +1,10 @@
-const workbox = require('workbox-build')
+const { injectManifest } = require('workbox-build')
 
 const SWSRC = 'src/_sw/sw.js'
 const SWDEST = 'dist/sw.js'
 
 function main() {
-    return workbox.injectManifest({
+    return injectManifest({
         swSrc: SWSRC,
         swDest: SWDEST,
         globDirectory: 'dist',
