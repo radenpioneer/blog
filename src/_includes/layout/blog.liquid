@@ -28,9 +28,9 @@ layout: layout/layout
         </header>
         <main>
             {% unless post.data.tags contains 'notes' %}
-            {{ post.templateContent | truncatewords: 30 }}
+            {{ post.templateContent | truncatewords: 50 }}
             {% else %}
-            {{ post.templateContent }}
+            {{ post.templateContent | truncatewords: 200 }}
             {% endunless %}
         </main>
     </article>
