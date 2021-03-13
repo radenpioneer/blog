@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
         "assets/img": "assets/img",
         "assets/static": ".",
         "assets/media": "assets/media",
+        "assets/files": "files",
         "node_modules/speedlify-score/speedlify-score.*": "speedlify"
     })
 
