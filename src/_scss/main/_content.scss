@@ -34,8 +34,8 @@
     }
     > footer {
         @apply pt-8 text-xl max-w-prose mx-auto;
-        #contentRelated {
-            @apply border-t border-gray-300;
+        #contentRelated, #comments {
+            @apply border-t border-gray-300 mt-4;
             > h1 {
                 @apply font-bold tracking-widest text-base text-gray-500 py-4;
             }
