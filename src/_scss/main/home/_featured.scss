@@ -25,11 +25,11 @@
             @apply flex flex-col absolute inset-0 rounded-lg p-4;
 
             h2 {
-                @apply flex-1 font-customHeading font-extrabold text-2xl lg:text-3xl break-words transition hover:text-blue-400 my-2;
+                @apply flex-1 font-customHeading font-extrabold text-2xl lg:text-3xl break-words my-2;
             } 
     
             p {
-                @apply font-bold text-sm transition hover:text-blue-400 ;
+                @apply font-bold text-sm;
             }
 
             &.withImage {
