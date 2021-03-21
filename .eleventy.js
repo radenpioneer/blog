@@ -2,12 +2,14 @@ const execSync = require('child_process').execSync
 const minify = require('html-minifier')
 const amphtml = require('@ampproject/eleventy-plugin-amp')
 const typeset = require('eleventy-plugin-typeset')
+const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets/img": "assets/img",
         "assets/static": ".",
         "assets/media": "assets/media",
+        "assets/files": "files",
         "node_modules/speedlify-score/speedlify-score.*": "speedlify"
     })
 
@@ -77,7 +79,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setDataDeepMerge(true)
 
     //browsersync
-    eleventyConfig.setBrowserSyncConfig(require('./config/browsersync.config')('dist'))
+    eleventyConfig.setBrowserSyncConfig(require('./plugins/browsersync/browsersync.config')('dist'))
+
+    //sitemap
+    eleventyConfig.addPlugin(sitemap, {
+        sitemap : {
+            hostname: 'https://radenpioneer.netlify.app/'
+        }
+    })
 
     eleventyConfig.addPlugin(typeset({
         only: '#content, .postsItem',

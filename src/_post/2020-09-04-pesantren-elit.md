@@ -2,8 +2,7 @@
 title: Pesantren Elit
 date: 2020-09-04
 tags:
-    - islami
-    - blog
+    - archived
 ---
 
 Sejauh ini, rasanya orientasi hidup yang kita jalani, meski sebagai orang yang taat menjalankan agama, adalah orientasi hidup duniawi. Kita, -- *entah terpaksa atau tidak* -- memilih mengikuti jalan hidup yang berpusat pada gemerlap dunia. Hingga sedikit demi sedikit, perlahan tapi pasti, kita meninggalkan jalan hidup ukhrowi. Bermodal satu hadits yang kita salahgunakan: *"hiduplah di dunia, seolah kau hidup selamanya!"*. Maka tak jarang dari sini, kita melihat amaliyah-amaliyah yang 'anomali'. Misal, soal pendidikan Islam.

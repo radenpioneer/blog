@@ -1,4 +1,7 @@
 {
     "tags": "static",
-    "permalink": "{{ page.fileSlug }}.html"
+    "permalink": "{{ page.fileSlug }}.html",
+    "sitemap": {
+        "priority": 0.2
+    }
 }

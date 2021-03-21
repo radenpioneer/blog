@@ -3,8 +3,7 @@ title: Madihin Nurul Jannah
 description: PP Nurul Jannah Sawahan Sampit
 date: 2020-07-30
 tags:
-  - blog
-  - islami
+  - archived
 image: /assets/img/uploads/madihin-nurul-jannah.jpg
 ---
 

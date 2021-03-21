@@ -4,7 +4,6 @@ description: Studium Generale Musda VI KAMMI Palangka Raya
 date: 2019-12-27
 tags:
   - blog
-  - organisasi
 image: /assets/img/uploads/peran-pemuda-dalam-menghadapi-pilkada-di-era-4-0-1.jpg
 ---
 Sebelumnya sudah banyak yang disampaikan oleh bang Teguh Nababan (Aktivis GMKI) terkait dengan generasi milenial, 4.0 dan hal-hal terkait. Maka saya akan lebih spesifik menjelaskan terkait Pilkada, dari sisi permasalahan dan tawaran solusi apa yang akan saya berikan untuk kawan-kawan dalam rangka menghadapi Pilkada Kalteng 2020.

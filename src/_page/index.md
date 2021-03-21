@@ -1,9 +1,11 @@
 ---
 layout: layout/home
 permalink: "index.html"
-title: Saya menulis.
-subtitle: hello nama saya ilham
+title: Selamat datang.
+subtitle: blog pribadi radenpioneer
+sitemap:
+    priority: 1.0
 ---
-Saya menulis banyak hal di blog ini,baik tentang teknologi web, maupun non-teknologi seperti opini, organisasi, pengalaman pribadi dan lain-lain. 
+Semoga tulisan saya di blog ini bermanfaat untuk kita semua.
 
-Semoga bisa memberi manfaat untuk pembaca sekalian.
+Tentang saya: [Klik di sini](/about)

@@ -3,5 +3,8 @@
     "layout": "layout/post",
     "permalink": "notes/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html",
     "author": "R. Ilham Sastronegoro",
-    "comments": true
+    "comments": true,
+    "sitemap": {
+        "priority": 0.5
+    }
 }
