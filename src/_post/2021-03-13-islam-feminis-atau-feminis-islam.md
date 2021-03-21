@@ -20,5 +20,5 @@ Islam pada dasarnya mengajarkan bahwa tidak ada yang lebih baik di mata Allah ke
 
 Dengan demikian, dapat diambil kesimpulan sederhana: feminisme, dengan dasar pemahaman bahwa perempuan itu tertindas, warga kelas dua, tidak pernah terjadi dalam kebudayaan masyarakat Indonesia, setidaknya sejak Islam berkembang di Indonesia, bahkan bisa jadi sebelum itu. Sehingga Feminisme tidak kompatibel dengan masyarakat Indonesia, yang dari dahulu kala telah terpengaruh budaya Islam. Boleh dikata: seperti pohon kelapa yang tidak bisa ditanam di atas gunung, demikian pula feminisme, justru tidak akan bisa tumbuh karena sudah jelas salah ladangnya.
 
-<amp-google-document-embed src="/files/islam-feminis-atau-feminis-islam.docx" width="800" height="600" layout="responsive">
+<amp-google-document-embed src="{{ env.site.url }}/files/islam-feminis-atau-feminis-islam.docx" width="800" height="600" layout="responsive">
 </amp-google-document-embed>
