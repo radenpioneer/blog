@@ -19,14 +19,18 @@ layout: layout/layout
         </p>
     </header>
     <main>
-        {{ content }}
+        <div>{{ content }}</div>
     </main>
-    {% unless tags contains 'notes' %}
     <footer>
+        <div id="comments">
+            <h1>{{ "Komentar" | upcase }}</h1>
+            {% include component/comment %}
+        </div>
+        {% unless tags contains 'notes' %}
         <div id="contentRelated">
             <h1>{{ "Tulisan Lainnya" | upcase }}</h1>
             <ul>
-            {% assign posts = collections.post | sort: 'date' | reverse %}
+            {% assign posts = collections.blog | sort: 'date' | reverse %}
             {% for post in posts limit: 5 %}
             <li class="related">
                 <span class="text-gray-500 w-52 pr-4">{{ post.date | dateReadable }}</span>
@@ -35,6 +39,7 @@ layout: layout/layout
             {% endfor %}
             </ul>
         </div>
+        {% endunless %}
     </footer>
-    {% endunless %}
+
 </article>
