@@ -6,14 +6,8 @@ layout: layout/layout
     {% for post in posts %}
     <article class="postsItem">
         <header>
-            {% unless post.data.tags contains 'notes' %}
             <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-            {% endunless %}
             <p>
-                {% if post.data.tags contains 'notes' %}
-                <a href="{{ post.url }}">{{ post.data.title | upcase }}</a>
-                &bull;
-                {% endif %}
                 <a href="{{ post.url }}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable | upcase }}</time></a>
                 &bull;
                 {% for tag in post.data.tags %}
@@ -29,8 +23,6 @@ layout: layout/layout
         <main>
             {% unless post.data.tags contains 'notes' %}
             {{ post.templateContent | truncatewords: 50 }}
-            {% else %}
-            {{ post.templateContent | truncatewords: 200 }}
             {% endunless %}
         </main>
     </article>
