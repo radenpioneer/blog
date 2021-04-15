@@ -1,4 +1,4 @@
-@use '../mixins/animation';
+@use 'mixins/animation';
 
 #blogroll {
     @apply max-w-screen-lg grid grid-cols-1 lg:grid-cols-4 gap-4 mx-auto px-8;
