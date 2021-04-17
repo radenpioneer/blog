@@ -41,9 +41,10 @@
 
     }
     > p {
-        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right ;
+        @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right mt-4 transition;
+        @include animation.move-right-on-hover;
         >a {
-            @apply rounded-lg transition hover:bg-blue-400 hover:bg-opacity-10 transform translate-x-0 hover:translate-x-2 p-2 -mr-2;
+            @apply rounded-lg transition hover:bg-blue-400 hover:bg-opacity-10 transform translate-x-0 hover:translate-x-2 p-4 -mr-4;
             @include colors.blue;
         }
     }
