@@ -1,28 +1,25 @@
 @use 'mixins/animation';
 
 #posts {
-    @apply max-w-screen-md mx-auto px-4 mt-10 lg:mt-20;
+    @apply max-w-screen-md grid grid-cols-1 gap-8 mx-auto px-4 mt-10 lg:mt-20;
     h1 {
         @apply font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 transition text-black hover:text-blue-400;
     }
-    article.postsItem {
+    .postsItem {
 
         @include animation.move-up-on-hover;
-        @apply rounded-lg shadow hover:shadow-lg p-4 my-8 transition;
-
-        header {
-            @apply mb-4;
-            h2 {
-                @apply font-customHeading font-extrabold text-2xl lg:text-4xl transition text-black hover:text-blue-400;
-            }
-            p {
-                @apply text-sm mt-2;
-                > time, > span, > a {
-                    @apply transition text-gray-500 hover:text-blue-400 hover:underline
-                }
+        @apply rounded-lg shadow hover:shadow-lg p-4 transition;
+  
+        > h2 {
+            @apply font-customHeading font-extrabold text-2xl lg:text-4xl transition text-black hover:text-blue-400;
+        }
+        > p {
+            @apply text-sm my-4;
+            > time, > span {
+                @apply transition text-gray-500 hover:text-blue-400 hover:underline
             }
         }
-        main {
+        > div {
             @apply prose-lg;
         }
     }
