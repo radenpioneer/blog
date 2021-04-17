@@ -1,3 +1,5 @@
+@use '../mixins/colors';
+
 #sitefooter {
     @apply w-screen shadow-sm py-4;
     #sitefooter-container {
@@ -7,13 +9,14 @@
                 @apply font-bold;
             }
             a {
-                @apply transition hover:text-blue-400;
+                @include colors.blue-hover;
             }
         }
         .sitefooter-icons {
             @apply flex flex-row lg:col-start-6 lg:justify-self-end -mx-2;
             a {
-                @apply transition hover:text-blue-400 p-2;
+                @apply p-2;
+                @include colors.blue-hover;
                 svg {
                     @apply fill-current w-5 h-5;
                 }

@@ -1,11 +1,12 @@
 @use '../mixins/animation';
+@use '../mixins/colors';
 
 #featuredPosts {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
     > h1 {
         @apply col-span-1 sm:col-span-2 lg:col-span-4 font-customHeading font-extrabold text-2xl lg:text-4xl;
         > span {
-            @apply transition hover:text-blue-400;
+            @include colors.blue-hover;
         }
     }
     > .featuredPost {
@@ -42,7 +43,8 @@
     > p {
         @apply col-span-1 sm:col-span-2 lg:col-span-4 font-bold text-xl text-right ;
         >a {
-            @apply rounded-lg transition text-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transform translate-x-0 hover:translate-x-2 p-2 -mr-2;
+            @apply rounded-lg transition hover:bg-blue-400 hover:bg-opacity-10 transform translate-x-0 hover:translate-x-2 p-2 -mr-2;
+            @include colors.blue;
         }
     }
 }

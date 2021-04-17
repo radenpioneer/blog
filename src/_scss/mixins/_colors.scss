@@ -1,0 +1,7 @@
+@mixin blue-hover {
+    @apply hover:text-lightBlue-700 transition;
+}
+
+@mixin blue {
+    @apply text-lightBlue-700;
+}
