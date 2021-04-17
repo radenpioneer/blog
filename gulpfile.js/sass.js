@@ -8,7 +8,7 @@ const Fiber = require('fibers')
 
 //PostCSS and plugins
 const postcss = require('gulp-postcss')
-const polyfills = require('postcss-preset-env')
+const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
 const tailwind = require('tailwindcss')
 
@@ -21,7 +21,7 @@ function main() {
         importcss({
             modernBrowser: true
         }),
-        polyfills
+        autoprefixer
     ]
     return pipeline(
         src(SRC),

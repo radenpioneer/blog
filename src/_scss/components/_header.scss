@@ -1,3 +1,5 @@
+@use '../mixins/colors';
+
 #siteheader {
     @apply fixed overflow-hidden top-0 bg-white w-screen shadow-sm z-10 py-4 lg:py-8 mb-1;
     #siteheader-container {
@@ -5,7 +7,8 @@
         #siteheader-logo {
             @apply flex flex-row items-center justify-items-start;
             >h1 {
-                @apply font-extrabold tracking-widest text-lg transition hover:text-blue-400 ml-2;
+                @apply font-extrabold tracking-widest text-lg ml-2;
+                @include colors.blue-hover;
                 > span {
                     @apply hidden lg:inline transition text-gray-500 text-opacity-0 hover:text-opacity-50;
                 }
@@ -22,7 +25,8 @@
             }
 
             a {
-                @apply font-bold p-2 rounded-lg transition hover:text-blue-400 hover:bg-blue-400 hover:bg-opacity-10;
+                @apply font-bold p-2 rounded-lg hover:bg-blue-400 hover:bg-opacity-10;
+                @include colors.blue-hover;
             }
         }
     }
