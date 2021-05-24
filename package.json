@@ -45,7 +45,7 @@
     "postcss-import-url": "^7.0.0",
     "readable-stream": "^3.6.0",
     "sass": "^1.32.8",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^2.1.2",
     "workbox-build": "^6.1.1"
   },
   "dependencies": {
