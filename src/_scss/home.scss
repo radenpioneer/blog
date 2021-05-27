@@ -1,4 +1,5 @@
-@use 'home/featured';
+@use 'components/featured';
+@use 'mixins/colors';
 
 #homePage {
     @apply max-w-screen-lg grid grid-cols-1 gap-16 mx-auto px-8;
@@ -8,17 +9,17 @@
     > p {
         @apply text-base font-bold tracking-wider mb-4; 
         > span {
-            @apply text-blue-400;
+            @include colors.blue;
         }
     }
     > h1 {
         @apply font-customHeading font-extrabold text-4xl lg:text-6xl;
         > span {
-            @apply transition hover:text-blue-400;
+            @include colors.blue-hover;
         }
     }
 
     #description {
-        @apply prose prose-lg lg:prose-2xl mt-8;
+        @apply prose prose-lg lg:prose-xl mt-8;
     }
 }

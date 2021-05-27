@@ -1,0 +1,30 @@
+@use 'mixins/animation';
+@use 'mixins/colors';
+
+#posts {
+    @apply max-w-screen-md grid grid-cols-1 gap-8 mx-auto px-4 mt-10 lg:mt-20;
+    h1 {
+        @apply font-customHeading font-extrabold text-4xl lg:text-6xl lg:text-center my-10 lg:my-20 text-black;
+        @include colors.blue-hover;
+    }
+    .postsItem {
+
+        @include animation.move-up-on-hover;
+        @apply rounded-lg shadow hover:shadow-lg p-4 transition;
+  
+        > h2 {
+            @apply font-customHeading font-extrabold text-2xl lg:text-4xl text-black;
+            @include colors.blue-hover;
+        }
+        > p {
+            @apply text-sm my-4;
+            > time, > span {
+                @apply text-gray-500 hover:underline;
+                @include colors.blue-hover;
+            }
+        }
+        > div {
+            @apply prose-lg;
+        }
+    }
+}

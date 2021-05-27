@@ -1,4 +1,13 @@
 <style>
     {% include styles/main.css %}
     {% include styles/typeset.css %}
+    {% if page.url == '/' %}
+        {% include styles/home.css %}
+    {% elsif page.url == '/blogroll.html' %}
+        {% include styles/blogroll.css %}
+    {% elsif page.url == '/post/' or page.url == '/post/old/' or page.url == '/notes/' %}
+        {% include styles/blog.css %}
+    {% else %}
+        {% include styles/content.css %}
+    {% endif %}
 </style>

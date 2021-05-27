@@ -1,4 +1,5 @@
-@use '../mixins/animation';
+@use 'mixins/animation';
+@use 'mixins/colors';
 
 #content {
     @apply max-w-screen-lg mx-auto px-4;
@@ -10,10 +11,12 @@
         > p {
             @apply text-base lg:text-xl lg:text-center mt-4;
             &.time > time, &.time > span {
-                @apply transition text-gray-500 hover:text-blue-400;
+                @apply text-gray-500;
+                @include colors.blue-hover;
             }
             &.description {
-                @apply text-base lg:text-lg font-bold text-blue-400 mb-2;
+                @apply text-base lg:text-lg font-bold mb-2;
+                @include colors.blue;
             }
         }
     }
@@ -30,6 +33,9 @@
             figcaption {
                 @apply text-base text-center text-gray-500 m-0 py-2;
             }
+        }
+        a {
+            @include colors.blue-hover;
         }
     }
     > footer {
@@ -48,7 +54,8 @@
                     a.relatedItem {
 
                         @include animation.move-right-on-hover;
-                        @apply font-bold transition hover:text-blue-400;
+                        @include colors.blue-hover;
+                        @apply font-bold;
                     }
                 }
             }

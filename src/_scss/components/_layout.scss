@@ -1,5 +1,5 @@
-@use 'layout/header';
-@use 'layout/footer';
+@use 'header';
+@use 'footer';
 
 #body {
     @apply flex flex-col min-h-screen font-sans;

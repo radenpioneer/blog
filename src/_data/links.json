@@ -1,4 +1,4 @@
-[
+[ 
     {
         "title": "Blogroll",
         "url": "/blogroll"
@@ -14,5 +14,9 @@
     {
         "title": "Sitemap",
         "url": "/sitemap.xml"
+    },
+    {
+        "title": "❤️",
+        "url": "/notes/2021/05/personal-request.html"
     }
 ]
